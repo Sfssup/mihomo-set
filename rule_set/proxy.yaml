@@ -1,0 +1,17 @@
+# 代理
+
+payload:
+  - +.mobilism.me
+  - +.mobilism.org
+  - +.lsposed.org
+  - +.greasyfork.org
+  - +.firstory.me
+  - +.firstory.blog
+  - +.podtube.me
+  - +.y2pod.com
+  - +.youtubecast.com
+  - +.dailyuploads.net
+  - +.metacubex.one
+  - +.sagernet.org
+  - +.ghproxy.com
+  - +.ghp.ci
