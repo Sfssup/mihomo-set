@@ -1,369 +1,152 @@
+# 该规则主要针对各大不在 CN 列表里但可以直连的视频平台
+# 反馈、提交规则：https://t.me/ksc666/7321
+# behavior: domain
+
 payload:
-# 封面来源
-# 小海报
- - DOMAIN-SUFFIX,doubanio.com
-# 大封面
- - DOMAIN-SUFFIX,tmdb.org
-# 弹幕
- - DOMAIN,dandanplay.net
-# 网盘规则
-# 阿里
- - DOMAIN-SUFFIX,aliyundrive.com
- - DOMAIN-SUFFIX,voicehub.top
-# 夸克
- - DOMAIN-SUFFIX,quark.cn
-# 天翼
- - DOMAIN-SUFFIX,189.cn
- - DOMAIN-SUFFIX,ctyunxs.cn
-# 115
- - DOMAIN-SUFFIX,115.com
-# uc
- - DOMAIN-SUFFIX,uc.cn
-# 小雅
- - DOMAIN-SUFFIX,xiaoya.pro
-# 网盘源
-# 小米
- - DOMAIN,mihdr.top
-# 木偶
- - DOMAIN-SUFFIX,mogg.top
-# 玩偶
- - DOMAIN-SUFFIX,wogg.net
-# 雷鲸
- - DOMAIN,www.leijing.xyz
-# 校长
- - DOMAIN,xzys.fun
-# 蜡笔
- - DOMAIN-SUFFIX,duopan.fun
-# 南风
- - DOMAIN,www.nanf.cc
-# 多多
- - DOMAIN,yydsys.top
-# 欧歌
- - DOMAIN,woog.nxog.eu.org
-# 云盘吧
- - DOMAIN,yunpan8.cc
-# nmlive相关
- - DOMAIN-SUFFIX,bilivideo.com
- - DOMAIN,slink.ltd
- - DOMAIN-SUFFIX,douyincdn.com
- - DOMAIN-SUFFIX,douyinpic.com
- - DOMAIN-SUFFIX,douyucdn.cn
- - DOMAIN-SUFFIX,douyucdn2.cn
- - DOMAIN-SUFFIX,huya.com
- - DOMAIN-SUFFIX,msstatic.com
- - DOMAIN,lemonlive.deno.dev
-# VOD源
-# 低端主页与播放
- - DOMAIN-SUFFIX,ddys.pro
-# AGE主页
- - DOMAIN-SUFFIX,agedm.org
-# ギリギリ主页
- - DOMAIN,anime.girigirilove.com
-# 播放
- - DOMAIN,love.girigirilove.com
- - DOMAIN,m3u8.girigirilove.com
-# 瓜子主页
- - DOMAIN,api.9cec79d.com
-# 播放
- - DOMAIN,wjm.kemfsj.com
-# 4k-av播放
- - DOMAIN,www.4k-av.com
-# 囧动漫主页
- - IP-CIDR,43.142.232.217/32
-# 播放
- - DOMAIN-SUFFIX,fanchenstatic.com
- - DOMAIN,i0.hdslb.com
- - DOMAIN-SUFFIX,bsgslb.cn
- - DOMAIN-SUFFIX,bytetos.com
- - DOMAIN-SUFFIX,douyinvod.com
- - DOMAIN-SUFFIX,byteimg.com
- - IP-CIDR,110.41.171.181/32
- - IP-CIDR,49.235.143.104/32
- - DOMAIN-SUFFIX,xhscdn.com
- - DOMAIN-SUFFIX,bdxiguastatic.com
- - DOMAIN-SUFFIX,zshtys888.com
-# libvio主页
- - DOMAIN,www.libvio.cc
-# 播放
- - DOMAIN-SUFFIX,mcloud.139.com
- - DOMAIN-SUFFIX,libvio.cloud
-# anfuns相关
- - DOMAIN-SUFFIX,anfuns.org
- - DOMAIN-SUFFIX,bytegiftia.top
- - DOMAIN-SUFFIX,lenovo.com.cn
- - DOMAIN,image.zhihuishu.com
- - DOMAIN,presale.111.com.cn
-# hdmoli主页
- - DOMAIN,hdmoli.pro
-# 播放
- - DOMAIN,v.damoli.pro
-# 哔嘀影视主页
- - DOMAIN,www.xlys01.com
-# 播放
- - DOMAIN-SUFFIX,bytetos.com
-# 烧火影视主页
- - DOMAIN,saohuo.tv
-# 播放
- - DOMAIN,hhjx.hhplayer.comundefined
- - DOMAIN-SUFFIX,video.iqiyi.com
- - DOMAIN-SUFFIX,qitu-zuida.com
- - DOMAIN,om.tc.qq.com
- - DOMAIN-SUFFIX,ibytedtos.com
- - DOMAIN-SUFFIX,1ljx.com
- - DOMAIN-SUFFIX,smtcdns.com
- - DOMAIN,cme-video.vod-qcloud.com
- - DOMAIN,hhjx.hhplayer.com
-# NO視頻主页
- - DOMAIN,www.novipnoad.net
-# 播放
- - DOMAIN-SUFFIX,novipnoad.net
-# 韩剧看看主页
- - DOMAIN,www.hanjukankan.com
- - DOMAIN,glzx.thekutv.com
-# 播放
- - DOMAIN-SUFFIX,thehanju.com
- - DOMAIN-SUFFIX,vvddoo.com
-# 星芽主页
- - DOMAIN,qiniu.rongjuwh.cn
- - DOMAIN,app.whjzjx.cn
- - DOMAIN,u.shytkjgs.com
-# 播放
- - IP-CIDR,218.22.23.189/32
- - IP-CIDR,117.68.35.135/32
- - IP-CIDR,218.22.23.229/32
- - DOMAIN-SUFFIX,qnqcdn.net
- - DOMAIN-SUFFIX,xingya.com.cn
- - IP-CIDR,117.68.35.139/32
-# 小苹果播放
- - IP-CIDR,163.123.192.184/32
- - IP-CIDR,148.59.74.50/32
- - IP-CIDR,205.178.182.17/32
- - IP-CIDR,163.123.192.169/32
- - IP-CIDR,163.123.192.68/32
- - IP-CIDR,163.123.192.182/32
- - IP-CIDR,205.178.182.8/32
- - IP-CIDR,163.123.192.108/32
- - IP-CIDR,163.123.192.29/32
- - IP-CIDR,205.178.182.52/32
- - IP-CIDR,163.123.192.17/32
- - DOMAIN,c.xpgtv.net
-# 厂长主页
- - DOMAIN,www.czzyvideo.com
-# 播放
- - DOMAIN,qimgs.qunarzz.com
- - DOMAIN,lf16-fe.resso.me
- - DOMAIN-SUFFIX,akamaized.net
- - DOMAIN,t001.czzy.fun
- - DOMAIN,vunyundun.czys.art
- - DOMAIN-SUFFIX,larksuitecdn.com
- - DOMAIN,dc.xhscdn.com
- - DOMAIN,mdn.alipayobjects.com
-# 天天主页
- - DOMAIN,op.ysdqjs.cn
-# 在线之家主页--播放地址是ctyunxs.cn,在天翼里有
- - DOMAIN-SUFFIX,zxzja.com
-# 素白白主页--播放地址是dc.xhscdn.com,在厂长里有
- - DOMAIN,www.subaibaiys.com
-# CMS源
-# 360主页
- - DOMAIN,360zy.com
-# 播放
- - DOMAIN,vod.lyhuicheng.com
-# 非凡主页和播放
- - DOMAIN-KEYWORD,ffzy
-# 墨斗主页
- - DOMAIN,www.mdzyapi.com
-# 黑木耳主页
- - DOMAIN-SUFFIX,heimuer.tv
- - DOMAIN-SUFFIX,heimuer.xyz
-# 播放
- - DOMAIN,2bzfvku2xwu7.com
- - DOMAIN,n9ihkvv1ytjr.com
- - DOMAIN,0cicgw0mte7y.com
- - DOMAIN,r5oa1oqwh6gz.com
- - DOMAIN,knfuzimvbmwr.com
- - DOMAIN,ucul8pjt6v6h.com
- - DOMAIN,5pvheva17etb.com
- - DOMAIN,k6qgunhk9wuk.com
- - DOMAIN,0uxzzy8thov3.com
- - DOMAIN,5dagx9am9sai.com
- - DOMAIN,omgyesityyhl.com
- - DOMAIN,eucjzvub6vhr.com
- - DOMAIN,tficf2xx0qxr.com
- - DOMAIN,zqmdvefdijjx.com
- - DOMAIN,jzuqfavoibww.com
- - DOMAIN,in1eab44tnda.com
- - DOMAIN,nfysfaemv1m2.com
- - DOMAIN,rfjyb3bu5j0r.com
- - DOMAIN,wjmgijixqcbc.com
- - DOMAIN,jvgcazuedspp.com
- - DOMAIN,fmxjkp6ekzcg.com
- - DOMAIN,zea35s3nhdbn.com
- - DOMAIN,zehnaxihujfi.com
- - DOMAIN,0nzuqy0k3c35.com
- - DOMAIN,yvocwep63nev.com
- - DOMAIN,navogkbbnjl4.com
- - DOMAIN,xgwr4phkkafo.com
- - DOMAIN,om43531gxybq.com
- - DOMAIN,3lky1u69bdx2.com
- - DOMAIN,438pnr4dyywt.com
- - DOMAIN,mdghhsgc4iiy.com
- - DOMAIN,m3u8.hmrvideo.com
-# 华为吧主页
- - DOMAIN,hw8.live
-# 播放
- - DOMAIN,selfcdn.simaguo.com
- - DOMAIN,m3u.nikanba.live
-# 腐剧主页
- - DOMAIN,www.fuju2024.cc
-# 播放
- - DOMAIN-SUFFIX,yishihui.com
-# 金鹰主页
- - DOMAIN,image.jinyingimage.com
- - DOMAIN,jinyingzy.com
-# 播放
- - DOMAIN,c.baisiweiting.com
- - DOMAIN,hd.ijycnd.com
-# OK主页
- - DOMAIN,pic.okzy.xyz
- - DOMAIN,wakdj.com
-# 播放
- - DOMAIN-SUFFIX,noop44.com
- - DOMAIN-SUFFIX,bxgbnet.com
- - DOMAIN-SUFFIX,xxya88.com
-# 宝片主页
- - DOMAIN,zpsps.com
-# 播放
- - DOMAIN-KEYWORD,bbffvip.com
- - DOMAIN-KEYWORD,rrcdnbf
-# 小黄人主页
- - DOMAIN,iqyi.xiaohuangrentv.com
-# 播放
- - DOMAIN-KEYWORD,.jisu.com
-# 牛牛主页
- - DOMAIN,pic.niuniuzy.info
-# 播放
- - DOMAIN-SUFFIX,qrstt.com
- - DOMAIN-SUFFIX,stuuvwy.com
- - DOMAIN-SUFFIX,xingchongwang.com
-# 丫丫主页
- - DOMAIN-SUFFIX,uvvv77.com
-# 播放
- - DOMAIN-SUFFIX,jklnopq.com
- - DOMAIN,cj.yayazy.net
- - DOMAIN-SUFFIX,qdhdcate.com
-# 影图主页
- - DOMAIN,cj.vodimg.top
-# 播放
- - DOMAIN-SUFFIX,ghij11.com
- - DOMAIN-SUFFIX,tlkqc.com
- - DOMAIN,pic.picturecdn.com
- - DOMAIN,tlkqc.com
- - DOMAIN-SUFFIX,xaab57.com
-# U酷主页
- - DOMAIN,api.ukuapi.com
-# 播放
- - DOMAIN-KEYWORD,ukzy.ukubf
-# 豪华主页
- - DOMAIN,hhzyapi.com
-# 播放
- - DOMAIN,play.hhuus.com
- - DOMAIN,p.hhwenjian.com
-# 极速主页
- - DOMAIN,jszyapi.com
-# 索尼主页
- - DOMAIN,snzypic.vip
-# 播放
- - DOMAIN-KEYWORD,.hiij
- - DOMAIN-SUFFIX,nopqq.vip
- - DOMAIN-SUFFIX,uvwwx.vip
- - DOMAIN-SUFFIX,pqqrs.vip
- - DOMAIN-SUFFIX,qrssv.com
-# ikun主页
- - DOMAIN,www.imgikzy.com
-# 播放
- - DOMAIN,kkzycdn.com
- - DOMAIN,bfikuncdn.com
-# 量子主页
- - DOMAIN,cj.lziapi.com
- - DOMAIN,img.lzzyimg.com
-# 播放
- - DOMAIN-KEYWORD,v.cdnlz
-# 暴风主页
- - DOMAIN-SUFFIX,bfzypic.com
- - DOMAIN,bfzyapi.com
-# 播放
- - DOMAIN-SUFFIX,bfllvip.com
-# 红牛主页
- - DOMAIN,www.hongniuzy2.com
-# 播放
- - DOMAIN,hn.bfvvs.com
- - DOMAIN,hnts.ymuuy.com
-# 快车主页
- - DOMAIN,caijl.kczyapi.com
-# 播放
- - DOMAIN-SUFFIX,fghjklm.com
- - DOMAIN-SUFFIX,ijkklmn.com
- - DOMAIN-SUFFIX,longshengtea.com
- - DOMAIN-SUFFIX,stuuv.vip
-# 闪电主页
- - DOMAIN,sdzyapi.com
-# 播放
- - DOMAIN-SUFFIX,qrrs56.com
- - DOMAIN-SUFFIX,wwxy0.com
- - DOMAIN-SUFFIX,fentvoss.com
-# 樱花主页
- - DOMAIN,m3u8.apiyhzy.com
-# 播放
- - DOMAIN-SUFFIX,ijkkl.vip
- - DOMAIN-SUFFIX,abcce.vip
- - DOMAIN-SUFFIX,mmnn34.com
- - DOMAIN-SUFFIX,vwxx78.com
- - DOMAIN-SUFFIX,stttu.vip
- - DOMAIN-SUFFIX,tuvvv.vip
- - DOMAIN-SUFFIX,ijkmnno.com
- - DOMAIN-SUFFIX,deefg.vip
- - DOMAIN-SUFFIX,lmnoprs.com
- - DOMAIN-KEYWORD,shes
- - DOMAIN-SUFFIX,yhzybf.com
- - DOMAIN-SUFFIX,wgslsw.com
- - DOMAIN,pic.jegms.com
-# 卧龙主页
- - DOMAIN,collect.wolongzyw.com
- - DOMAIN,pic.wlongimg.com
-# 播放
- - DOMAIN-KEYWORD,cdn.wls
- - DOMAIN-KEYWORD,cdn.wlcdn
-# 虎牙主页与播放
- - DOMAIN-KEYWORD,.huya
-# 飘零主页
- - DOMAIN,p2100.net
-# 无尽主页
- - DOMAIN,api.wujinapi.com
-# 播放
- - DOMAIN-SUFFIX,stuv67.com
- - DOMAIN-SUFFIX,hjjk22.com
- - DOMAIN-SUFFIX,jkkl23.com
- - DOMAIN,v5.xyaa88.com
-# 速博主页
- - DOMAIN-KEYWORD,subo
-# 播放
- - DOMAIN,play.subokk.com
- - DOMAIN-SUFFIX,xlzyd.com
-# 魔都主页
- - DOMAIN,caiji.moduapi.cc
- - DOMAIN,www.mdzypic.com
-# 播放
- - DOMAIN-KEYWORD,play.modujx
-# 最大主页
- - DOMAIN,ok.zuidapic.com
- - DOMAIN,zuidazy.me
-# 播放
- - DOMAIN-SUFFIX,daayee.com
-# 新浪主页
- - DOMAIN,xinlangtupian.com
-# 播放
- - DOMAIN,play.xluuss.com
-# 八戒播放
- - DOMAIN-SUFFIX,monidai.com
- - DOMAIN-SUFFIX,hdslb.pro
+  - dmbus.cc
+  - dm84.tv
+  - dm84.site
+  - dm84.top
+  - www.dmmiku.com
+  - ddys.mov
+  - www.mogg.top
+  - mogg.xn--yetu07f.top
+  - +.7moor-fs1.com
+  - obs.gduamoe.com
+  - www.wogg.net
+  - woggpan.333232.xyz
+  - www.bttwoo.com
+  - www.wo4k.com
+  - svip.high24-playback.com
+  - svipsvip.ffzy-online5.com
+  - c1.7bbffvip.com
+  - vip.wwgz.cn
+  - cms-vip.lyyytv.cn
+  - www.kkys02.com
+  - www.kanmeiju.org
+  - cdn-us.ckflv-cdn-hk.sbs
+  - item.xpgtv.com
+  - ys.changmengyun.com
+  - sf16-va.larksuitecdn.com
+  - cdn.ryplay12.com
+  - yiso.fun
+  - op.ysdqjs.cn
+  - v.cdnlz12.com
+  - www.misou.fun
+  - api2.rinhome.com
+  - ghp.ci
+  - www.xzso.net
+  - www.xb6v.com
+  - www.melost.cn
+  - ddys.pro
+  - auete.com
+  - panso.pro
+  - duopan.fun
+  - tv.yydsys.cc
+  - www.zxzjhd.com
+  - z.kzjtv.com
+  - www.libvio.cc
+  - labipan.com
+  - apiappdyyztvyydsqwdy.68.gy
+  - puui.qpic.cn
+  - v.cdnlz22.com
+  - v.rbotv.cn
+  - czzy.xn--m7r412advb92j21st65a.tk
+  - www.xn--sss604efuw.com
+  - www.hkybqufgh.com
+  - ok321.top
+  - live.fanmingming.com
+  - api.so.360kan.com
+  - duanjutt.tv
+  - www.ghw9zwp5.com
+  - tipu.xjqxz.top
+  - cj.ffzyapi.com
+  - tv.xn--yhqu5zs87a.top
+  - www.alipansou.com
+  - upapi.juapp9.com
+  - apd-vlive.apdcdn.tc.qq.com
+  - zhaoziyuan1.cc
+  - ghproxy.net
+  - lib.baomitu.com
+  - hhjx.hhplayer.com
+  - bdric-cdn-tos.1ljx.com
+  - www.662688.xyz
+  - lf6-cdn-tos.bytecdntp.com
+  - p.qpic.cn
+  - www.dygang.tv
+  - www.dytt99.com
+  - res.yunpan.win
+  - www.9kdy.com
+  - api.zeqaht.com
+  - www.dy2160.com
+  - tv.haoqu99.com
+  - www.4kvm.org
+  - fagmn.com
+  - phoneqq.qing.mgtv.com
+  - notabug.org
+  - mirror.ghproxy.com
+  - img.shifen.me
+  - epg.51zmt.top
+  - phonetx.qing.mgtv.com
+  - user.aliyundrive.com
+  - auth.aliyundrive.com
+  - api.aliyundrive.com
+  - drive-pc.quark.cn
+  - www.mucpan.cc
+  - ae01.alicdn.com
+  - m.ykimg.com
+  - sdk.taobao.com.ailbaba.me
+  - zea35s3nhdbn.com
+  - pic3.iqiyipic.com
+  - p6-feedback.byteimg.com
+  - hnts.ymuuy.com
+  - hn.bfvvs.com
+  - m3u8.hmrvideo.com
+  - jf.hanliu8.cn
+  - pan.38zf.cn
+  - oss.hmgdxf.com
+  - api.heimuer.app
+  - fmxjkp6ekzcg.com
+  - s3plus-img.meituan.net
+  - videocut-upload-sz.oss-cn-shenzhen.aliyuncs.com
+  - ucenter.cdn.bcebos.com
+  - api.zcj2.dzpgrw.cn
+  - log-alibaba-taobao-douyin.cdn.bcebos.com
+  - ae02.alicdn.com
+  - mkk.gotto.xyz
+  - mdisk.oss-cn-hangzhou.aliyuncs.com
+  - www.ixigua.com
+  - m51.goweb.vip
+  - m51.gotto.top
+  - site.weilai555.com
+  - r.tvbb.xyz
+  - app.tvbb.xyz
+  - iptv-org.github.io
+  - api.shoumilive.com
+  - api.dsdjasldskalk.com
+  - www.dandanzan.in
+  - play.modujx16.com
+  - app-v1.ecoliving168.com
+  - +.bfdm.xyz
+  - img.lzzyimg.com
+  - www.cfkj86.com
+  - czzy.210985.xyz
+  - svip.high22-playback.com
+  - dcyun.cc
+  - www.bttwo.org
+  - xzys.fun
+  - www.nanf.cc
+  - yydsys.top
+  - mihdr.top
+  - xiafan.zhuiju666.com
+  - sc1080.top
+  - ppvod01.blbtgg.com
+  - cdn7.ryplay7.com
+  - saohuo.tv
+  - soupian.app
+  - 4k.4u4.cn
+  - api.pullword.com
+  - uz.xn--z7x900a.com
+  - www.uuneed.cn
+  - xn--z7x900a.com
+  - ceshi.xn--z7x900a.com
