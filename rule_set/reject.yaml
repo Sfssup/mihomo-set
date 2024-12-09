@@ -1,0 +1,21 @@
+# 拦截
+
+payload:
+  - black.qimo.ink # 哔哩漫游X服务器
+  - pypd.paypal-mktg.com # Paypal营销
+  - h5.weishi.qq.com # 腾讯微视
+  - http1226k.swazg.cn # 未知
+  - httpdns.bcelive.com # HTTP DNS 服务
+  - gjfzpt.cn # 未知
+  - openaicom.imgix.net # 图片优化服务
+  - o33249.ingest.sentry.io # Sentry日志服务
+  - sdk1xyajs.data.p2cdn.com # CDN服务
+  
+# MIUI
+  - trial.open.mp.huangye.miui.com # MIUI试用服务
+  - miui-fxcse.avlyun.com # MIUI服务
+  - miav-cse.avlyun.com # MIUI服务
+  - api.installer.xiaomi.com # 小米安装器API
+  - a0.app.xiaomi.com # 小米应用商店
+  - m.youpin.mi.com # 小米有品
+  - flash.sec.miui.com # MIUI安全更新
