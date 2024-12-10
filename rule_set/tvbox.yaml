@@ -1,4 +1,4 @@
-# 该规则主要针对各大不在 CN 列表里但可以直连的视频平台
+# 该规则主要针对可以直连但不在CN列表里的各大视频网站域名
 # 反馈、提交规则：https://t.me/ksc666/7321
 # behavior: domain
 
@@ -66,7 +66,6 @@ payload:
   - upapi.juapp9.com
   - apd-vlive.apdcdn.tc.qq.com
   - zhaoziyuan1.cc
-  - ghproxy.net
   - lib.baomitu.com
   - hhjx.hhplayer.com
   - bdric-cdn-tos.1ljx.com
