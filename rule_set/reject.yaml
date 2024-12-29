@@ -21,15 +21,15 @@ payload:
   - flash.sec.miui.com # MIUI安全更新
 
 # 度小满
-  - *.duxiaoman-int.com
-  - *.duxiaoman.com
-  - *.duxiaomanfintech.com
-  - *.duxiaomantech.com
-  - *.dxm-cdn.com
-  - *.dxm-int.com
-  - *.dxmlcf.com
-  - *.dxmlcfintech.com
-  - *.dxmpay.com
-  - *.dxmstatic.com
-  - *.dxmyqh.com
-  - *.paydxm.com
+  - +.duxiaoman-int.com
+  - +.duxiaoman.com
+  - +.duxiaomanfintech.com
+  - +.duxiaomantech.com
+  - +.dxm-cdn.com
+  - +.dxm-int.com
+  - +.dxmlcf.com
+  - +.dxmlcfintech.com
+  - +.dxmpay.com
+  - +.dxmstatic.com
+  - +.dxmyqh.com
+  - +.paydxm.com
