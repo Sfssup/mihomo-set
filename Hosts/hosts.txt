@@ -3,6 +3,7 @@
 # 哔哩漫游X服务器
 127.0.0.1 black.qimo.ink
 
+
 127.0.0.1 pypd.paypal-mktg.com
 127.0.0.1 h5.weishi.qq.com
 127.0.0.1 http1226k.swazg.cn
@@ -11,10 +12,25 @@
 127.0.0.1 openaicom.imgix.net
 127.0.0.1 o33249.ingest.sentry.io
 127.0.0.1 sdk1xyajs.data.p2cdn.com
+
+# MIUI相关组件
 127.0.0.1 trial.open.mp.huangye.miui.com
+127.0.0.1 log.avlyun.sec.intl.miui.com
+127.0.0.1 update.avlyun.sec.miui.com
+127.0.0.1 ixav-cse.avlyun.com
+127.0.0.1 logupdate.avlyun.sec.miui.com
+127.0.0.1 sdkconf.avlyun.com
+127.0.0.1 tmfsdk.m.qq.com
+
+# 腾讯安天
 127.0.0.1 miui-fxcse.avlyun.com
 127.0.0.1 miav-cse.avlyun.com
+
+# 应用包扫描
 127.0.0.1 api.installer.xiaomi.com
+
+# 小米跟踪API
 127.0.0.1 a0.app.xiaomi.com
-127.0.0.1 m.youpin.mi.com
+
+# 反炸
 127.0.0.1 flash.sec.miui.com
