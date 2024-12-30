@@ -1,4 +1,4 @@
-# 自用Hosts文件，主要屏蔽一些域名
+# 自用Hosts
 
 # 哔哩漫游X服务器
-black.qimo.ink
+127.0.0.1 black.qimo.ink
