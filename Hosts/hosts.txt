@@ -1,19 +1,19 @@
 # 自用Hosts
 
-# 哔哩漫游X服务器
-127.0.0.1 black.qimo.ink
-
-# 车来了推荐
-127.0.0.1 cdn.web.chelaile.net.cn
-
+# 其他未
 127.0.0.1 pypd.paypal-mktg.com
 127.0.0.1 h5.weishi.qq.com
 127.0.0.1 http1226k.swazg.cn
 127.0.0.1 httpdns.bcelive.com
 127.0.0.1 gjfzpt.cn
-127.0.0.1 openaicom.imgix.net
 127.0.0.1 o33249.ingest.sentry.io
 127.0.0.1 sdk1xyajs.data.p2cdn.com
+
+# 哔哩漫游X服务器
+127.0.0.1 black.qimo.ink
+
+# 车来了推荐
+127.0.0.1 cdn.web.chelaile.net.cn
 
 # MIUI相关组件
 127.0.0.1 trial.open.mp.huangye.miui.com
