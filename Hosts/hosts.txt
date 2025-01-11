@@ -1,6 +1,6 @@
 # 自用Hosts
 
-# 其他未
+# 其他未知
 127.0.0.1 pypd.paypal-mktg.com
 127.0.0.1 h5.weishi.qq.com
 127.0.0.1 http1226k.swazg.cn
