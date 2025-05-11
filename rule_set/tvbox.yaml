@@ -7,9 +7,6 @@ payload:
   - +.dm84.tv
   - +.dm84.site
   - +.dm84.top
-  - +.22hti9dvbxh4.com
-  - +.lz-cdn14.com
-  - +.cdnlz22.com
   - +.ddys.mov
   - +.ddys.pro
   - +.wogg.net
@@ -34,8 +31,11 @@ payload:
   - +.sc1080.top
   - +.mihdr.top
   - +.saohuo.tv
+  - +.duanjutt.tv
+  - +.yydsys.cc
+  - +.yydsys.top
 
-  # —— 在线解析/接口API ——
+  # —— 在线解析 / 接口 API ——
   - +.api.aliyundrive.com
   - +.auth.aliyundrive.com
   - +.user.aliyundrive.com
@@ -51,7 +51,7 @@ payload:
   - +.ucenter.cdn.bcebos.com
   - +.log-alibaba-taobao-douyin.cdn.bcebos.com
 
-  # —— CDN/资源域名 ——
+  # —— CDN / 资源域名 ——
   - +.puui.qpic.cn
   - +.p.qpic.cn
   - +.ae01.alicdn.com
@@ -65,8 +65,10 @@ payload:
   - +.cdn-us.ckflv-cdn-hk.sbs
   - +.oss.hmgdxf.com
   - +.mdisk.oss-cn-hangzhou.aliyuncs.com
+  - +.lz-cdn14.com
+  - +.cdnlz22.com
 
-  # —— 各类播放器、嵌入域 ——
+  # —— 播放器 / 嵌入式内容 ——
   - +.m3u8.hmrvideo.com
   - +.hhjx.hhplayer.com
   - +.phoneqq.qing.mgtv.com
@@ -76,19 +78,16 @@ payload:
   - +.v16.resso.app
   - +.ixigua.com
   - +.rrcdnbf3.com
+  - +.play.modujx16.com
 
-  # —— 其他杂项（小众/未归类） ——
+  # —— 其他杂项（待观察 / 未归类） ——
   - +.uoiqmwhmk2tt.com
   - +.zea35s3nhdbn.com
   - +.alipansou.com
   - +.cfkj86.com
-  - +.yydsys.cc
-  - +.yydsys.top
-  - +.duanjutt.tv
   - +.drive-pc.quark.cn
   - +.sdk.taobao.com.ailbaba.me
-  - +.play.modujx16.com
   - +.site.weilai555.com
   - +.fmxjkp6ekzcg.com
-
-# 可继续补充分组或合并逻辑
+  - +.22hti9dvbxh4.com
+  - 22hti9dvbxh4.com
