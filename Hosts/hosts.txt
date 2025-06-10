@@ -1,6 +1,6 @@
 # 自用Hosts
 
-# 其他未知
+# 广告补充
 127.0.0.1 pypd.paypal-mktg.com
 127.0.0.1 h5.weishi.qq.com
 127.0.0.1 http1226k.swazg.cn
@@ -8,6 +8,9 @@
 127.0.0.1 gjfzpt.cn
 127.0.0.1 o33249.ingest.sentry.io
 127.0.0.1 sdk1xyajs.data.p2cdn.com
+127.0.0.1 sdk.mobads.adwangmai.com
+127.0.0.1 sdk.adx.adwangmai.com
+127.0.0.1 mobads.adwangmai.com
 
 # 哔哩漫游X服务器
 127.0.0.1 black.qimo.ink
@@ -33,6 +36,4 @@
 
 # 小米跟踪API
 127.0.0.1 a0.app.xiaomi.com
-
-# 反炸
 127.0.0.1 flash.sec.miui.com
