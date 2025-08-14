@@ -97,4 +97,4 @@ Dashboard<br>
 
 访问量<br>
 ====
-![](http://profile-counter.glitch.me/Sfssup_mihomo-set/count.svg)
+<a href="https://info.flagcounter.com/nLub"><img src="https://s01.flagcounter.com/map/nLub/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0"></a>
