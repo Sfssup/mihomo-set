@@ -1,1 +1,160 @@
+mixed-port: 1080
+tproxy-port: 1536
+log-level: error
+mode: rule
+udp: true
+find-process-mode: strict
+ipv6: true
+tcp-concurrent: true
+unified-delay: true
+
+global-client-fingerprint: chrome
+global-ua: clash.meta
+etag-support: true
+
+allow-lan: true
+bind-address: "*"
+
+disable-keep-alive: true
+keep-alive-interval: 15
+keep-alive-idle: 15
+
+geodata-loader: memconservative
+geosite-matcher: succinct
+
+external-controller: 127.0.0.1:9090
+secret: "ksc666"
+external-ui: "./zashboard"
+external-ui-url: "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip" # 自定义外部用户界面下载地址
+
+profile:
+  store-selected: true # 储存 API 对策略组的选择，以供下次启动时使用
+  store-fake-ip: true # 储存 fakeip 映射表，域名再次发生连接时，使用原有映射地址
+
+tun:
+  enable: false
+  device: utun0
+  stack: mixed
+  auto-route: true
+  auto-redirect: false
+  auto-detect-interface: true
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  strict-route: true
+  route-exclude-address:
+    - "192.168.0.0/16"
+    - "fc00::/7"
+
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  skip-src-address:
+    - 192.168.0.3/32
+  skip-dst-address:
+    - 192.168.0.3/32
+  skip-domain:
+    - "RULE-SET:private"
+    - "Mijia Cloud"
+    - "+.push.apple.com"
+
+dns:
+  enable: true
+  cache-algorithm: arc
+  prefer-h3: false
+  use-hosts: true
+  use-system-hosts: true
+  respect-rules: true
+  listen: 0.0.0.0:1053
+  ipv6: true
+  ipv6-timeout: 600
+  default-nameserver:
+    - https://223.5.5.5/dns-query
+    - https://120.53.53.53/dns-query
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.0/15
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - "RULE-SET:private"
+  nameserver-policy:
+    "+.arpa": "10.0.0.1"
+    "RULE-SET:cn,private":
+      - https://223.5.5.5/dns-query
+      - https://120.53.53.53/dns-query
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  direct-nameserver:
+    - https://223.5.5.5/dns-query
+    - https://120.53.53.53/dns-query
+  proxy-server-nameserver:
+    - https://223.5.5.5/dns-query
+    - https://120.53.53.53/dns-query
+
+proxies:
+  - {name: 🌐 DNS劫持, type: dns}
+  - {name: 🇨🇳 国内直连, type: direct, udp: true}
+
+p: &p {type: http, interval: 86400, proxy: "节点下载", exclude-filter: "套餐|流量|群组|频道|官网|推荐使用|测试|电报|极速666|防失联|节点超时", exclude-type: "http", health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 3600, timeout: 3000, max-failed-times: 5, lazy: true}}
+pr: &pr {type: select, proxies: [手动选择, 自动选择, 故障转移, 负载均衡, 🇨🇳 国内直连, 流量拦截, 香港, 台湾, 日本, 韩国, 新加坡, 美国, 其它地区, 全部节点]}
+
+proxy-providers:
+  mojie: {<<: *p, url: "https://www.mojie.cyou/#/register?code=a0sBIylV", override: {additional-prefix: "魔戒｜"}}
+  dingjijichang: {<<: *p, url: "https://xn--mes358a9urctx.com/#/register?code=wiPXjyYq", override: {additional-prefix: "顶级机场｜"}}
+  feiniaoyun: {<<: *p, url: "https://www.feiniaoyun.xyz/#/register?code=1gZX21aI", override: {additional-prefix: "飞鸟云｜"}}
+  Miaona: {<<: *p, url: "https://miaona.org/#/register?code=C3J67GSL", override: {additional-prefix: "Miaona｜"}}
+  jisuyun: {<<: *p, url: "https://w2.rouhe88.com/#/register?code=Zl5IqVKd", override: {additional-prefix: "极速云｜"}}
+
+proxy-groups:
+  - {name: 手动选择, type: select, proxies: [自动选择, 故障转移, 负载均衡, 🇨🇳 国内直连, 流量拦截, 香港, 台湾, 日本, 韩国, 新加坡, 美国, 其它地区, 全部节点], icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Clubhouse.png}
+  - {name: 自动选择, type: url-test, include-all-providers: true, tolerance: 10, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Auto.png}
+  - {name: 故障转移, type: fallback, include-all-providers: true, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/ULB.png}
+  - {name: 负载均衡, type: load-balance, strategy: sticky-sessions, include-all-providers: true, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/load-balance.png}
+
+  - {name: 自定义流量, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/zdy.png}
+  - {name: 节点下载, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Download.png}
+  - {name: 漏网之鱼, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Final.png}
+  - {name: 流量拦截, type: select, proxies: [REJECT-DROP, REJECT, PASS], icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Reject.png}
+  
+  - {name: 香港, type: url-test, include-all-providers: true, filter: "(?i)🇭🇰|港|hk|hongkong|hong kong", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/HongKong.png}
+  - {name: 台湾, type: url-test, include-all-providers: true, filter: "(?i)🇹🇼|台|tw|taiwan|tai", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Taiwan.png}
+  - {name: 日本, type: url-test, include-all-providers: true, filter: "(?i)🇯🇵|日本|jp|japan", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Japan.png}
+  - {name: 韩国, type: url-test, include-all-providers: true, filter: "(?i)🇰🇷|韩|kr|korea", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Korea.png}
+  - {name: 新加坡, type: url-test, include-all-providers: true, filter: "(?i)🇸🇬|新|sg|singapore", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Singapore.png}
+  - {name: 美国, type: url-test, include-all-providers: true, exclude-filter: "(?i)RU", filter: "(?i)🇺🇸|美|us|unitedstates|united states", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/United_States.png}
+  - {name: 其它地区, type: url-test, include-all-providers: true, exclude-filter: "(?i)🇭🇰|港|hk|hongkong|hong kong|🇹🇼|台|tw|taiwan|tai|🇰🇷|韩|kr|korea|🇯🇵|日|jp|japan|🇸🇬|新加坡|sg|singapore|🇺🇸|美|us|unitedstates|united states", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/qitadiqu.png}
+  - {name: 全部节点, type: url-test, include-all-providers: true, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/quanbujiedian.png}
+
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
+
+rule-providers:
+  private: {<<: *domain, path: ./rule_set/private.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
+  cn: {<<: *domain, path: ./rule_set/cn.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
+  direct_domain: {<<: *domain, path: ./rule_set/direct.yaml, format: yaml, url: "https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/rule_set/direct.yaml"}
+  category-ads-all: {<<: *domain, path: ./rule_set/category-ads-all.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs"}
+  private_ip: {<<: *ip, path: ./rule_set/private_ip.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"}
+  
+rules:
+
+  - DST-PORT,53,🌐 DNS劫持
+  - RULE-SET,private,🇨🇳 国内直连
+  - RULE-SET,category-ads-all,流量拦截
+  - RULE-SET,direct_domain,自定义流量
+  - RULE-SET,cn,🇨🇳 国内直连
+  - RULE-SET,private_ip,🇨🇳 国内直连,no-resolve
+  - RULE-SET,cn_ip,🇨🇳 国内直连
+
+  - MATCH,漏网之鱼
 
