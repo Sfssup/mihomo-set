@@ -1,6 +1,7 @@
 写在前面<br>
 ====
 该仓库所有内容仅为收集整理，不对可能造成的任何后果负责；有建议或意见请提Issues<br>
+[欢迎补充](https://t.me/ksc666/7486)
 
 内核<br>
 ====
@@ -32,6 +33,7 @@ Android<br>
 >* [Clash Meta for Android](https://github.com/MetaCubeX/ClashMetaForAndroid)<br>
 >* [FlClash](https://github.com/chen08209/FlClash)<br>
 >* [FlyClash](https://github.com/GtxFury/FlyClash-Android)<br>
+>* [Clash Mi](https://github.com/KaringX/clashmi)<br>
 
 >Magisk Modules<br>
 >-------
@@ -54,6 +56,7 @@ Windows<br>
 * [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev)
 * [Clash Web](https://github.com/lzdnico/ClashWeb)
 * [Clash N](https://github.com/2dust/clashN)
+* [Clash Mi](https://github.com/KaringX/clashmi)
 * [Clash Nyanpasu](https://github.com/LibNyanpasu/clash-nyanpasu)
 * [Clashr Auto Desktop](https://github.com/ClashrAuto/Clashr-Auto-Desktop)
 * [GUI.for.Clash](https://github.com/GUI-for-Cores/GUI.for.Clash)
