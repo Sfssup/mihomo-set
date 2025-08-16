@@ -74,8 +74,8 @@ Dashboard<br>
 
 配置<br>
 ====
-该配置简单粗暴，仅区分直连和代理，默认代理，添加直连规则分流
-如需其他分流规则可自定义添加
+该配置简单粗暴，仅区分直连和代理，默认代理，添加直连规则分流<br>
+如需其他分流规则可自定义添加<br>
 有问题可发Issues<br>
 
 * [Mihomo 配置文件](https://github.com/Sfssup/MihomoConfigFile/blob/main/config/config.yaml)
