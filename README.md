@@ -74,8 +74,9 @@ Dashboard<br>
 
 配置<br>
 ====
-该配置已在 Android For Magisk、Windows平台测试，能跑，但不排除可能存在问题，有问题可发Issues<br>
-
+该配置简单粗暴，仅区分直连和代理，默认代理，添加直连规则分流
+如需其他分流规则可自定义添加
+有问题可发Issues<br>
 
 * [Mihomo 配置文件](https://github.com/Sfssup/MihomoConfigFile/blob/main/config/config.yaml)
 
