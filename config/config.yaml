@@ -28,8 +28,8 @@ external-ui: "./zashboard"
 external-ui-url: "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip" # 自定义外部用户界面下载地址
 
 profile:
-  store-selected: true # 储存 API 对策略组的选择，以供下次启动时使用
-  store-fake-ip: true # 储存 fakeip 映射表，域名再次发生连接时，使用原有映射地址
+  store-selected: true
+  store-fake-ip: true
 
 tun:
   enable: false
