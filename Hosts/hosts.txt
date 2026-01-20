@@ -5,12 +5,14 @@
 127.0.0.1 h5.weishi.qq.com
 127.0.0.1 http1226k.swazg.cn
 127.0.0.1 httpdns.bcelive.com
-127.0.0.1 gjfzpt.cn
 127.0.0.1 o33249.ingest.sentry.io
 127.0.0.1 sdk1xyajs.data.p2cdn.com
 127.0.0.1 sdk.mobads.adwangmai.com
 127.0.0.1 sdk.adx.adwangmai.com
 127.0.0.1 mobads.adwangmai.com
+
+# 国家反诈中心
+127.0.0.1 gjfzpt.cn
 
 # 哔哩漫游X服务器
 127.0.0.1 black.qimo.ink
@@ -20,20 +22,25 @@
 
 # MIUI相关组件
 127.0.0.1 trial.open.mp.huangye.miui.com
-127.0.0.1 log.avlyun.sec.intl.miui.com
-127.0.0.1 update.avlyun.sec.miui.com
 127.0.0.1 ixav-cse.avlyun.com
 127.0.0.1 logupdate.avlyun.sec.miui.com
 127.0.0.1 sdkconf.avlyun.com
-127.0.0.1 tmfsdk.m.qq.com
-
+# MIUI-tracking
+127.0.0.1 tracking.miui.com
+127.0.0.1 tracking.intl.miui.com
+127.0.0.1 tracking.rus.miui.com
+127.0.0.1 tracking.india.miui.com
+# 病毒扫描
+127.0.0.1 log.avlyun.sec.intl.miui.com
+127.0.0.1 update.avlyun.sec.miui.com
+127.0.0.1 api.sec.miui.com
+127.0.0.1 staging.sec.miui.com
+127.0.0.1 a0.app.xiaomi.com
+127.0.0.1 flash.sec.miui.com
 # 腾讯安天
 127.0.0.1 miui-fxcse.avlyun.com
 127.0.0.1 miav-cse.avlyun.com
-
+127.0.0.1 tmfsdk.m.qq.com
 # 应用包扫描
 127.0.0.1 api.installer.xiaomi.com
 
-# 小米跟踪API
-127.0.0.1 a0.app.xiaomi.com
-127.0.0.1 flash.sec.miui.com
