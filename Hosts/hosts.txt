@@ -53,6 +53,110 @@
 # 应用包扫描
 0.0.0.0 api.installer.xiaomi.com
 
+# miaozhen.com
+0.0.0.0 miaozhen.com
+0.0.0.0 ads.cn.miaozhen.com
+0.0.0.0 pd.ads.cn.miaozhen.com
+0.0.0.0 cm.cn.miaozhen.com
+0.0.0.0 e.cn.miaozhen.com
+0.0.0.0 g.cn.miaozhen.com
+0.0.0.0 stm-cdn.cn.miaozhen.com
+0.0.0.0 stm-collect.cn.miaozhen.com
+0.0.0.0 xiaomi-mipdx.cn.miaozhen.com
+
+# oppomobile.com
+0.0.0.0 adx.ads.oppomobile.com
+0.0.0.0 bdapi.ads.oppomobile.com
+0.0.0.0 data.ads.oppomobile.com
+0.0.0.0 data-id.ads.oppomobile.com
+0.0.0.0 adsfs.oppomobile.com
+
+# doubleclick.net
+0.0.0.0 doubleclick.net
+0.0.0.0 accounts.doubleclick.net
+0.0.0.0 ad.doubleclick.net
+0.0.0.0 ad-emea.doubleclick.net
+0.0.0.0 ff.doubleclick.net
+0.0.0.0 fls.doubleclick.net
+0.0.0.0 5290727.fls.doubleclick.net
+0.0.0.0 8168974.fls.doubleclick.net
+0.0.0.0 8397396.fls.doubleclick.net
+0.0.0.0 g.doubleclick.net
+0.0.0.0 adx.g.doubleclick.net
+0.0.0.0 bid.g.doubleclick.net
+0.0.0.0 cm.g.doubleclick.net
+0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 googleads4.g.doubleclick.net
+0.0.0.0 pubads.g.doubleclick.net
+0.0.0.0 securepubads.g.doubleclick.net
+0.0.0.0 stats.g.doubleclick.net
+0.0.0.0 survey.g.doubleclick.net
+0.0.0.0 dart.l.doubleclick.net
+0.0.0.0 m.doubleclick.net
+0.0.0.0 s0.doubleclick.net
+0.0.0.0 static.doubleclick.net
+
+# gemius.pl
+0.0.0.0 gemius.pl
+0.0.0.0 gatr.hit.gemius.pl
+0.0.0.0 googlecm.hit.gemius.pl
+
+# google-analytics.com
+0.0.0.0 google-analytics.com
+0.0.0.0 ssl.google-analytics.com
+0.0.0.0 www.google-analytics.com
+
+# google.com
+0.0.0.0 ads.google.com
+0.0.0.0 adservice.google.com
+
+# googleadservices.com
+0.0.0.0 googleadservices.com
+0.0.0.0 pagead2.googleadservices.com
+0.0.0.0 www.googleadservices.com
+
+# tiktok.com
+0.0.0.0 analytics.tiktok.com
+
+# tiktokv.com
+0.0.0.0 log-va.tiktokv.com
+0.0.0.0 mon.tiktokv.com
+0.0.0.0 mon-va.tiktokv.com
+
+# googleadsserving.cn
+0.0.0.0 static.googleadsserving.cn
+
+# microsoft.com
+0.0.0.0 bingads.microsoft.com
+0.0.0.0 advertise.bingads.microsoft.com
+
+# googlesyndication.com
+0.0.0.0 googlesyndication.com
+0.0.0.0 ade.googlesyndication.com
+0.0.0.0 pagead2.googlesyndication.com
+0.0.0.0 tpc.googlesyndication.com
+
+# appleads-trk.com
+0.0.0.0 appleads-trk.com
+0.0.0.0 redirect.appleads-trk.com
+
+# googleusercontent.com
+0.0.0.0 displayads-formats.googleusercontent.com
+
+# apple.com
+0.0.0.0 iadsdk.apple.com
+0.0.0.0 ca.iadsdk.apple.com
+0.0.0.0 cf.iadsdk.apple.com
+0.0.0.0 news.iadsdk.apple.com
+0.0.0.0 tr.iadsdk.apple.com
+0.0.0.0 ut.iadsdk.apple.com
+0.0.0.0 notes-analytics-events.apple.com
+0.0.0.0 stocks-analytics-events.apple.com
+0.0.0.0 weather-analytics-events.apple.com
+
+# youtube.com
+0.0.0.0 ads.youtube.com
+
 # 广告补充
 0.0.0.0 pypd.paypal-mktg.com
 0.0.0.0 h5.weishi.qq.com
