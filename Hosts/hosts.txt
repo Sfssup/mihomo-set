@@ -13,16 +13,30 @@
 # 车来了推荐
 0.0.0.0 cdn.web.chelaile.net.cn
 
-# MIUI相关组件
-0.0.0.0 trial.open.mp.huangye.miui.com
+# Xiaomi
+0.0.0.0 api.ad.xiaomi.com
+0.0.0.0 log.ad.xiaomi.com
+0.0.0.0 sdkconfig.ad.xiaomi.com
+0.0.0.0 track.ad.xiaomi.com
+0.0.0.0 zeus.ad.xiaomi.com
+0.0.0.0 sdkconfig.ad.india.xiaomi.com
+0.0.0.0 api.ad.intl.xiaomi.com
+0.0.0.0 diagnosis.ad.intl.xiaomi.com
+0.0.0.0 sdkconfig.ad.intl.xiaomi.com
+0.0.0.0 zeus.ad.intl.xiaomi.com
+
+# MiUi
 0.0.0.0 ixav-cse.avlyun.com
 0.0.0.0 logupdate.avlyun.sec.miui.com
 0.0.0.0 sdkconf.avlyun.com
-# MIUI-tracking
 0.0.0.0 tracking.miui.com
 0.0.0.0 tracking.intl.miui.com
 0.0.0.0 tracking.rus.miui.com
 0.0.0.0 tracking.india.miui.com
+0.0.0.0 trial.open.mp.huangye.miui.com
+0.0.0.0 sa.api.intl.miui.com
+0.0.0.0 fcanr.tracking.miui.com
+
 # 病毒扫描
 0.0.0.0 log.avlyun.sec.intl.miui.com
 0.0.0.0 update.avlyun.sec.miui.com
@@ -30,10 +44,12 @@
 0.0.0.0 staging.sec.miui.com
 0.0.0.0 a0.app.xiaomi.com
 0.0.0.0 flash.sec.miui.com
+
 # 腾讯安天
 0.0.0.0 miui-fxcse.avlyun.com
 0.0.0.0 miav-cse.avlyun.com
 0.0.0.0 tmfsdk.m.qq.com
+
 # 应用包扫描
 0.0.0.0 api.installer.xiaomi.com
 
