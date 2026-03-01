@@ -1486,59 +1486,6 @@
 0.0.0.0 miao.baidu.com
 0.0.0.0 miniapp-ad.bj.bcebos.com
 
-# 新浪
-0.0.0.0 ads.sina.com
-0.0.0.0 log.sina.cn
-0.0.0.0 wbapp.mobile.sina.cn
-0.0.0.0 sax.sina.cn
-0.0.0.0 adbox.sina.com.cn
-0.0.0.0 beacon.sina.com.cn
-0.0.0.0 emarketing.sina.com.cn
-0.0.0.0 sbeacon.sina.com.cn
-0.0.0.0 newspush.sinajs.cn
-0.0.0.0 click.uve.mobile.sina.cn
-0.0.0.0 cm.dmp.sina.cn
-0.0.0.0 sdkclick.mobile.sina.cn
-0.0.0.0 u1.img.mobile.sina.cn
-0.0.0.0 wapwbclick.mobile.sina.cn
-0.0.0.0 wbpctips.mobile.sina.cn
-0.0.0.0 rs.sinajs.cn
-0.0.0.0 adm.leju.sina.com.cn
-0.0.0.0 d00.sina.com.cn
-0.0.0.0 d0.sina.com.cn
-0.0.0.0 d1.sina.com.cn
-0.0.0.0 d2.sina.com.cn
-0.0.0.0 d3.sina.com.cn
-0.0.0.0 d4.sina.com.cn
-0.0.0.0 d5.sina.com.cn
-0.0.0.0 d6.sina.com.cn
-0.0.0.0 d7.sina.com.cn
-0.0.0.0 d8.sina.com.cn
-0.0.0.0 d9.sina.com.cn
-0.0.0.0 img.adbox.sina.com.cn
-0.0.0.0 img.amp.ad.sina.com.cn
-0.0.0.0 interest.mix.sina.com.cn
-0.0.0.0 log.mix.sina.com.cn
-0.0.0.0 m.beacon.sina.com.cn
-0.0.0.0 mg.games.sina.com.cn
-0.0.0.0 pfp.sina.com.cn
-0.0.0.0 rm.sina.com.cn
-0.0.0.0 staticadm.leju.sina.com.cn
-0.0.0.0 woocall.sina.com.cn
-0.0.0.0 ad.us.sinaimg.cn
-0.0.0.0 mixer.sina.cn  #网页新浪新闻正文页面的广告(含弹窗)
-0.0.0.0 l6urqh27.sina.cn  #网页手机新浪网首页的广告，屏蔽后仍显示空白广告位，起码不显示文字；新闻正文页的部分广告位，上面那条禁用后就没显示广告位了。
-0.0.0.0 qgnu18wo.sina.cn  #同上
-0.0.0.0 9ibbcq2d.sina.cn  #同上
-# 爱问
-0.0.0.0 dd.iaskgo.com
-0.0.0.0 qiye11.ejunshi.net
-# sina-icast
-0.0.0.0 cast.ra.icast.cn
-0.0.0.0 rack.ra.icast.cn
-0.0.0.0 res.icast.cn
-0.0.0.0 rmtx.ra.icast.cn
-0.0.0.0 track.ra.icast.cn
 # 微博
 0.0.0.0 biz.weibo.com
 0.0.0.0 s.alitui.weibo.com
