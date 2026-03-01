@@ -519,8 +519,8 @@
 0.0.0.0 wnsmusic.qq.com
 0.0.0.0 tmeadbak.y.qq.com
 0.0.0.0 ugcup.music.qq.com
-#0.0.0.0 c6.y.qq.com  #更新？
-#0.0.0.0 base.music.qq.com  #更新？
+0.0.0.0 c6.y.qq.com  #更新？
+0.0.0.0 base.music.qq.com  #更新？
 
 # 疑似京东金融开屏广告，副作用未测试
 0.0.0.0 kjstorage.360buyimg.com
@@ -1133,29 +1133,6 @@
 0.0.0.0 gloaphoo.net
 0.0.0.0 firsecuckoo.com
 
-# QQ浏览器
-0.0.0.0 adsolution.imtt.qq.com
-0.0.0.0 adsense.html5.qq.com
-0.0.0.0 mqqad.cs0309.html5.qq.com
-0.0.0.0 mqqad.html5.qq.com
-0.0.0.0 tpush.html5.qq.com
-0.0.0.0 mqqadr.reader.qq.com
-0.0.0.0 game.html5.qq.com
-0.0.0.0 jpush.html5.qq.com
-0.0.0.0 novelsns.html5.qq.com
-0.0.0.0 cooperation.html5.qq.com
-0.0.0.0 zixuncooperation.html5.qq.com
-0.0.0.0 kde.qq.com  #小说的广告
-0.0.0.0 ug.qbimg.qq.com  #开屏和首页下面的弹出式伸缩的广告图。
-0.0.0.0 mcdn.kandian.qq.com  #开屏
-0.0.0.0 m4.publicimg.browser.qq.com  #直达_搜索框上方的广告贴图。
-0.0.0.0 qbuc.html5.qq.com  #底栏我的 的营销卡片和工具卡片
-
-# 链家（①开屏 ②屏蔽更新）
-0.0.0.0 image2.ljcdn.com
-0.0.0.0 i-shadow2.ke.com
-0.0.0.0 z.5th.zone  #住这儿开屏和横幅广告
-
 # YouTube Facebook 推特 P站
 0.0.0.0 ads.youtube.com
 0.0.0.0 fcmatch.youtube.com
@@ -1400,13 +1377,6 @@
 0.0.0.0 dns.jd.com
 0.0.0.0 smartopen.jd.com
 
-# 百度音乐
-0.0.0.0 log.music.baidu.com
-0.0.0.0 pups.baidu.com
-0.0.0.0 ttmsg.qianqian.com
-0.0.0.0 ttpack.qianqian.com
-0.0.0.0 ttplayer.qianqian.com
-0.0.0.0 ad.player.baidu.com
 # 贴吧
 0.0.0.0 static.pay.baidu.com
 0.0.0.0 img.taotaosou.cn
@@ -6127,7 +6097,8 @@
 0.0.0.0 user.wxcjgg.cn  #领页广告
 0.0.0.0 sdkcfg.adintl.cn
 0.0.0.0 stats.dmp.ghac.cn  #广汽本田营销
-#乐播投屏及广告流
+
+# 乐播投屏及广告流
 0.0.0.0 etl.xlmc.sandai.net
 0.0.0.0 clickc.admaster.com.cn
 0.0.0.0 media.admob.com
@@ -6179,74 +6150,3 @@
 0.0.0.0 appversion.115.com #115盘更新
 0.0.0.0 autoupdate.tantanapp.com  #探探更新？
 0.0.0.0 adsdk.idmzj.com  #动漫之家
-0.0.0.0 dsp-ad.yy.com
-0.0.0.0 splash.yy.com
-0.0.0.0 ad-sdk.lenovomm.com
-0.0.0.0 ad-trace.lenovomm.com  #简书引用的联想的APP商店广告
-0.0.0.0 pic.fastapi.net  #传奇私服网站
-0.0.0.0 ad-track.fliggy.com  #飞猪的
-0.0.0.0 advert.mafengwo.cn  #马蜂窝的
-0.0.0.0 apk-upgrade.qingteng-inc.com  #青藤之恋更新？
-0.0.0.0 xladapi.izuiyou.com
-0.0.0.0 api-ad.kajicam.com
-0.0.0.0 api.ad.yipinread.com
-0.0.0.0 bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn  #薄荷健康
-0.0.0.0 snssdk.huazhu.com  #华住会
-0.0.0.0 dynamicad.kfc.com.cn  #肯德基
-0.0.0.0 ad-dp-drcn.cloud.huawei.com.cn
-0.0.0.0 ad.xiaotucc.com  #小兔充充
-0.0.0.0 ad.mcloud.139.com  #移动云盘
-0.0.0.0 adx.zuoyebang.com  #作业帮、大学搜题酱
-
-# 修改版应用被劫持的垃圾弹窗，帝落、改的贴吧、笔趣阁完美版等弹窗
-0.0.0.0 arm.z74d.cn
-0.0.0.0 q.z74d.com
-0.0.0.0 mine.z74d.com
-0.0.0.0 twqwq.z74d.com
-0.0.0.0 syrs.z74d.com
-0.0.0.0 nztl.z74d.com
-0.0.0.0 sbkh5.z74d.com
-0.0.0.0 www.z74d.com
-0.0.0.0 m.z74d.com
-0.0.0.0 1.z74d.com
-0.0.0.0 ad.shunchangzhixing.com  #两步路
-0.0.0.0 imageads.codoon.com  #咕咚(运动)
-0.0.0.0 apk-upgrade.afunapp.com #会玩更新
-0.0.0.0 ad-dsp-1251779293.file.myqcloud.com  #丰巢首页下面的轮播横幅广告
-0.0.0.0 ad-clientlog.cn-shanghai.log.aliyuncs.com  #河马剧场
-0.0.0.0 ad-union.ssread.cn  #河马剧场
-0.0.0.0 rapi.cmgadx.com  #央视的广告
-0.0.0.0 ad-channel.diwodiwo.xyz
-0.0.0.0 ad-display.diwodiwo.xyz
-0.0.0.0 qadx.qinlinad.com  #亲邻开门
-0.0.0.0 ad.aggrx.com  #硬核聚视
-# U净，甚至可以考虑放行，广告不恶心，还是几条tips，禁用了反而难看。
-0.0.0.0 ads.zhinengxiyifang.cn
-0.0.0.0 adsoss.zhinengxiyifang.cn
-0.0.0.0 api.appcenter.ms  #贴吧lite更新
-0.0.0.0 in.appcenter.ms  #好像是一些APP的更新，据说还和隐私有关。
-0.0.0.0 codepush.appcenter.ms  #隐私
-0.0.0.0 api-v3.mentamob.com
-0.0.0.0 iflyad.bjb.openstorage.cn
-0.0.0.0 mb.readke.com  #网页锐客江湖-锐客网的所谓验证机器人实际广告弹窗跳转到快手。
-0.0.0.0 adsmartget.guangtuikeji.com
-0.0.0.0 adsmartgetbes.pinyuconn.cn
-0.0.0.0 ads.mykudou.com
-0.0.0.0 mores.motowoo.com  #塔库信息
-0.0.0.0 adx.halomobi.com  #嗨量科技
-0.0.0.0 bd-cdn.halomobi.com
-0.0.0.0 sdk.aqyad.com
-0.0.0.0 trace.aqyad.com
-0.0.0.0 volc.bj.ad.track.66mobi.com
-0.0.0.0 ads.mykudou.com
-0.0.0.0 fasthuyitool.jidiandian.cn
-0.0.0.0 huyitool.jidiandian.cn
-0.0.0.0 common.shuhonggz.com
-0.0.0.0 sdk.shuhonggz.com
-0.0.0.0 stat.shuhonggz.com
-0.0.0.0 stg.shuhonggz.com
-0.0.0.0 adshows.21cn.com  #天翼云盘抓出来的，有他没他都不影响开屏、弹窗广告
-0.0.0.0 tk2.xfadx.com  #安兔兔
-0.0.0.0 t.ag.b9ad.com  #安兔兔
-0.0.0.0 ads.cxwlad.com  #畅行未来
-0.0.0.0 v66-ad.ndcjl.com
