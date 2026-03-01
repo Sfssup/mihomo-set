@@ -617,32 +617,10 @@
 0.0.0.0 docerad.wps.cn
 0.0.0.0 update.thread0.com  #自定义水印相机更新？
 
-# 联通营业厅APP的开屏广告
-0.0.0.0 m1.ad.10010.com
-0.0.0.0 smartad.10010.com
-0.0.0.0 ad.admin.10010.com
-
 # 蓝奏云分享页上的部分广告
 0.0.0.0 glores2.taisantech.com
 0.0.0.0 sanme2.taisantech.com
 0.0.0.0 www.ordedr.com  #也是蓝奏云
-
-# 豆瓣(①②开屏广告，然而照样被空白屏拖时间)
-0.0.0.0 erebor.douban.com
-0.0.0.0 frodo.douban.com
-0.0.0.0 static-s.iqiyi.com  #主页视频广告预览图
-0.0.0.0 data.video.iqiyi.com  #主页视频广告视频
-0.0.0.0 dmp-data.vip.com
-0.0.0.0 api.douban.com  #日历推荐式开屏？
-0.0.0.0 artery.douban.com
-
-# 小红书
-0.0.0.0 ads-img-al.xhscdn.com
-0.0.0.0 ads-video-al.xhscdn.com
-0.0.0.0 ads-video-qc.xhscdn.com
-0.0.0.0 spider-tracker.xiaohongshu.com
-0.0.0.0 splash-online-decision.xiaohongshu.com
-0.0.0.0 ads-img-bak.xhscdn.com
 
 # 货拉拉
 0.0.0.0 ads-log.huolala.cn
