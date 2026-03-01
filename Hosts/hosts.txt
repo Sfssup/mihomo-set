@@ -498,61 +498,6 @@
 0.0.0.0 display.wting.info
 0.0.0.0 update.duokan.com  #全民小说、多看阅读更新？
 
-# 网易云音乐（据说②③影响了大喇叭，而且好像PC端播放不了）
-0.0.0.0 httpdns.music.163.com #会绕过hosts直接访问广告域名，误杀_无法打开更多模块，也就打不开更多和收藏的MV
-#0.0.0.0 interface.music.163.com
-#0.0.0.0 interface3.music.163.com
-#0.0.0.0 interface.music.163.com.163jiasu.com  #没网
-#0.0.0.0 interface3.music.163.com.163jiasu.com  #没网
-0.0.0.0 admusicpic.music.126.net
-0.0.0.0 iadmusicmat.music.126.net
-0.0.0.0 iadmusicmatvideo.music.126.net
-0.0.0.0 netapm.music.163.com
-#0.0.0.0 ipv6.music.163.com
-#0.0.0.0 ipv4.music.163.com
-
-# 酷狗音乐（开屏还是搞不掉，新版好像突然沒了？）
-0.0.0.0 adserviceretry.kglink.cn  #开屏广告？抓包到好多splash字符，测试。
-0.0.0.0 gatewayretry.kugou.com  #不知道什么的广告，抓包到好多ad、ads字符，副作用也未知。
-0.0.0.0 serveraddr.service.kugou.com
-0.0.0.0 adservice.kugou.com
-0.0.0.0 adserviceretry.kugou.com
-0.0.0.0 ads.service.kugou.com
-0.0.0.0 adsfileretry.service.kugou.com
-0.0.0.0 adsfilebssdlbig.ali.kugou.com
-0.0.0.0 adsfile.bssdlbig.kugou.com  #首页顶部横幅、编辑精选、我的顶部横幅图
-0.0.0.0 splashimgbssdl.yun.kugou.com
-0.0.0.0 splashimgretrybssdl.cloud.kugou.com
-0.0.0.0 gateway.kugou.com
-0.0.0.0 d.kugou.com
-0.0.0.0 downmobile.kugou.com
-0.0.0.0 gad.kugou.com
-0.0.0.0 gg.kugou.com
-0.0.0.0 install.kugou.com
-0.0.0.0 install2.kugou.com
-0.0.0.0 kgmobilestat.kugou.com
-0.0.0.0 log.stat.kugou.com
-0.0.0.0 minidcsc.kugou.com
-0.0.0.0 mo.kugou.com
-0.0.0.0 mobilelog.kugou.com
-0.0.0.0 msg.mobile.kugou.com
-0.0.0.0 mvads.kugou.com
-0.0.0.0 p.kugou.com
-0.0.0.0 push.mobile.kugou.com
-0.0.0.0 rtmonitor.kugou.com
-0.0.0.0 sdk.game.kugou.com
-0.0.0.0 sdn.kugou.com
-0.0.0.0 tj.kugou.com
-0.0.0.0 update.mobile.kugou.com
-0.0.0.0 tmeadkg.y.qq.com
-0.0.0.0 ads.bssdl.kugou.com
-0.0.0.0 channel.fanxing.kugou.com
-0.0.0.0 fanxing.kugou.com
-0.0.0.0 gamebox.kugou.com
-0.0.0.0 log.web.kugou.com
-0.0.0.0 song.fanxing.kugou.com
-0.0.0.0 ipv6.kg.qq.com
-
 # 疑似京东金融开屏广告，副作用未测试
 0.0.0.0 kjstorage.360buyimg.com
 # 美团开屏
