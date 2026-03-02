@@ -571,10 +571,9 @@
 0.0.0.0 sjarvis.taobao.com
 0.0.0.0 h-adashx4yt.ut.taobao.com
 0.0.0.0 openacs.m.taobao.com
-#0.0.0.0 msgacs.m.taobao.com  淘宝和店铺聊天消息
 0.0.0.0 acs4public.m.taobao.com
 0.0.0.0 accscdn4public.m.taobao.com
-0.0.0.0 qh-material.taobao.com  #莉景天气开屏广告
+0.0.0.0 qh-material.taobao.com
 # ali-mama
 0.0.0.0 a.alimama.cn
 0.0.0.0 img.alimama.cn
