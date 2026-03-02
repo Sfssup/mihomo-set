@@ -540,7 +540,7 @@
 
 # 淘宝广告
 #0.0.0.0 acs.m.taobao.com  #会导致一些新装的阿里系APP没网，连过网再禁却没事，可能是和初始化有关。阿里云盘卡开屏。
-0.0.0.0 wcp.taobao.com  #淘宝开屏？
+0.0.0.0 wcp.taobao.com
 0.0.0.0 adash.m.taobao.com
 0.0.0.0 adashbc.ut.taobao.com
 0.0.0.0 adashx4ae.ut.taobao.com
