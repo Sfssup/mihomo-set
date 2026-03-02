@@ -326,18 +326,6 @@
 0.0.0.0 wn.pos.baidu.com
 0.0.0.0 cpro.baidustatic.com
 
-# 百度地图（①开屏②开屏配置文件否则强行显示多几秒⑤首页底部推荐）
-0.0.0.0 a1.alibabausercontent.com
-0.0.0.0 afd.baidu.com
-0.0.0.0 afdconf.baidu.com
-0.0.0.0 httpdns.baidubce.com
-0.0.0.0 ugc.map.baidu.com
-# 主界面左上角贴图，会误伤公交&我的 部分图标以及其他角落的营销图。
-0.0.0.0 map-mobile-opnimg.cdn.bcebos.com
-# 百度地图底栏_出行上滑出现的推荐的内容和点搜索框进去后的广告。
-0.0.0.0 pms-cdn.bdstatic.com
-0.0.0.0 aiad-aisuda.cdn.bcebos.com
-
 # 百度输入法上传你输入了什么，副作用云联想词加载不出来。
 0.0.0.0 udpolimenew.baidu.com
 0.0.0.0 udpolimeok.baidu.com
@@ -350,16 +338,6 @@
 0.0.0.0 issuecdn.baidupcs.com
 0.0.0.0 update.pan.baidu.com
 0.0.0.0 update.pan.n.shifen.com
-
-# 高德地图(①开屏②③横幅和通知中心？№④№ 测试⑤play版15.0返场开屏广告⑥⑦№)
-0.0.0.0 optimus-ads.amap.com
-0.0.0.0 store.is.autonavi.com
-# 误杀顺风车主接不到单
-0.0.0.0 adiu.amap.com
-0.0.0.0 cgicol.amap.com
-0.0.0.0 awaken.amap.com
-0.0.0.0 amap-aos-info-nogw.amap.com
-0.0.0.0 optimus-ads-ykx.amap.com
 
 # 滴滴（①开屏广告会误伤主页一些图标的图）
 0.0.0.0 img-ys011.didistatic.com
@@ -417,46 +395,6 @@
 0.0.0.0 mi.gdt.qq.com
 0.0.0.0 ii.gdt.qq.com
 
-# 酷我音乐（去开屏广告①②缺一不可，①会误伤主页的主banner轮播图，③是主页插入的广告如拼多多广告）
-0.0.0.0 kwimg3.kuwo.cn
-0.0.0.0 httpdns.kg.qq.com
-0.0.0.0 tmeadcomm.y.qq.com
-0.0.0.0 apk.shouji.koowo.com
-0.0.0.0 g.koowo.com
-0.0.0.0 deliver.kuwo.cn
-0.0.0.0 log.kuwo.cn
-0.0.0.0 mobilead.kuwo.cn
-0.0.0.0 msphoneclick.kuwo.cn
-0.0.0.0 updatepage.kuwo.cn
-0.0.0.0 wa.kuwo.cn
-0.0.0.0 webstat.kuwo.cn
-
-# 喜马拉雅
-0.0.0.0 ad.ximalaya.com
-0.0.0.0 xdcs-collector.ximalaya.com
-0.0.0.0 adbehavior.ximalaya.com
-0.0.0.0 adbehavior.wsa.ximalaya.com
-0.0.0.0 adbehaviorhera.ximalaya.com
-0.0.0.0 adse.ximalaya.com
-0.0.0.0 adse.wsa.ximalaya.com
-0.0.0.0 adsehera.ximalaya.com
-0.0.0.0 gslbali.ximalaya.com  #播放页视频广告
-0.0.0.0 gslbtx.ximalaya.com  #播放页图片广告
-
-# 蜻蜓FM
-0.0.0.0 ad.qingting.fm
-0.0.0.0 admgr.qingting.fm
-0.0.0.0 dload.qd.qingting.fm
-0.0.0.0 logger.qingting.fm
-0.0.0.0 s.qd.qingting.fm
-0.0.0.0 s.qd.qingtingfm.com
-0.0.0.0 adlaunch.qtfm.cn
-0.0.0.0 ad-cdn.qtfm.cn
-
-# 懒人听书 开屏&播放页
-0.0.0.0 display.wting.info
-0.0.0.0 update.duokan.com  #全民小说、多看阅读更新？
-
 # 疑似京东金融开屏广告，副作用未测试
 0.0.0.0 kjstorage.360buyimg.com
 
@@ -470,31 +408,6 @@
 0.0.0.0 adim.pinduoduo.com
 0.0.0.0 dspsdk.pinduoduo.com
 0.0.0.0 lp.pinduoduo.com
-
-# 饿了么
-0.0.0.0 elemecdn.com
-0.0.0.0 fuss10.elemecdn.com
-0.0.0.0 www1.elecfans.com
-0.0.0.0 nr-op.elemecdn.com
-0.0.0.0 app-monitor.ele.me
-0.0.0.0 ads.95516.com
-# 云闪付，误杀本地优惠活动
-0.0.0.0 ads.cup.com.cn
-0.0.0.0 ad.maoyan.com
-
-# WiFi万能钥匙(尚网网络)
-0.0.0.0 a.wkanx.com
-0.0.0.0 adx-ad-prod.wkanx.com
-0.0.0.0 static.wkanx.com
-0.0.0.0 img01.51y5.net
-0.0.0.0 movies.ttwifi.net
-0.0.0.0 track-config.y5kfpt.com
-0.0.0.0 track-gateway.y5kfpt.com
-
-# WiFi万能钥匙_好看
-0.0.0.0 cds.wifi188.com
-0.0.0.0 n.wifi188.com
-0.0.0.0 ocean-alps.wifi188.com
 
 # 迅雷
 0.0.0.0 advertpay-vip-ssl.xunlei.com
@@ -519,24 +432,10 @@
 0.0.0.0 m.sjzhushou.com
 0.0.0.0 scene.vip.xunlei.com
 
-# WPS
-0.0.0.0 ad.docer.wps.cn
-0.0.0.0 adm.zookingsoft.com
-0.0.0.0 docerad.wps.cn
-0.0.0.0 update.thread0.com
-
 # 蓝奏云分享页上的部分广告
 0.0.0.0 glores2.taisantech.com
 0.0.0.0 sanme2.taisantech.com
 0.0.0.0 www.ordedr.com
-
-# 货拉拉
-0.0.0.0 ads-log.huolala.cn
-0.0.0.0 www-ads.huolala.co
-
-# 哈啰开屏广告
-0.0.0.0 admaster-public.51downapp.cn
-0.0.0.0 g.fancyapi.com
 
 # 京东广告
 0.0.0.0 dg.k.jd.com
