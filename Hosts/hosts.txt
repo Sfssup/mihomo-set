@@ -458,6 +458,14 @@
 0.0.0.0 adsmind.ugdtimg.com
 0.0.0.0 adstrategy.biz.weibo.com
 
+# 微博
+0.0.0.0 biz.weibo.com
+0.0.0.0 s.alitui.weibo.com
+0.0.0.0 zymo.mps.weibo.com
+0.0.0.0 game.weibo.cn
+0.0.0.0 gw5.push.mcp.weibo.cn
+0.0.0.0 m.game.weibo.cn
+
 # 酷我音乐（去开屏广告①②缺一不可，①会误伤主页的主banner轮播图，③是主页插入的广告如拼多多广告）
 0.0.0.0 kwimg3.kuwo.cn
 0.0.0.0 httpdns.kg.qq.com
@@ -696,7 +704,6 @@
 0.0.0.0 adsview2.qq.com
 0.0.0.0 adv.app.qq.com
 0.0.0.0 adver.qq.com
-0.0.0.0 aegis.qq.com  #误杀手游加速器功能页
 0.0.0.0 as.weixin.qq.com
 0.0.0.0 badjs.qq.com
 0.0.0.0 bs.l.qq.com
@@ -898,9 +905,11 @@
 0.0.0.0 tianshu.qq.com  #腾讯文档弹窗
 0.0.0.0 h5.qzone.qq.com  #据说是腾讯文档首页横幅
 0.0.0.0 control.vpn.qq.com  #腾讯手游加速器开屏广告和弹窗广告，但是误杀底栏_游戏_我的 一片空白。
-#h.trace.qq.com和aegis.qq.com必须一起放行，不然手游加速器一些功能界面明明能打开但是秒跳转显示没网。
 0.0.0.0 a.gdt.qq.com
 0.0.0.0 event.gdt.qq.com
+0.0.0.0 h.trace.qq.com #误杀手游加速器功能页
+0.0.0.0 aegis.qq.com  #误杀手游加速器功能页
+#h.trace.qq.com和aegis.qq.com必须一起放行，不然手游加速器一些功能界面明明能打开但是秒跳转显示没网。
 
 # 1905电影网
 0.0.0.0 afp.m1905.com
@@ -1104,7 +1113,6 @@
 0.0.0.0 apd-vodp2pnat.teg.tencent-cloud.net
 0.0.0.0 otheve.beacon.qq.com
 0.0.0.0 tmead.y.qq.com
-0.0.0.0 h.trace.qq.com #误杀手游加速器功能页
 0.0.0.0 hb.kg.qq.com
 0.0.0.0 oth.str.mdt.qq.com
 0.0.0.0 oth.eve.mdt.qq.com
@@ -1148,8 +1156,6 @@
 0.0.0.0 misc.wcd.qq.com
 0.0.0.0 raddus.bayescom.com
 0.0.0.0 tdid.m.qq.com
-0.0.0.0 h.trace.qq.com
-0.0.0.0 aegis.qq.com
 
 # 阿里广告
 0.0.0.0 abtest.alibaba.com
@@ -1273,7 +1279,6 @@
 0.0.0.0 sa.tuisong.baidu.com
 0.0.0.0 api.tuisong.baidu.com
 0.0.0.0 sa8.tuisong.baidu.com
-# 百度广告
 0.0.0.0 hmcdn.baidu.com
 0.0.0.0 cbjs.baidu.com
 0.0.0.0 cpro.baidu.com
@@ -1378,14 +1383,6 @@
 0.0.0.0 g.baidu.com  #250615
 0.0.0.0 miao.baidu.com
 0.0.0.0 miniapp-ad.bj.bcebos.com
-
-# 微博
-0.0.0.0 biz.weibo.com
-0.0.0.0 s.alitui.weibo.com
-0.0.0.0 zymo.mps.weibo.com
-0.0.0.0 game.weibo.cn
-0.0.0.0 gw5.push.mcp.weibo.cn
-0.0.0.0 m.game.weibo.cn
 
 # 穿山甲广告
 0.0.0.0 p3-ad-sign.byteimg.com  #抖音部分图片？
