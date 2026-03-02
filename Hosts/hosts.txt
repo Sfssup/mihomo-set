@@ -314,30 +314,6 @@
 # 车来了推荐
 0.0.0.0 cdn.web.chelaile.net.cn
 
-# 贴吧
-0.0.0.0 static.pay.baidu.com
-0.0.0.0 img.taotaosou.cn
-0.0.0.0 img01.taotaosou.cn
-0.0.0.0 gameplus-platform.cdn.bcebos.com  #未知，好像没影响，250202测试
-0.0.0.0 tieba-ares.cdn.bcebos.com
-0.0.0.0 sjh.baidu.com
-0.0.0.0 ns-strategy.cdn.bcebos.com
-0.0.0.0 fc1tn.baidu.com
-0.0.0.0 bj.bcebos.com  #酷友反馈误杀理想汽车APP驻车照片。
-0.0.0.0 fc-image.cdn.bcebos.com
-0.0.0.0 fc2tn.baidu.com
-0.0.0.0 fc4tn.baidu.com
-0.0.0.0 fc5tn.baidu.com
-
-# baidu-soft/cleaner
-0.0.0.0 cleaner.baidu.com
-0.0.0.0 dl-vip.pcfaster.baidu.co.th
-# baidu-soft/down
-0.0.0.0 rj.baidu.com
-0.0.0.0 dlsw.br.baidu.com
-# baidu-soft/hao123
-0.0.0.0 update.123juzi.net
-
 # 隐私分析上报
 0.0.0.0 crab.baidu.com
 0.0.0.0 dxp.baidu.com
@@ -356,8 +332,10 @@
 0.0.0.0 afdconf.baidu.com
 0.0.0.0 httpdns.baidubce.com
 0.0.0.0 ugc.map.baidu.com
-0.0.0.0 map-mobile-opnimg.cdn.bcebos.com  #主界面左上角贴图，会误伤公交&我的 部分图标以及其他角落的营销图。
-0.0.0.0 pms-cdn.bdstatic.com  百度地图底栏_出行上滑出现的推荐的内容和点搜索框进去后的广告。
+# 主界面左上角贴图，会误伤公交&我的 部分图标以及其他角落的营销图。
+0.0.0.0 map-mobile-opnimg.cdn.bcebos.com
+# 百度地图底栏_出行上滑出现的推荐的内容和点搜索框进去后的广告。
+0.0.0.0 pms-cdn.bdstatic.com
 0.0.0.0 aiad-aisuda.cdn.bcebos.com
 
 # 百度输入法上传你输入了什么，副作用云联想词加载不出来。
