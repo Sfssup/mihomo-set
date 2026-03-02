@@ -356,16 +356,13 @@
 0.0.0.0 c.gdt.qq.com
 0.0.0.0 updatecenter.qq.com
 0.0.0.0 tangram-config.gdt.qq.com
-0.0.0.0 iv6.gtimg.cn  #个性字体（副作用未知）
-0.0.0.0 gxh.material.qq.com  #气泡、头像挂件，误伤夜间模式不能下载
-#0.0.0.0 downv6.qq.com  #QQ下载安装包，但导致一些网页下载不了东西
-0.0.0.0 qzonestyle.gtimg.cn #QQ空间装扮
-0.0.0.0 world.qpic.cn  #小世界的图片，视频的封面图。
-0.0.0.0 tianshu.gtimg.cn  #顶部横幅广告图片，误杀签到打卡后的图片
-0.0.0.0 minigame.gtimg.cn  #QQ微信小游戏图标
+0.0.0.0 iv6.gtimg.cn
+0.0.0.0 qzonestyle.gtimg.cn
+0.0.0.0 world.qpic.cn
+0.0.0.0 tianshu.gtimg.cn
+0.0.0.0 minigame.gtimg.cn
 # 下载？
 0.0.0.0 c.gj.qq.com
-#0.0.0.0 c.pc.qq.com  QQ群链接安全中转页无法直接点开
 0.0.0.0 download.sj.qq.com
 0.0.0.0 t.sj.qq.com
 0.0.0.0 ws.sj.qq.com
@@ -373,11 +370,10 @@
 0.0.0.0 hlmj.broker.tplay.qq.com
 # 隐私相关
 0.0.0.0 wup.imtt.qq.com
-0.0.0.0 huatuo.qq.com  #华佗诊断
+0.0.0.0 huatuo.qq.com
 0.0.0.0 ping.huatuo.qq.com
 0.0.0.0 tpns.tencent.com
 0.0.0.0 stat.tpns.tencent.com
-#0.0.0.0 access1.tpns.tencent.com  #会误杀酷安没有推送。 禁用腾讯推送相关组件也会没推送。
 
 # 微信公众号(只禁③广告位还在只是不显示广告图片&视频)
 0.0.0.0 wxa.wxs.qq.com
