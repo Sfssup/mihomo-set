@@ -344,12 +344,6 @@
 0.0.0.0 update.pan.baidu.com
 0.0.0.0 update.pan.n.shifen.com
 
-# 滴滴（①开屏广告会误伤主页一些图标的图）
-0.0.0.0 img-ys011.didistatic.com
-0.0.0.0 adtrack.xiaojukeji.com  #滴滴顺风车主页面闪退到没网界面
-#0.0.0.0 ut-static.udache.com  #滴滴顺风车邀请车主贴图广告，误杀查看进行中的行程
-0.0.0.0 s3-hnapuhdd-cdn.didistatic.com  #滴滴开屏2，节日
-
 # QQ
 0.0.0.0 ca.gtimg.com
 0.0.0.0 q.i.gdt.qq.com
@@ -402,45 +396,6 @@
 # 美团开屏
 0.0.0.0 flowplus.meituan.net
 0.0.0.0 httpdns.meituan.com
-
-# 拼多多广告
-0.0.0.0 images.pinduoduo.com
-0.0.0.0 t-dsp.pinduoduo.com
-0.0.0.0 adim.pinduoduo.com
-0.0.0.0 dspsdk.pinduoduo.com
-0.0.0.0 lp.pinduoduo.com
-
-# 迅雷
-0.0.0.0 advertpay-vip-ssl.xunlei.com
-0.0.0.0 test.adsp.xunlei.com
-0.0.0.0 api-mcp.adsp.xunlei.com
-0.0.0.0 watch.advertising.speed.cdn.vip.xunlei.com
-0.0.0.0 advertpay.vip.xunlei.com
-0.0.0.0 adsp.xunlei.com
-0.0.0.0 t03-api.xlmc.xunlei.com
-0.0.0.0 master.wap.dphub.sandai.net
-0.0.0.0 hub5u.wap.sandai.net
-0.0.0.0 idx.m.hub.sandai.net
-0.0.0.0 tw13b093.sandai.net
-0.0.0.0 uploadlog.xlmc.sandai.net
-0.0.0.0 pre.api.tw06.xlmc.sandai.net
-0.0.0.0 hub5pn.wap.sandai.net
-0.0.0.0 api-shoulei-ssl.xunlei.com
-0.0.0.0 biz.live.xunlei.com
-0.0.0.0 ct.niu.xunlei.com
-0.0.0.0 mou.niu.xunlei.com
-0.0.0.0 static.m.sjzhushou.com
-0.0.0.0 m.sjzhushou.com
-0.0.0.0 scene.vip.xunlei.com
-
-# 蓝奏云分享页上的部分广告
-0.0.0.0 glores2.taisantech.com
-0.0.0.0 sanme2.taisantech.com
-0.0.0.0 www.ordedr.com
-
-# 腾讯云视频极光测试250318
-0.0.0.0 sdk-e.play.aiseet.atianqi.com
-0.0.0.0 qrapi.play.aiseet.atianqi.com
 
 # 小米视频电视端
 0.0.0.0 data.video.ptqy.gitv.tv
