@@ -383,8 +383,8 @@
 0.0.0.0 bc.weixin.qq.com
 0.0.0.0 channels.weixin.qq.com
 0.0.0.0 badjs.weixinbridge.com
-0.0.0.0 wximg.wxs.qq.com  #微信小程序开屏和其他广告图片，然而照样会空白屏显示3~5秒，弹窗广告照弹(只是无图)，广告位照样占(只是无图)。误杀暂未发现，看域名应该会有一些。
-0.0.0.0 wxsmw.wxs.qq.com  #微信小程序底下的视频广告，广告位还在，只是能省点流量，不会被视频打扰。误杀未知。
+0.0.0.0 wximg.wxs.qq.com
+0.0.0.0 wxsmw.wxs.qq.com
 0.0.0.0 dns.weixin.qq.com
 0.0.0.0 dns.weixin.qq.com.cn
 0.0.0.0 aedns.weixin.qq.com
