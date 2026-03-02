@@ -523,12 +523,12 @@
 0.0.0.0 ad.docer.wps.cn
 0.0.0.0 adm.zookingsoft.com
 0.0.0.0 docerad.wps.cn
-0.0.0.0 update.thread0.com  #自定义水印相机更新？
+0.0.0.0 update.thread0.com
 
 # 蓝奏云分享页上的部分广告
 0.0.0.0 glores2.taisantech.com
 0.0.0.0 sanme2.taisantech.com
-0.0.0.0 www.ordedr.com  #也是蓝奏云
+0.0.0.0 www.ordedr.com
 
 # 货拉拉
 0.0.0.0 ads-log.huolala.cn
