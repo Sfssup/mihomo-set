@@ -1137,7 +1137,6 @@
 0.0.0.0 discuz.gtimg.cn
 0.0.0.0 wa.gtimg.com
 0.0.0.0 pgdt.gtimg.com
-# 腾讯广告服务
 0.0.0.0 ad.qun.qq.com
 0.0.0.0 adping.qq.com
 0.0.0.0 adshmct.qq.com
@@ -1198,7 +1197,6 @@
 0.0.0.0 ad-host-backup-america.oss-us-west-1.aliyuncs.com
 0.0.0.0 ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com
 0.0.0.0 ad-host-backup-europe.oss-eu-central-1.aliyuncs.com
-# 阿里广告服务
 0.0.0.0 ynuf.aliapp.org
 0.0.0.0 www.uyunad.com
 0.0.0.0 acs4baichuan.m.taobao.com
