@@ -520,15 +520,18 @@
 
 # 疑似京东金融开屏广告，副作用未测试
 0.0.0.0 kjstorage.360buyimg.com
+
 # 美团开屏
 0.0.0.0 flowplus.meituan.net
 0.0.0.0 httpdns.meituan.com
+
 # 拼多多广告
 0.0.0.0 images.pinduoduo.com
 0.0.0.0 t-dsp.pinduoduo.com
 0.0.0.0 adim.pinduoduo.com
 0.0.0.0 dspsdk.pinduoduo.com
 0.0.0.0 lp.pinduoduo.com
+
 # 饿了么
 0.0.0.0 elemecdn.com
 0.0.0.0 fuss10.elemecdn.com
