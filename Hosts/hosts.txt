@@ -3030,21 +3030,12 @@
 0.0.0.0 stats.dmp.ghac.cn  #广汽本田营销
 
 # 广告补充
-0.0.0.0 pypd.paypal-mktg.com
-0.0.0.0 h5.weishi.qq.com
-0.0.0.0 http1226k.swazg.cn
-0.0.0.0 o33249.ingest.sentry.io
-0.0.0.0 sdk1xyajs.data.p2cdn.com
-0.0.0.0 mobads.adwangmai.com
-0.0.0.0 app.wiki.gg
-0.0.0.0 applog.camera360.com
-0.0.0.0 ad.zhuanzhuan.com  #转转用
+# 转转
+0.0.0.0 ad.zhuanzhuan.com
 0.0.0.0 g-adnet.hiaiabc.com
-0.0.0.0 m-adnet.hiaiabc.com  #转转用
-0.0.0.0 adapi.izuiyou.com  #皮皮虾
-0.0.0.0 adstat.izuiyou.com  #皮皮虾
-0.0.0.0 adcdn6.tencentmusic.com  #未知，全民K歌抓出来的
-0.0.0.0 adapi.pandabus.cn
-0.0.0.0 appversion.115.com #115盘更新
-0.0.0.0 autoupdate.tantanapp.com  #探探更新？
-0.0.0.0 adsdk.idmzj.com  #动漫之家
+0.0.0.0 m-adnet.hiaiabc.com
+# 皮皮虾
+0.0.0.0 adapi.izuiyou.com
+0.0.0.0 adstat.izuiyou.com
+# 动漫之家
+0.0.0.0 adsdk.idmzj.com
