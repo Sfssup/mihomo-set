@@ -458,6 +458,18 @@
 0.0.0.0 adsmind.ugdtimg.com
 0.0.0.0 adstrategy.biz.weibo.com
 
+# 转转
+0.0.0.0 ad.zhuanzhuan.com
+0.0.0.0 g-adnet.hiaiabc.com
+0.0.0.0 m-adnet.hiaiabc.com
+
+# 皮皮虾
+0.0.0.0 adapi.izuiyou.com
+0.0.0.0 adstat.izuiyou.com
+
+# 动漫之家
+0.0.0.0 adsdk.idmzj.com
+
 # 微博
 0.0.0.0 biz.weibo.com
 0.0.0.0 s.alitui.weibo.com
@@ -3028,14 +3040,3 @@
 0.0.0.0 api.wxcjgg.cn  #小蚕霸王餐开屏？
 0.0.0.0 user.wxcjgg.cn  #领页广告
 0.0.0.0 stats.dmp.ghac.cn  #广汽本田营销
-
-# 广告补充
-# 转转
-0.0.0.0 ad.zhuanzhuan.com
-0.0.0.0 g-adnet.hiaiabc.com
-0.0.0.0 m-adnet.hiaiabc.com
-# 皮皮虾
-0.0.0.0 adapi.izuiyou.com
-0.0.0.0 adstat.izuiyou.com
-# 动漫之家
-0.0.0.0 adsdk.idmzj.com
