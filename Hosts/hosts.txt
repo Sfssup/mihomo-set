@@ -354,11 +354,11 @@
 # 高德地图(①开屏②③横幅和通知中心？№④№ 测试⑤play版15.0返场开屏广告⑥⑦№)
 0.0.0.0 optimus-ads.amap.com
 0.0.0.0 store.is.autonavi.com
-0.0.0.0 adiu.amap.com  #误杀顺风车主接不到单
+# 误杀顺风车主接不到单
+0.0.0.0 adiu.amap.com
 0.0.0.0 cgicol.amap.com
 0.0.0.0 awaken.amap.com
 0.0.0.0 amap-aos-info-nogw.amap.com
-#0.0.0.0 free-aos-cdn-image.amap.com  #误伤一些图标
 0.0.0.0 optimus-ads-ykx.amap.com
 
 # 滴滴（①开屏广告会误伤主页一些图标的图）
@@ -416,45 +416,6 @@
 0.0.0.0 gw.365you.com
 0.0.0.0 mi.gdt.qq.com
 0.0.0.0 ii.gdt.qq.com
-
-# 微博（前3顺手抓的未知，资讯流广告和正文一起的一损俱损，④开屏，⑥14.7后新增的视频开屏广告，⑤xml配置了很多加载广告，副作用未知）
-0.0.0.0 adimg.uve.weibo.com
-0.0.0.0 admimage.biz.weibo.com
-0.0.0.0 kadmimage.biz.weibo.com
-0.0.0.0 sdkapp.mobile.sina.cn
-0.0.0.0 down.apps.sina.cn
-0.0.0.0 bootpreload.uve.weibo.com
-0.0.0.0 bootrealtime.uve.weibo.com
-0.0.0.0 wbapp.uve.weibo.com
-0.0.0.0 sdkapp.uve.weibo.com
-0.0.0.0 datacollection.uve.weibo.com #开屏？
-0.0.0.0 fastimage.uve.weibo.com #开屏?
-0.0.0.0 uve.weibo.com
-0.0.0.0 ad.weibo.com
-#0.0.0.0 api.weibo.cn
-#0.0.0.0 mapi.weibo.cn
-0.0.0.0 adsmind.ugdtimg.com
-0.0.0.0 adstrategy.biz.weibo.com
-
-# 转转
-0.0.0.0 ad.zhuanzhuan.com
-0.0.0.0 g-adnet.hiaiabc.com
-0.0.0.0 m-adnet.hiaiabc.com
-
-# 皮皮虾
-0.0.0.0 adapi.izuiyou.com
-0.0.0.0 adstat.izuiyou.com
-
-# 动漫之家
-0.0.0.0 adsdk.idmzj.com
-
-# 微博
-0.0.0.0 biz.weibo.com
-0.0.0.0 s.alitui.weibo.com
-0.0.0.0 zymo.mps.weibo.com
-0.0.0.0 game.weibo.cn
-0.0.0.0 gw5.push.mcp.weibo.cn
-0.0.0.0 m.game.weibo.cn
 
 # 酷我音乐（去开屏广告①②缺一不可，①会误伤主页的主banner轮播图，③是主页插入的广告如拼多多广告）
 0.0.0.0 kwimg3.kuwo.cn
@@ -516,9 +477,10 @@
 0.0.0.0 www1.elecfans.com
 0.0.0.0 nr-op.elemecdn.com
 0.0.0.0 app-monitor.ele.me
-0.0.0.0 ads.95516.com  #云闪付
-#0.0.0.0 ads.cup.com.cn  #云闪付，误杀本地优惠活动
-0.0.0.0 ad.maoyan.com  #猫眼(购票)
+0.0.0.0 ads.95516.com
+# 云闪付，误杀本地优惠活动
+0.0.0.0 ads.cup.com.cn
+0.0.0.0 ad.maoyan.com
 
 # WiFi万能钥匙(尚网网络)
 0.0.0.0 a.wkanx.com  #开屏广告、底部广告、插入式广告、我的_广告
