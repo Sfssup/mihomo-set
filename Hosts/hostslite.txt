@@ -355,13 +355,6 @@
 0.0.0.0 world.qpic.cn
 0.0.0.0 tianshu.gtimg.cn
 0.0.0.0 minigame.gtimg.cn
-# 下载？
-0.0.0.0 c.gj.qq.com
-0.0.0.0 download.sj.qq.com
-0.0.0.0 t.sj.qq.com
-0.0.0.0 ws.sj.qq.com
-# 欢乐麻将弹窗广告。
-0.0.0.0 hlmj.broker.tplay.qq.com
 # 隐私相关
 0.0.0.0 wup.imtt.qq.com
 0.0.0.0 huatuo.qq.com
@@ -413,13 +406,6 @@
 0.0.0.0 tracker.ads.cctv.com
 0.0.0.0 adstore-index-1252524079.file.myqcloud.com
 
-# 三星
-0.0.0.0 insights.samsung.com
-0.0.0.0 ad.samsungadhub.com
-0.0.0.0 samsungads.com
-0.0.0.0 ads.samsungads.com
-0.0.0.0 config.samsungads.com
-
 # TopOn广告(酷安用，不然信息流漏广告)
 0.0.0.0 app.takuad.com
 0.0.0.0 img.toponad.com
@@ -432,46 +418,6 @@
 0.0.0.0 www.toponad.com
 0.0.0.0 tt.toponad.com
 0.0.0.0 dd.toponad.com
-
-# 微软广告
-0.0.0.0 bingads.microsoft.com
-0.0.0.0 advertise.bingads.microsoft.com
-0.0.0.0 www.bingads.microsoft.com
-0.0.0.0 rad.microsoft.com
-0.0.0.0 ads1.msads.net
-0.0.0.0 ads2.msads.net
-0.0.0.0 global.msads.net
-0.0.0.0 a.global.msads.net
-0.0.0.0 rad.live.com
-0.0.0.0 ads1.msn.com
-0.0.0.0 a.ads1.msn.com
-0.0.0.0 a.ads2.msn.com
-0.0.0.0 b.ads1.msn.com
-0.0.0.0 ads.eu.msn.com
-0.0.0.0 ads.msn.com
-0.0.0.0 ads2.msn.com
-0.0.0.0 adsyndication.msn.com
-0.0.0.0 ads.ninemsn.com.au
-0.0.0.0 mobileads.msn.com
-0.0.0.0 rmads.eu.msn.com
-0.0.0.0 rmads.msn.com
-
-# TalkingData-数据、分析、广告
-0.0.0.0 www.xdrig.com
-0.0.0.0 adt.xdrig.com
-0.0.0.0 app.xdrig.com
-0.0.0.0 av1.xdrig.com
-0.0.0.0 cloud.xdrig.com
-0.0.0.0 conf.xdrig.com
-0.0.0.0 ga.xdrig.com
-0.0.0.0 gv.xdrig.com
-0.0.0.0 gv1.xdrig.com
-0.0.0.0 idauth.xdrig.com
-0.0.0.0 me.xdrig.com
-0.0.0.0 pg.xdrig.com
-0.0.0.0 push.xdrig.com
-0.0.0.0 tdsdk.xdrig.com
-0.0.0.0 tdsdk-ip6.xdrig.com
 
 # 布里奇信息(酷安评论信息流广告用)
 0.0.0.0 www.anythinktech.com
