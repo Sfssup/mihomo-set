@@ -342,7 +342,7 @@
 0.0.0.0 udpolimenew.baidu.com
 0.0.0.0 udpolimeok.baidu.com
 0.0.0.0 upl.baidu.com
-0.0.0.0 ads.uutest.cn  #【测网速】
+0.0.0.0 ads.uutest.cn
 
 # 百度网盘（①是开屏广告②网页分享页上半部分的广告图片）
 0.0.0.0 dss0.bdstatic.com
