@@ -483,11 +483,11 @@
 0.0.0.0 ad.maoyan.com
 
 # WiFi万能钥匙(尚网网络)
-0.0.0.0 a.wkanx.com  #开屏广告、底部广告、插入式广告、我的_广告
-0.0.0.0 adx-ad-prod.wkanx.com  #未知
-0.0.0.0 static.wkanx.com  #连尚广告
-0.0.0.0 img01.51y5.net  #右下角贴图
-0.0.0.0 movies.ttwifi.net  #短剧
+0.0.0.0 a.wkanx.com
+0.0.0.0 adx-ad-prod.wkanx.com
+0.0.0.0 static.wkanx.com
+0.0.0.0 img01.51y5.net
+0.0.0.0 movies.ttwifi.net
 0.0.0.0 track-config.y5kfpt.com
 0.0.0.0 track-gateway.y5kfpt.com
 
