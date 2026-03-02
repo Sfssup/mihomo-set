@@ -687,12 +687,6 @@
 0.0.0.0 tracker.ads.cctv.com
 0.0.0.0 adstore-index-1252524079.file.myqcloud.com
 
-# Spotify(音频广告去不掉)
-0.0.0.0 ads.spotify.com
-0.0.0.0 adstudio-assets.scdn.co
-0.0.0.0 audio-ad.spotify.com
-0.0.0.0 enduser.adsrvr.org
-
 # 三星
 0.0.0.0 insights.samsung.com
 0.0.0.0 ad.samsungadhub.com
