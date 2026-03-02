@@ -550,7 +550,7 @@
 0.0.0.0 audid-api.taobao.com
 0.0.0.0 simaba.taobao.com
 0.0.0.0 m.simaba.taobao.com
-0.0.0.0 amdcopen.m.taobao.com  #阿里云内置域名解析服务
+0.0.0.0 amdcopen.m.taobao.com
 0.0.0.0 accscdn.m.taobao.com
 0.0.0.0 adashx4yt.m.taobao.com
 0.0.0.0 tunion-api.m.taobao.com
