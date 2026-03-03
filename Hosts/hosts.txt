@@ -171,11 +171,11 @@
 0.0.0.0 qr.quickapp.cn
 0.0.0.0 qrcdn.quickapp.cn
 0.0.0.0 statres.quickapp.cn
-0.0.0.0 cnbj1.fds.api.xiaomi.co  #小米遥控器底部横幅
+0.0.0.0 cnbj1.fds.api.xiaomi.co
 0.0.0.0 api.jr.mi.com  #小米钱包净化
-0.0.0.0 sug.browser.miui.com  #小米浏览器搜索提示，上方的应用推广和下面的联想词一起干没
-0.0.0.0 api.comm.miui.com  #小米日历广告
-0.0.0.0 wtradv.market.xiaomi.com  #小米天气主页广告、央视天气预报和适宜XX卡片
+0.0.0.0 sug.browser.miui.com
+0.0.0.0 api.comm.miui.com
+0.0.0.0 wtradv.market.xiaomi.com
 # 小米电视
 0.0.0.0 519332da.rtc.youme.im
 0.0.0.0 ad.doubleclick.net
@@ -295,17 +295,17 @@
 
 # OV真我Realme一加
 0.0.0.0 ads.heytapmobi.com
-0.0.0.0 adx.ads.heytapmobi.com  #据说是浏览器下载推荐
+0.0.0.0 adx.ads.heytapmobi.com
 0.0.0.0 adsfs.heytapimage.com
 0.0.0.0 adsfs-sdkconfig.heytapimage.com
 0.0.0.0 mdp-usertrace-cn.heytapmobi.com
 0.0.0.0 uapi.ads.heytapmobi.com
 0.0.0.0 b1-data.ads.heytapmobi.com
 0.0.0.0 b2-data.ads.heytapmobi.com
-0.0.0.0 stg-data.ads.heytapmobi.com  #安装界面广告
-0.0.0.0 sms.ads.heytapmobi.com  #短信和拨号广告
-0.0.0.0 icosa.coloros.com  #据说是Realme应用增强服务_安装软件后上传包名
-0.0.0.0 ibrowser.feeds.heytapmobi.com  #天气_精彩推荐
+0.0.0.0 stg-data.ads.heytapmobi.com
+0.0.0.0 sms.ads.heytapmobi.com
+0.0.0.0 icosa.coloros.com
+0.0.0.0 ibrowser.feeds.heytapmobi.com
 
 # 酷安
 0.0.0.0 api.coolapk.com
@@ -363,9 +363,8 @@
 
 # 滴滴（①开屏广告会误伤主页一些图标的图）
 0.0.0.0 img-ys011.didistatic.com
-0.0.0.0 adtrack.xiaojukeji.com  #滴滴顺风车主页面闪退到没网界面
-#0.0.0.0 ut-static.udache.com  #滴滴顺风车邀请车主贴图广告，误杀查看进行中的行程
-0.0.0.0 s3-hnapuhdd-cdn.didistatic.com  #滴滴开屏2，节日
+0.0.0.0 adtrack.xiaojukeji.com
+0.0.0.0 s3-hnapuhdd-cdn.didistatic.com
 
 # QQ
 0.0.0.0 ca.gtimg.com
@@ -373,12 +372,12 @@
 0.0.0.0 c.gdt.qq.com
 0.0.0.0 updatecenter.qq.com
 0.0.0.0 tangram-config.gdt.qq.com
-0.0.0.0 iv6.gtimg.cn  #个性字体（副作用未知）
-0.0.0.0 gxh.material.qq.com  #气泡、头像挂件，误伤夜间模式不能下载
-0.0.0.0 qzonestyle.gtimg.cn #QQ空间装扮
-0.0.0.0 world.qpic.cn  #小世界的图片，视频的封面图。
-0.0.0.0 tianshu.gtimg.cn  #顶部横幅广告图片，误杀签到打卡后的图片
-0.0.0.0 minigame.gtimg.cn  #QQ微信小游戏图标
+0.0.0.0 iv6.gtimg.cn
+0.0.0.0 gxh.material.qq.com
+0.0.0.0 qzonestyle.gtimg.cn
+0.0.0.0 world.qpic.cn
+0.0.0.0 tianshu.gtimg.cn
+0.0.0.0 minigame.gtimg.cn
 # 下载？
 0.0.0.0 c.gj.qq.com
 0.0.0.0 download.sj.qq.com
