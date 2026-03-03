@@ -375,14 +375,12 @@
 0.0.0.0 tangram-config.gdt.qq.com
 0.0.0.0 iv6.gtimg.cn  #个性字体（副作用未知）
 0.0.0.0 gxh.material.qq.com  #气泡、头像挂件，误伤夜间模式不能下载
-#0.0.0.0 downv6.qq.com  #QQ下载安装包，但导致一些网页下载不了东西
 0.0.0.0 qzonestyle.gtimg.cn #QQ空间装扮
 0.0.0.0 world.qpic.cn  #小世界的图片，视频的封面图。
 0.0.0.0 tianshu.gtimg.cn  #顶部横幅广告图片，误杀签到打卡后的图片
 0.0.0.0 minigame.gtimg.cn  #QQ微信小游戏图标
 # 下载？
 0.0.0.0 c.gj.qq.com
-#0.0.0.0 c.pc.qq.com  QQ群链接安全中转页无法直接点开
 0.0.0.0 download.sj.qq.com
 0.0.0.0 t.sj.qq.com
 0.0.0.0 ws.sj.qq.com
@@ -390,11 +388,10 @@
 0.0.0.0 hlmj.broker.tplay.qq.com
 # 隐私相关
 0.0.0.0 wup.imtt.qq.com
-0.0.0.0 huatuo.qq.com  #华佗诊断
+0.0.0.0 huatuo.qq.com
 0.0.0.0 ping.huatuo.qq.com
 0.0.0.0 tpns.tencent.com
 0.0.0.0 stat.tpns.tencent.com
-#0.0.0.0 access1.tpns.tencent.com  #会误杀酷安没有推送。 禁用腾讯推送相关组件也会没推送。
 
 # 微信公众号(只禁③广告位还在只是不显示广告图片&视频)
 0.0.0.0 wxa.wxs.qq.com
@@ -404,8 +401,8 @@
 0.0.0.0 bc.weixin.qq.com
 0.0.0.0 channels.weixin.qq.com
 0.0.0.0 badjs.weixinbridge.com
-0.0.0.0 wximg.wxs.qq.com  #微信小程序开屏和其他广告图片，然而照样会空白屏显示3~5秒，弹窗广告照弹(只是无图)，广告位照样占(只是无图)。误杀暂未发现，看域名应该会有一些。
-0.0.0.0 wxsmw.wxs.qq.com  #微信小程序底下的视频广告，广告位还在，只是能省点流量，不会被视频打扰。误杀未知。
+0.0.0.0 wximg.wxs.qq.com
+0.0.0.0 wxsmw.wxs.qq.com
 0.0.0.0 dns.weixin.qq.com
 0.0.0.0 dns.weixin.qq.com.cn
 0.0.0.0 aedns.weixin.qq.com
@@ -440,8 +437,8 @@
 0.0.0.0 adse.ximalaya.com
 0.0.0.0 adse.wsa.ximalaya.com
 0.0.0.0 adsehera.ximalaya.com
-0.0.0.0 gslbali.ximalaya.com  #播放页视频广告
-0.0.0.0 gslbtx.ximalaya.com  #播放页图片广告
+0.0.0.0 gslbali.ximalaya.com
+0.0.0.0 gslbtx.ximalaya.com
 
 # 蜻蜓FM
 0.0.0.0 ad.qingting.fm
@@ -455,7 +452,7 @@
 
 # 懒人听书 开屏&播放页
 0.0.0.0 display.wting.info
-0.0.0.0 update.duokan.com  #全民小说、多看阅读更新？
+0.0.0.0 update.duokan.com
 
 # 疑似京东金融开屏广告，副作用未测试
 0.0.0.0 kjstorage.360buyimg.com
@@ -610,9 +607,9 @@
 0.0.0.0 ottupdate.api.mgtv.com
 0.0.0.0 ottupdate2.api.mgtv.com
 0.0.0.0 ott.liveapi.mgtv.com
-0.0.0.0 4img.mgtv.com  #退出时弹出的广告
-0.0.0.0 ttupdate2.api.mgtv.com #更新?
-0.0.0.0 ottupdate.api.nunaios.com #更新?
+0.0.0.0 4img.mgtv.com
+0.0.0.0 ttupdate2.api.mgtv.com
+0.0.0.0 ottupdate.api.nunaios.com
 
 # CNTV
 0.0.0.0 a.cctv.com
@@ -623,8 +620,8 @@
 0.0.0.0 cctv.adsunion.com
 
 # 酷喵影视（CIBN优酷）
-0.0.0.0 pl.cp31.ott.cibntv.net  #酷喵(优酷)片头？
-0.0.0.0 vali-ugc.cp31.ott.cibntv.net  #淘票票详情页上方的简介视频无法播放
+0.0.0.0 pl.cp31.ott.cibntv.net
+0.0.0.0 vali-ugc.cp31.ott.cibntv.net
 0.0.0.0 api.adv.ott.cibntv.net
 0.0.0.0 openstorage.ad.cmvideo.cn
 0.0.0.0 ipm.atm.cp31.ott.cibntv.net
@@ -643,13 +640,13 @@
 0.0.0.0 heyi-acs.cp31.ott.cibntv.net
 0.0.0.0 ott.cibntv.net
 0.0.0.0 pis-pcdn.youku.com
-0.0.0.0 appupgrade.alicdn.com #更新？
-0.0.0.0 appupgrade.cp12.ott.cibntv.net #更新？
-0.0.0.0 valipl.cp31.ott.cibntv.net  #片头？
+0.0.0.0 appupgrade.alicdn.com
+0.0.0.0 appupgrade.cp12.ott.cibntv.net
+0.0.0.0 valipl.cp31.ott.cibntv.net
 0.0.0.0 yk-ssp-ad.cp31.ott.cibntv.net
 
 # 云视听极光(腾讯视频电视端)
-0.0.0.0 sv-video.play.aiseet.atianqi.com  #云视听极光（腾讯视频TV版）片头广告，V15.9发现已失效。
+0.0.0.0 sv-video.play.aiseet.atianqi.com
 0.0.0.0 andrqd.play.aiseet.atianqi.com
 0.0.0.0 otheve.play.aiseet.atianqi.com
 0.0.0.0 othstr.play.aiseet.atianqi.com
@@ -675,11 +672,7 @@
 0.0.0.0 data.video.ptqy.gitv.tv
 0.0.0.0 msg.ptqy.gitv.tv
 0.0.0.0 api.poll.aiseet.atianqi.com
-0.0.0.0 upgrade.ptmi.gitv.tv  #小米电视升级
-#0.0.0.0 t2.market.mi-img.com
-#0.0.0.0 t1.market.mi-img.com
-#0.0.0.0 t1.a.market.xiaomi.com
-#0.0.0.0 t2.a.market.xiaomi.com
+0.0.0.0 upgrade.ptmi.gitv.tv
 
 # 央视系广告
 0.0.0.0 res.ads.cctv.com
