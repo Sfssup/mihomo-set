@@ -332,9 +332,6 @@
 0.0.0.0 afdconf.baidu.com
 0.0.0.0 httpdns.baidubce.com
 0.0.0.0 ugc.map.baidu.com
-# 主界面左上角贴图，会误伤公交&我的 部分图标以及其他角落的营销图。
-0.0.0.0 map-mobile-opnimg.cdn.bcebos.com
-# 百度地图底栏_出行上滑出现的推荐的内容和点搜索框进去后的广告。
 0.0.0.0 pms-cdn.bdstatic.com
 0.0.0.0 aiad-aisuda.cdn.bcebos.com
 
@@ -361,31 +358,7 @@
 0.0.0.0 amap-aos-info-nogw.amap.com
 0.0.0.0 optimus-ads-ykx.amap.com
 
-# 滴滴（①开屏广告会误伤主页一些图标的图）
-0.0.0.0 img-ys011.didistatic.com
-0.0.0.0 adtrack.xiaojukeji.com
-0.0.0.0 s3-hnapuhdd-cdn.didistatic.com
-
-# QQ
-0.0.0.0 ca.gtimg.com
-0.0.0.0 q.i.gdt.qq.com
-0.0.0.0 c.gdt.qq.com
-0.0.0.0 updatecenter.qq.com
-0.0.0.0 tangram-config.gdt.qq.com
-0.0.0.0 iv6.gtimg.cn
-0.0.0.0 gxh.material.qq.com
-0.0.0.0 qzonestyle.gtimg.cn
-0.0.0.0 world.qpic.cn
-0.0.0.0 tianshu.gtimg.cn
-0.0.0.0 minigame.gtimg.cn
-# 下载？
-0.0.0.0 c.gj.qq.com
-0.0.0.0 download.sj.qq.com
-0.0.0.0 t.sj.qq.com
-0.0.0.0 ws.sj.qq.com
-# 欢乐麻将弹窗广告。
-0.0.0.0 hlmj.broker.tplay.qq.com
-# 隐私相关
+# QQ隐私相关
 0.0.0.0 wup.imtt.qq.com
 0.0.0.0 huatuo.qq.com
 0.0.0.0 ping.huatuo.qq.com
@@ -521,11 +494,6 @@
 0.0.0.0 docerad.wps.cn
 0.0.0.0 update.thread0.com
 
-# 蓝奏云分享页上的部分广告
-0.0.0.0 glores2.taisantech.com
-0.0.0.0 sanme2.taisantech.com
-0.0.0.0 www.ordedr.com
-
 # 货拉拉
 0.0.0.0 ads-log.huolala.cn
 0.0.0.0 www-ads.huolala.co
@@ -533,67 +501,6 @@
 # 哈啰开屏广告
 0.0.0.0 admaster-public.51downapp.cn
 0.0.0.0 g.fancyapi.com
-
-# 京东广告
-0.0.0.0 dg.k.jd.com
-0.0.0.0 janapi.jd.com
-0.0.0.0 mapi.m.jd.com
-0.0.0.0 img.360buyimg.com
-0.0.0.0 img1.360buyimg.com
-0.0.0.0 img2.360buyimg.com
-0.0.0.0 img3.360buyimg.com
-0.0.0.0 ads-union.jd.com
-0.0.0.0 ads.union.jd.com
-0.0.0.0 bdsp.x.jd.com
-0.0.0.0 blackhole.m.jd.com
-0.0.0.0 c-nfa.jd.com
-0.0.0.0 c.fa.jd.com
-0.0.0.0 cc.m.jd.com
-0.0.0.0 ccc.x.jd.com
-0.0.0.0 cm.jd.com
-0.0.0.0 dgstatic.jd.com
-0.0.0.0 dsp-x.jd.com
-0.0.0.0 du.jd.com
-0.0.0.0 firevent.jd.com
-# 礼品卡？也能打开啊
-0.0.0.0 gia.jd.com
-0.0.0.0 im-x.jd.com
-0.0.0.0 img-x.jd.com
-0.0.0.0 jcm.jd.com
-0.0.0.0 jd-mail.co.uk
-0.0.0.0 jd.btmeifeng.cn
-0.0.0.0 jd.c-ptsp.com.cn
-0.0.0.0 jd.com.pesbbw.cn
-0.0.0.0 jd.jxmzyg.com
-0.0.0.0 jd.revolvermaps.com
-0.0.0.0 jd.sundxs.com
-0.0.0.0 jd.wxnmvwb.cn
-0.0.0.0 jd.zxsmxt.com
-0.0.0.0 jrad.jd.com
-0.0.0.0 jrclick.jd.com
-0.0.0.0 jzt.jd.com
-0.0.0.0 kepler.jd.com
-0.0.0.0 knicks.jd.com
-0.0.0.0 m.jd.watbc.top
-0.0.0.0 m.jd.watbe.top
-0.0.0.0 mars.jd.com
-0.0.0.0 mercury.jd.com
-0.0.0.0 orbit.jd.com
-0.0.0.0 pic.jd-bbs.com
-0.0.0.0 policy.jd.com
-0.0.0.0 skdisplay.jd.com
-0.0.0.0 stat.m.jd.com
-0.0.0.0 u-x.jd.com
-0.0.0.0 u.x.jd.com
-0.0.0.0 union.m.jd.com
-0.0.0.0 wl.jd.com
-0.0.0.0 wn.x.jd.com
-0.0.0.0 www.jd-mail.co.uk
-0.0.0.0 x.jd.com
-0.0.0.0 xlog.jd.com
-0.0.0.0 zt.jd.com
-0.0.0.0 dns.jd.com
-0.0.0.0 smartopen.jd.com
 
 # 三星
 0.0.0.0 insights.samsung.com
