@@ -314,7 +314,7 @@
 # 车来了推荐
 0.0.0.0 cdn.web.chelaile.net.cn
 
-# 隐私分析上报
+# 百度隐私分析上报
 0.0.0.0 crab.baidu.com
 0.0.0.0 dxp.baidu.com
 0.0.0.0 hm.baidu.com
