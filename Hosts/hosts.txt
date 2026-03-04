@@ -172,7 +172,7 @@
 0.0.0.0 qrcdn.quickapp.cn
 0.0.0.0 statres.quickapp.cn
 0.0.0.0 cnbj1.fds.api.xiaomi.co
-0.0.0.0 api.jr.mi.com  #小米钱包净化
+0.0.0.0 api.jr.mi.com
 0.0.0.0 sug.browser.miui.com
 0.0.0.0 api.comm.miui.com
 0.0.0.0 wtradv.market.xiaomi.com
@@ -348,7 +348,7 @@
 0.0.0.0 update.pan.baidu.com
 0.0.0.0 update.pan.n.shifen.com
 
-# 高德地图(①开屏②③横幅和通知中心？№④№ 测试⑤play版15.0返场开屏广告⑥⑦№)
+# 高德地图
 0.0.0.0 optimus-ads.amap.com
 0.0.0.0 store.is.autonavi.com
 # 误杀顺风车主接不到单
@@ -365,7 +365,7 @@
 0.0.0.0 tpns.tencent.com
 0.0.0.0 stat.tpns.tencent.com
 
-# 微信公众号(只禁③广告位还在只是不显示广告图片&视频)
+# 微信公众号
 0.0.0.0 wxa.wxs.qq.com
 0.0.0.0 wxsnsdy.wxs.qq.com
 0.0.0.0 wxsnsdythumb.wxs.qq.com
@@ -386,7 +386,7 @@
 0.0.0.0 mi.gdt.qq.com
 0.0.0.0 ii.gdt.qq.com
 
-# 酷我音乐（去开屏广告①②缺一不可，①会误伤主页的主banner轮播图，③是主页插入的广告如拼多多广告）
+# 酷我音乐
 0.0.0.0 kwimg3.kuwo.cn
 0.0.0.0 httpdns.kg.qq.com
 0.0.0.0 tmeadcomm.y.qq.com
