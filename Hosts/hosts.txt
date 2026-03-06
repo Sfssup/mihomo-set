@@ -490,8 +490,33 @@
 0.0.0.0 display.wting.info
 0.0.0.0 update.duokan.com
 
-# 疑似京东金融开屏广告，副作用未测试
-0.0.0.0 kjstorage.360buyimg.com
+# 京东开屏广告
+0.0.0.0 adservice.jd.com
+0.0.0.0 ads.jd.com
+0.0.0.0 adsmind.jd.com
+0.0.0.0 stat.m.jd.com
+0.0.0.0 policy.jd.com
+0.0.0.0 jrad.jd.com
+0.0.0.0 imgad0.jd.com
+0.0.0.0 imgad1.jd.com
+0.0.0.0 imgad2.jd.com
+0.0.0.0 imgad3.jd.com
+0.0.0.0 imgad4.jd.com
+0.0.0.0 adimg.jd.com
+
+# 京东广告统计
+0.0.0.0 stat.m.jd.com
+0.0.0.0 stat.jd.com
+0.0.0.0 counter.jd.com
+
+# 京东联盟广告
+0.0.0.0 union.jd.com
+0.0.0.0 cpc.jd.com
+
+# 第三方广告（京东常用）
+0.0.0.0 ad.doubleclick.net
+0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 pagead2.googlesyndication.com
 
 # 美团开屏
 0.0.0.0 flowplus.meituan.net
