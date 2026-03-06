@@ -99,9 +99,12 @@
 # 小米广告
 0.0.0.0 ad.mi.com
 0.0.0.0 ad.xiaomi.com
+0.0.0.0 api.ad.xiaomi.com
+0.0.0.0 tracking.ad.xiaomi.com
+0.0.0.0 sdkconfig.ad.xiaomi.com
+
 0.0.0.0 ad1.xiaomi.com
 0.0.0.0 a.stat.xiaomi.com
-0.0.0.0 api.ad.xiaomi.com
 0.0.0.0 cdn.ad.xiaomi.com
 0.0.0.0 diagnosis.ad.xiaomi.com
 0.0.0.0 e.ad.xiaomi.com
@@ -118,7 +121,6 @@
 0.0.0.0 mjp-analytics.ximad.com
 0.0.0.0 opt.ximad.com
 0.0.0.0 new.api.ad.xiaomi.com
-0.0.0.0 sdkconfig.ad.xiaomi.com
 0.0.0.0 test.ad.xiaomi.com
 0.0.0.0 test.e.ad.xiaomi.com
 0.0.0.0 test.new.api.ad.xiaomi.com
