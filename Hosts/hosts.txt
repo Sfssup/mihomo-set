@@ -123,14 +123,12 @@
 0.0.0.0 test.e.ad.xiaomi.com
 0.0.0.0 test.new.api.ad.xiaomi.com
 0.0.0.0 adinfo.ra1.xlmc.sec.miui.com
-0.0.0.0 tracking.miui.com
 0.0.0.0 om.tracking.miui.com
 0.0.0.0 analytics.miui.com
 0.0.0.0 analytics.db.miui.com
 # MIUI
 0.0.0.0 ixav-cse.avlyun.com
 0.0.0.0 sdkconf.avlyun.com
-0.0.0.0 tracking.intl.miui.com
 0.0.0.0 tracking.rus.miui.com
 0.0.0.0 tracking.india.miui.com
 0.0.0.0 trial.open.mp.huangye.miui.com
@@ -154,6 +152,9 @@
 # 数据上报
 0.0.0.0 data.mistat.xiaomi.com
 0.0.0.0 data.mistat.intl.xiaomi.com
+# 行为统计
+0.0.0.0 tracking.miui.com
+0.0.0.0 tracking.intl.miui.com
 # 小米云扫描组件
 0.0.0.0 log.avlyun.sec.intl.miui.com
 0.0.0.0 update.avlyun.sec.miui.com
