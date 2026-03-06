@@ -151,6 +151,9 @@
 # 安全相关，下载完文件触发
 0.0.0.0 data.sec.miui.com
 0.0.0.0 api.tw06.xlmc.sec.miui.com
+# 数据上报
+0.0.0.0 data.mistat.xiaomi.com
+0.0.0.0 data.mistat.intl.xiaomi.com
 # 小米云扫描组件
 0.0.0.0 log.avlyun.sec.intl.miui.com
 0.0.0.0 update.avlyun.sec.miui.com
@@ -204,7 +207,6 @@
 0.0.0.0 conf.hpplay.cn
 0.0.0.0 config.kuyun.com
 0.0.0.0 d1.xiaomi.com
-0.0.0.0 data.mistat.xiaomi.com
 0.0.0.0 de.pandora.xiaomi.com
 0.0.0.0 devicemgr.hpplay.cn
 0.0.0.0 dvb.pandora.xiaomi.com
