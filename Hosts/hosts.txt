@@ -350,27 +350,6 @@
 0.0.0.0 upgrade.xl9.xunlei.com
 0.0.0.0 etl-xlmc-ssl.sandai.net
 
-# OPPO
-0.0.0.0 adx.ads.oppomobile.com
-0.0.0.0 bdapi.ads.oppomobile.com
-0.0.0.0 data.ads.oppomobile.com
-0.0.0.0 data-id.ads.oppomobile.com
-0.0.0.0 adsfs.oppomobile.com
-
-# OV真我Realme一加
-0.0.0.0 ads.heytapmobi.com
-0.0.0.0 adx.ads.heytapmobi.com
-0.0.0.0 adsfs.heytapimage.com
-0.0.0.0 adsfs-sdkconfig.heytapimage.com
-0.0.0.0 mdp-usertrace-cn.heytapmobi.com
-0.0.0.0 uapi.ads.heytapmobi.com
-0.0.0.0 b1-data.ads.heytapmobi.com
-0.0.0.0 b2-data.ads.heytapmobi.com
-0.0.0.0 stg-data.ads.heytapmobi.com
-0.0.0.0 sms.ads.heytapmobi.com
-0.0.0.0 icosa.coloros.com
-0.0.0.0 ibrowser.feeds.heytapmobi.com
-
 # 酷安
 0.0.0.0 api.coolapk.com
 0.0.0.0 api2.coolapk.com
@@ -399,11 +378,32 @@
 0.0.0.0 pms-cdn.bdstatic.com
 0.0.0.0 aiad-aisuda.cdn.bcebos.com
 
-# 百度输入法上传你输入了什么，副作用云联想词加载不出来。
+# ===============================
+# 百度输入法 广告
+0.0.0.0 adinput.baidu.com
+0.0.0.0 adinputapi.baidu.com
+0.0.0.0 adsinput.baidu.com
+# 百度输入法 统计 / 行为分析
+0.0.0.0 inputlog.baidu.com
+0.0.0.0 inputdata.baidu.com
+0.0.0.0 input-stat.baidu.com
+# 百度输入法 数据上报 / 遥测
+0.0.0.0 log.input.baidu.com
+0.0.0.0 report.input.baidu.com
+0.0.0.0 telemetry.input.baidu.com
+# 百度输入法 推荐 / 内容推送
+0.0.0.0 rec.input.baidu.com
+0.0.0.0 recommend.input.baidu.com
+0.0.0.0 feed.input.baidu.com
 0.0.0.0 udpolimenew.baidu.com
 0.0.0.0 udpolimeok.baidu.com
 0.0.0.0 upl.baidu.com
 0.0.0.0 ads.uutest.cn
+# 百度输入法 SDK / 广告平台
+0.0.0.0 mobads.baidu.com
+0.0.0.0 mobads-logs.baidu.com
+0.0.0.0 union.baidu.com
+# ===============================
 
 # 百度网盘（①是开屏广告②网页分享页上半部分的广告图片）
 0.0.0.0 dss0.bdstatic.com
@@ -591,9 +591,254 @@
 0.0.0.0 admaster-public.51downapp.cn
 0.0.0.0 g.fancyapi.com
 
-# 三星
-0.0.0.0 insights.samsung.com
-0.0.0.0 ad.samsungadhub.com
+# ===============================
+# TikTok 广告 / 统计 / 追踪
+# ===============================
+0.0.0.0 analytics.tiktok.com
+0.0.0.0 ads.tiktok.com
+0.0.0.0 business-api.tiktok.com
+0.0.0.0 log.tiktokv.com
+0.0.0.0 analytics.tiktokv.com
+0.0.0.0 ads.tiktokv.com
+0.0.0.0 analytics16-normal-c-useast1a.tiktokv.com
+0.0.0.0 analytics16-normal-c-useast2a.tiktokv.com
+0.0.0.0 analytics16-normal-c-useast1a.tiktokv.com
+
+# ===============================
+# TikTok SDK / ByteDance 追踪
+# ===============================
+0.0.0.0 log.byteoversea.com
+0.0.0.0 analytics.byteoversea.com
+0.0.0.0 ads.byteoversea.com
+0.0.0.0 tracking.byteoversea.com
+0.0.0.0 mon.byteoversea.com
+
+# ===============================
+# 抖音 广告 / 统计
+# ===============================
+0.0.0.0 analytics.snssdk.com
+0.0.0.0 log.snssdk.com
+0.0.0.0 ads.snssdk.com
+0.0.0.0 ad.snssdk.com
+0.0.0.0 track.snssdk.com
+
+# ===============================
+# 抖音 / 字节跳动 统计平台
+# ===============================
+0.0.0.0 mon.snssdk.com
+0.0.0.0 apm.snssdk.com
+0.0.0.0 apmplus.snssdk.com
+0.0.0.0 log.snssdk.com
+0.0.0.0 data.bytedance.net
+
+# ===============================
+# 穿山甲广告 (ByteDance Ads)
+# ===============================
+0.0.0.0 pangolin-sdk-toutiao.com
+0.0.0.0 pangolin.snssdk.com
+0.0.0.0 ad.toutiao.com
+0.0.0.0 adshare.toutiao.com
+0.0.0.0 dsp.toutiao.com
+
+# ===============================
+# 汽水音乐 广告 / 统计
+# ===============================
+0.0.0.0 music.snssdk.com
+0.0.0.0 analytics.music.snssdk.com
+0.0.0.0 log.music.snssdk.com
+
+# ===============================
+# 字节跳动 归因 / SDK
+# ===============================
+0.0.0.0 tnc3-aliec2.snssdk.com
+0.0.0.0 tnc3-bjlgy.snssdk.com
+0.0.0.0 tnc3-alisc1.snssdk.com
+0.0.0.0 tnc16-alisg.snssdk.com
+0.0.0.0 tnc16-useast1a.snssdk.com
+
+# ===============================
+# 字节跳动广告 / 推荐系统
+# ===============================
+0.0.0.0 recommendation.snssdk.com
+0.0.0.0 feed.snssdk.com
+0.0.0.0 i.snssdk.com
+0.0.0.0 is.snssdk.com
+
+# ===============================
+# OPPO 广告 / 统计 / 上报
+# ===============================
+0.0.0.0 adsfs.oppomobile.com
+0.0.0.0 ad.oppomobile.com
+0.0.0.0 adx.ads.oppomobile.com
+0.0.0.0 conf.ads.oppomobile.com
+0.0.0.0 data.ads.oppomobile.com
+0.0.0.0 adlog.oppomobile.com
+0.0.0.0 ck.ads.oppomobile.com
+0.0.0.0 analytics.oppo.com
+0.0.0.0 analytics.oppomobile.com
+0.0.0.0 log.oppomobile.com
+0.0.0.0 report.oppomobile.com
+0.0.0.0 datareport.oppomobile.com
+0.0.0.0 tracking.oppomobile.com
+0.0.0.0 storeconfig.oppomobile.com
+0.0.0.0 store.oppomobile.com
+0.0.0.0 ads.store.oppomobile.com
+
+0.0.0.0 adx.ads.oppomobile.com
+0.0.0.0 bdapi.ads.oppomobile.com
+0.0.0.0 data.ads.oppomobile.com
+0.0.0.0 data-id.ads.oppomobile.com
+0.0.0.0 adsfs.oppomobile.com
+# OV真我Realme一加
+0.0.0.0 ads.heytapmobi.com
+0.0.0.0 adx.ads.heytapmobi.com
+0.0.0.0 adsfs.heytapimage.com
+0.0.0.0 adsfs-sdkconfig.heytapimage.com
+0.0.0.0 mdp-usertrace-cn.heytapmobi.com
+0.0.0.0 uapi.ads.heytapmobi.com
+0.0.0.0 b1-data.ads.heytapmobi.com
+0.0.0.0 b2-data.ads.heytapmobi.com
+0.0.0.0 stg-data.ads.heytapmobi.com
+0.0.0.0 sms.ads.heytapmobi.com
+0.0.0.0 icosa.coloros.com
+0.0.0.0 ibrowser.feeds.heytapmobi.com
+# ===============================
+# Apple 广告 / 统计 / 遥测
+# ===============================
+0.0.0.0 iad.apple.com
+0.0.0.0 iadcontent.apple.com
+0.0.0.0 iadworkbench.apple.com
+0.0.0.0 iadct.apple.com
+0.0.0.0 iadsdk.apple.com
+0.0.0.0 ads.apple.com
+0.0.0.0 advertising.apple.com
+0.0.0.0 api-adservices.apple.com
+0.0.0.0 analytics.apple.com
+0.0.0.0 analytics-events.apple.com
+0.0.0.0 metrics.apple.com
+0.0.0.0 metrics.icloud.com
+0.0.0.0 stats.gc.apple.com
+0.0.0.0 xp.apple.com
+0.0.0.0 xp.itunes.apple.com
+0.0.0.0 configuration.apple.com
+0.0.0.0 gsp10-ssl.ls.apple.com
+0.0.0.0 gsp-ssl.ls.apple.com
+0.0.0.0 gsp64-ssl.ls.apple.com
+0.0.0.0 api.smoot.apple.com
+0.0.0.0 smoot.apple.com
+
+# ===============================
+# Samsung 广告 / 统计 / 遥测
+# ===============================
+0.0.0.0 ads.samsung.com
 0.0.0.0 samsungads.com
-0.0.0.0 ads.samsungads.com
 0.0.0.0 config.samsungads.com
+0.0.0.0 log-config.samsungads.com
+0.0.0.0 events.samsungads.com
+0.0.0.0 ads.samsungadhub.com
+0.0.0.0 ad.samsungadhub.com
+0.0.0.0 tracking.samsung.com
+0.0.0.0 analytics.samsungknox.com
+0.0.0.0 metrics.samsung.com
+0.0.0.0 log.samsung.com
+0.0.0.0 dc.di.atlas.samsung.com
+0.0.0.0 diagmon-service.samsungdm.com
+0.0.0.0 diagmon-serviceapi.samsungdm.com
+0.0.0.0 samsung-com.112.2o7.net
+0.0.0.0 ads.galaxy.store
+0.0.0.0 metrics.galaxy.store
+0.0.0.0 notice.samsungcloud.com
+
+# ===============================
+# Microsoft 广告 / Windows 遥测
+# ===============================
+0.0.0.0 ads.msn.com
+0.0.0.0 ads1.msn.com
+0.0.0.0 ads2.msn.com
+0.0.0.0 adnxs.com
+0.0.0.0 ib.adnxs.com
+0.0.0.0 bingads.microsoft.com
+0.0.0.0 vortex.data.microsoft.com
+0.0.0.0 settings-win.data.microsoft.com
+0.0.0.0 telemetry.microsoft.com
+0.0.0.0 telecommand.telemetry.microsoft.com
+0.0.0.0 watson.telemetry.microsoft.com
+0.0.0.0 sqm.telemetry.microsoft.com
+0.0.0.0 sqm.df.telemetry.microsoft.com
+0.0.0.0 reports.wes.df.telemetry.microsoft.com
+0.0.0.0 oca.telemetry.microsoft.com
+0.0.0.0 choice.microsoft.com
+0.0.0.0 choice.microsoft.com.nsatc.net
+0.0.0.0 adssettings.microsoft.com
+0.0.0.0 arc.msn.com
+0.0.0.0 assets.msn.com
+0.0.0.0 ntp.msn.com
+0.0.0.0 browser.events.data.msn.com
+0.0.0.0 analytics.bing.com
+0.0.0.0 bat.bing.com
+
+# ===============================
+# Microsoft Edge / Bing 广告与推荐
+# ===============================
+0.0.0.0 c.bing.com
+0.0.0.0 adnexus.net
+0.0.0.0 ntp.msn.cn
+0.0.0.0 static.msn.com
+0.0.0.0 img-s-msn-com.akamaized.net
+0.0.0.0 api.msn.com
+0.0.0.0 feedapi.msn.com
+0.0.0.0 ntp-edge.microsoft.com
+0.0.0.0 browser.events.data.microsoft.com
+0.0.0.0 self.events.data.microsoft.com
+0.0.0.0 v10.events.data.microsoft.com
+0.0.0.0 browser.pipe.aria.microsoft.com
+0.0.0.0 bing.com.fdgdns.microsoft.com
+0.0.0.0 spynet2.microsoft.com
+0.0.0.0 spynetalt.microsoft.com
+0.0.0.0 a.ads1.msn.com
+0.0.0.0 a.ads2.msn.com
+0.0.0.0 a.ads1.msads.net
+0.0.0.0 a.ads2.msads.net
+0.0.0.0 ac3.msn.com
+0.0.0.0 ac2.msn.com
+0.0.0.0 config.edge.skype.com
+0.0.0.0 edge.microsoft.com
+0.0.0.0 experimentation.microsoft.com
+0.0.0.0 notifications.windows.com
+0.0.0.0 wn.edge.microsoft.com
+0.0.0.0 copilot.microsoft.com
+0.0.0.0 sydney.bing.com
+0.0.0.0 edgeservices.bing.com
+
+# ===============================
+# Google 广告 / 统计 / 追踪
+# ===============================
+0.0.0.0 ad.doubleclick.net
+0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 pagead2.googlesyndication.com
+0.0.0.0 partnerad.l.doubleclick.net
+0.0.0.0 www.google-analytics.com
+0.0.0.0 ssl.google-analytics.com
+0.0.0.0 stats.g.doubleclick.net
+0.0.0.0 adservice.google.com
+0.0.0.0 adservice.google.com.hk
+0.0.0.0 adservice.google.com.cn
+
+# ===============================
+# Facebook / Meta 追踪
+# ===============================
+0.0.0.0 connect.facebook.net
+0.0.0.0 graph.facebook.com
+0.0.0.0 pixel.facebook.com
+0.0.0.0 analytics.facebook.com
+
+# ===============================
+# 国内统计 / 广告归因平台
+# ===============================
+0.0.0.0 alog.umeng.com
+0.0.0.0 app.appsflyer.com
+0.0.0.0 t.appsflyer.com
+0.0.0.0 app.adjust.com
+0.0.0.0 tracking.adjust.com
+0.0.0.0 log.byteoversea.com
+0.0.0.0 analytics.snssdk.com
