@@ -429,7 +429,12 @@
 0.0.0.0 tpns.tencent.com
 0.0.0.0 stat.tpns.tencent.com
 
-# 微信公众号
+# ===============================
+# 微信广告
+0.0.0.0 ad.weixin.qq.com
+0.0.0.0 ads.weixin.qq.com
+0.0.0.0 adstats.weixin.qq.com
+0.0.0.0 adimg.weixin.qq.com
 0.0.0.0 wxa.wxs.qq.com
 0.0.0.0 wxsnsdy.wxs.qq.com
 0.0.0.0 wxsnsdythumb.wxs.qq.com
@@ -439,16 +444,33 @@
 0.0.0.0 badjs.weixinbridge.com
 0.0.0.0 wximg.wxs.qq.com
 0.0.0.0 wxsmw.wxs.qq.com
-0.0.0.0 dns.weixin.qq.com
-0.0.0.0 dns.weixin.qq.com.cn
 0.0.0.0 aedns.weixin.qq.com
 0.0.0.0 dnstest.weixin.qq.com
-
-# 下列会影响奖励形式的广告(小程序\小游戏等)
 0.0.0.0 is.snssdk.com
 0.0.0.0 gw.365you.com
 0.0.0.0 mi.gdt.qq.com
 0.0.0.0 ii.gdt.qq.com
+0.0.0.0 adlog.weixin.qq.com
+0.0.0.0 adreport.weixin.qq.com
+0.0.0.0 adanalytics.weixin.qq.com
+0.0.0.0 rec.weixin.qq.com
+0.0.0.0 recommend.weixin.qq.com
+0.0.0.0 feed.weixin.qq.com
+0.0.0.0 log.weixin.qq.com
+0.0.0.0 report.weixin.qq.com
+0.0.0.0 analytics.weixin.qq.com
+0.0.0.0 telemetry.weixin.qq.com
+0.0.0.0 trace.weixin.qq.com
+0.0.0.0 ad.qq.com
+0.0.0.0 adsmind.qq.com
+0.0.0.0 adsmind.gdtimg.com
+0.0.0.0 pgdt.gtimg.cn
+0.0.0.0 pgdt.ugdtimg.com
+0.0.0.0 gdt.qq.com
+0.0.0.0 tencentlog.com
+0.0.0.0 log.tbs.qq.com
+0.0.0.0 report.qq.com
+# ===============================
 
 # 酷我音乐
 0.0.0.0 kwimg3.kuwo.cn
