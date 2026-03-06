@@ -96,15 +96,18 @@
 # 哔哩漫游X服务器
 0.0.0.0 black.qimo.ink
 
-# 小米广告
+# ===============================
+# Xiaomi Ads（MIUI 广告服务器）
+# ===============================
 0.0.0.0 ad.mi.com
 0.0.0.0 ad.xiaomi.com
 0.0.0.0 api.ad.xiaomi.com
+0.0.0.0 new.api.ad.xiaomi.com
 0.0.0.0 tracking.ad.xiaomi.com
 0.0.0.0 sdkconfig.ad.xiaomi.com
+0.0.0.0 ssp.ad.xiaomi.com
 
 0.0.0.0 ad1.xiaomi.com
-0.0.0.0 a.stat.xiaomi.com
 0.0.0.0 cdn.ad.xiaomi.com
 0.0.0.0 diagnosis.ad.xiaomi.com
 0.0.0.0 e.ad.xiaomi.com
@@ -112,186 +115,240 @@
 0.0.0.0 track.ad.xiaomi.com
 0.0.0.0 m.track.ad.xiaomi.com
 0.0.0.0 zeus.ad.xiaomi.com
+
 0.0.0.0 sdkconfig.ad.india.xiaomi.com
+0.0.0.0 sdkconfig.ad.intl.xiaomi.com
 0.0.0.0 api.ad.intl.xiaomi.com
 0.0.0.0 diagnosis.ad.intl.xiaomi.com
-0.0.0.0 sdkconfig.ad.intl.xiaomi.com
 0.0.0.0 zeus.ad.intl.xiaomi.com
-0.0.0.0 ximad.com
-0.0.0.0 mjp-analytics.ximad.com
-0.0.0.0 opt.ximad.com
-0.0.0.0 new.api.ad.xiaomi.com
+
 0.0.0.0 test.ad.xiaomi.com
 0.0.0.0 test.e.ad.xiaomi.com
 0.0.0.0 test.new.api.ad.xiaomi.com
-0.0.0.0 adinfo.ra1.xlmc.sec.miui.com
-0.0.0.0 om.tracking.miui.com
+
+0.0.0.0 ximad.com
+0.0.0.0 mjp-analytics.ximad.com
+0.0.0.0 opt.ximad.com
+
+# ===============================
+# Xiaomi Analytics（统计 / 行为上报）
+# ===============================
+0.0.0.0 a.stat.xiaomi.com
 0.0.0.0 analytics.miui.com
 0.0.0.0 analytics.db.miui.com
-# MIUI
-0.0.0.0 ixav-cse.avlyun.com
-0.0.0.0 sdkconf.avlyun.com
+
+0.0.0.0 data.mistat.xiaomi.com
+0.0.0.0 data.mistat.intl.xiaomi.com
+
+0.0.0.0 tracking.miui.com
+0.0.0.0 tracking.intl.miui.com
 0.0.0.0 tracking.rus.miui.com
 0.0.0.0 tracking.india.miui.com
-0.0.0.0 trial.open.mp.huangye.miui.com
-0.0.0.0 sa.api.intl.miui.com
+
+0.0.0.0 om.tracking.miui.com
+0.0.0.0 mitv.tracking.miui.com
 0.0.0.0 fcanr.tracking.miui.com
-# 系统应用更新弹窗，比如下载管理、相册
-0.0.0.0 api.developer.xiaomi.com
-# 软件安装验证相关
-0.0.0.0 api.installer.xiaomi.com
-0.0.0.0 api-installer.pt.xiaomi.com
-0.0.0.0 preview-api.installer.xiaomi.com
-0.0.0.0 test-api-installer.pt.xiaomi.com
-# 安全相关，每次装完APP都会连，可能有上报
+
+# ===============================
+# MIUI 安全 / 安装验证 / 病毒扫描
+# ===============================
 0.0.0.0 adv.sec.miui.com
 0.0.0.0 api.sec.miui.com
 0.0.0.0 auth.be.sec.miui.com
 0.0.0.0 flash.sec.miui.com
-# 安全相关，下载完文件触发
+
 0.0.0.0 data.sec.miui.com
+0.0.0.0 staging.sec.miui.com
+
 0.0.0.0 api.tw06.xlmc.sec.miui.com
-# 数据上报
-0.0.0.0 data.mistat.xiaomi.com
-0.0.0.0 data.mistat.intl.xiaomi.com
-# 行为统计
-0.0.0.0 tracking.miui.com
-0.0.0.0 tracking.intl.miui.com
-# 小米云扫描组件
+0.0.0.0 adinfo.ra1.xlmc.sec.miui.com
+
+# 腾讯安全 SDK
+0.0.0.0 tmfsdk.m.qq.com
+
+# ===============================
+# MIUI 云扫描组件（Avlyun）
+# ===============================
+0.0.0.0 ixav-cse.avlyun.com
+0.0.0.0 sdkconf.avlyun.com
+0.0.0.0 miui-fxcse.avlyun.com
+0.0.0.0 miav-cse.avlyun.com
+
 0.0.0.0 log.avlyun.sec.intl.miui.com
 0.0.0.0 update.avlyun.sec.miui.com
 0.0.0.0 logupdate.avlyun.sec.miui.com
-0.0.0.0 miui-fxcse.avlyun.com
-0.0.0.0 miav-cse.avlyun.com
-# 禁用后将无法云扫描病毒
-0.0.0.0 etl-xlmc-ssl.sandai.net
-0.0.0.0 cn.app.chat.xiaomi.net
-# 病毒扫描
-0.0.0.0 staging.sec.miui.com
-0.0.0.0 a0.app.xiaomi.com
-# 腾讯安天
-0.0.0.0 tmfsdk.m.qq.com
-# 系统更新
+
+# ===============================
+# MIUI 系统更新
+# ===============================
 0.0.0.0 update.miui.com
 0.0.0.0 hugeota.d.miui.com
 0.0.0.0 bigota.d.miui.com
+
+# ===============================
+# 应用安装验证
+# ===============================
+0.0.0.0 api.installer.xiaomi.com
+0.0.0.0 api-installer.pt.xiaomi.com
+0.0.0.0 preview-api.installer.xiaomi.com
+0.0.0.0 test-api-installer.pt.xiaomi.com
+
+# ===============================
+# MIUI 云服务 / 系统服务
+# ===============================
+0.0.0.0 api.developer.xiaomi.com
+0.0.0.0 api.comm.miui.com
+0.0.0.0 cn.app.chat.xiaomi.net
+0.0.0.0 metok.sys.miui.com
+0.0.0.0 a0.app.xiaomi.com
+0.0.0.0 o2o.api.xiaomi.com
+0.0.0.0 staging.ai.api.xiaomi.com
+0.0.0.0 api.jr.mi.com
+
+# ===============================
+# MIUI 浏览器 / 推荐
+# ===============================
+0.0.0.0 sug.browser.miui.com
+0.0.0.0 r.browser.miui.com
+
+# ===============================
 # 快应用
+# ===============================
 0.0.0.0 qr.quickapp.cn
 0.0.0.0 qrcdn.quickapp.cn
 0.0.0.0 statres.quickapp.cn
-0.0.0.0 cnbj1.fds.api.xiaomi.co
-0.0.0.0 api.jr.mi.com
-0.0.0.0 sug.browser.miui.com
-0.0.0.0 api.comm.miui.com
-0.0.0.0 wtradv.market.xiaomi.com
-# 小米电视
-0.0.0.0 519332da.rtc.youme.im
-0.0.0.0 ad.doubleclick.net
-0.0.0.0 ad.hpplay.cn
-0.0.0.0 adc.hpplay.cn
-0.0.0.0 adcdn.hpplay.cn
-0.0.0.0 adeng.hpplay.cn
-0.0.0.0 admaster.com.cn
-0.0.0.0 alert.kuyun.com
-0.0.0.0 alog.umeng.com
-0.0.0.0 android.bugly.qq.com
-0.0.0.0 api.cupid.ptqy.gitv.tv
-0.0.0.0 api.hpplay.com.cn
-0.0.0.0 appstore.cdn.pandora.xiaomi.com
-0.0.0.0 appstore.pandora.xiaomi.com
-0.0.0.0 assistant.pandora.xiaomi.com
-0.0.0.0 auth.api.gitv.tv
-0.0.0.0 b.netcheck.gallery.pandora.xiaomi.com
-0.0.0.0 broker.mqtt.pandora.xiaomi.com
-0.0.0.0 bss.pandora.xiaomi.com
-0.0.0.0 cdn.hpplay.com.cn
-0.0.0.0 cdn1.hpplay.cn
-0.0.0.0 cloud.hpplay.cn
-0.0.0.0 conf.hpplay.cn
-0.0.0.0 config.kuyun.com
-0.0.0.0 d1.xiaomi.com
-0.0.0.0 de.pandora.xiaomi.com
-0.0.0.0 devicemgr.hpplay.cn
-0.0.0.0 dvb.pandora.xiaomi.com
-0.0.0.0 f1.market.mi-img.com
-0.0.0.0 f1.market.xiaomi.com
-0.0.0.0 f2.market.mi-img.com
-0.0.0.0 f2.market.xiaomi.com
-0.0.0.0 f3.market.mi-img.com
-0.0.0.0 f3.market.xiaomi.com
-0.0.0.0 f4.market.mi-img.com
-0.0.0.0 f4.market.xiaomi.com
-0.0.0.0 f5.market.mi-img.com
-0.0.0.0 f5.market.xiaomi.com
-0.0.0.0 file.xmpush.xiaomi.com
-0.0.0.0 fix.hpplay.cn
-0.0.0.0 ftp.hpplay.com.cn
-0.0.0.0 g.dtv.cn.miaozhan.com
-0.0.0.0 g.dtv.cn.miaozhen.com
-0.0.0.0 gallery.pandora.xiaomi.com
-0.0.0.0 gslb.hpplay.cn
-0.0.0.0 gvod.aiseejapp.atianqi.com
-0.0.0.0 h5.hpplay.com.cn
-0.0.0.0 hotupgrade.hpplay.cn
-0.0.0.0 hpplay.cdn.cibn.cc
-0.0.0.0 hub5btmain.sandai.net
-0.0.0.0 hub5emu.sandai.net
-0.0.0.0 image.hpplay.cn
-0.0.0.0 imdns.hpplay.cn
-0.0.0.0 jellyfish.pandora.xiaomi.com
-0.0.0.0 leboapi.hpplay.com.cn
-0.0.0.0 logonext.tv.kuyun.com
+
+# ===============================
+# 小米应用商店
+# ===============================
 0.0.0.0 market.xiaomi.com
-0.0.0.0 metok.sys.miui.com
-0.0.0.0 milink.pandora.xiaomi.com
-0.0.0.0 misc.in.duokanbox.com
-0.0.0.0 misc.pandora.xiaomi.com
-0.0.0.0 mishop.pandora.xiaomi.com
-0.0.0.0 mitv.tracking.miui.com
-0.0.0.0 o2o.api.xiaomi.com
-0.0.0.0 omgmta.play.aiseet.atianqi.com
-0.0.0.0 osfota.cdn.aliyun.com
-0.0.0.0 osupdateservice.yunos.com
-0.0.0.0 ota.cdn.pandora.xiaomi.com
-0.0.0.0 package.box.xiaomi.com
-0.0.0.0 package.cdn.pandora.xiaomi.com
-0.0.0.0 pandora.mi.com
-0.0.0.0 pin.hpplay.cn
-0.0.0.0 r.browser.miui.com
-0.0.0.0 redirect.pandora.xiaomi.com
-0.0.0.0 register.xmpush.xiaomi.com
-0.0.0.0 resolver.msg.xiaomi.net
-0.0.0.0 rp.hpplay.cn
-0.0.0.0 rp.hpplay.com.cn
-0.0.0.0 rps.hpplay.cn
-0.0.0.0 sdkauth.hpplay.cn
-0.0.0.0 secure-chn.imrworldwide.com
-0.0.0.0 sl.hpplay.cn
-0.0.0.0 ssp.ad.xiaomi.com
-0.0.0.0 staging.ai.api.xiaomi.com
-0.0.0.0 starfish.pandora.xiaomi.com
-0.0.0.0 stat.pandora.xiaomi.com
+0.0.0.0 video.market.xiaomi.com
+0.0.0.0 wtradv.market.xiaomi.com
+
+0.0.0.0 f1.market.mi-img.com
+0.0.0.0 f2.market.mi-img.com
+0.0.0.0 f3.market.mi-img.com
+0.0.0.0 f4.market.mi-img.com
+0.0.0.0 f5.market.mi-img.com
+
+0.0.0.0 f1.market.xiaomi.com
+0.0.0.0 f2.market.xiaomi.com
+0.0.0.0 f3.market.xiaomi.com
+0.0.0.0 f4.market.xiaomi.com
+0.0.0.0 f5.market.xiaomi.com
+
 0.0.0.0 t1.a.market.xiaomi.com
 0.0.0.0 t2.a.market.xiaomi.com
 0.0.0.0 t3.a.market.xiaomi.com
 0.0.0.0 t4.a.market.xiaomi.com
 0.0.0.0 t5.a.market.xiaomi.com
-0.0.0.0 t7z.cupid.ptqy.gitv.tv
+
+# ===============================
+# 小米推送服务
+# ===============================
+0.0.0.0 file.xmpush.xiaomi.com
+0.0.0.0 register.xmpush.xiaomi.com
+0.0.0.0 resolver.msg.xiaomi.net
+
+# ===============================
+# 小米电视 / Pandora 平台
+# ===============================
+0.0.0.0 pandora.mi.com
+0.0.0.0 gallery.pandora.xiaomi.com
+0.0.0.0 misc.pandora.xiaomi.com
+0.0.0.0 assistant.pandora.xiaomi.com
+0.0.0.0 starfish.pandora.xiaomi.com
 0.0.0.0 tat.pandora.xiaomi.com
-0.0.0.0 tv.aiseet.atianqi.com
-0.0.0.0 tv.weixin.pandora.xiaomi.com
-0.0.0.0 tvapi.kuyun.com
-0.0.0.0 tvapp.hpplay.cn
+0.0.0.0 stat.pandora.xiaomi.com
 0.0.0.0 tvmanager.pandora.xiaomi.com
 0.0.0.0 tvmgr.pandora.xiaomi.com
+0.0.0.0 mishop.pandora.xiaomi.com
 0.0.0.0 upgrade.mishop.pandora.xiaomi.com
-0.0.0.0 upgrade.xl9.xunlei.com
+
+0.0.0.0 ota.cdn.pandora.xiaomi.com
+0.0.0.0 package.cdn.pandora.xiaomi.com
+0.0.0.0 package.box.xiaomi.com
+0.0.0.0 redirect.pandora.xiaomi.com
+0.0.0.0 b.netcheck.gallery.pandora.xiaomi.com
+0.0.0.0 broker.mqtt.pandora.xiaomi.com
+0.0.0.0 bss.pandora.xiaomi.com
+0.0.0.0 de.pandora.xiaomi.com
+0.0.0.0 dvb.pandora.xiaomi.com
+0.0.0.0 jellyfish.pandora.xiaomi.com
+0.0.0.0 milink.pandora.xiaomi.com
+0.0.0.0 tv.weixin.pandora.xiaomi.com
+
+# ===============================
+# 投屏 / 乐播
+# ===============================
+0.0.0.0 ad.hpplay.cn
+0.0.0.0 adc.hpplay.cn
+0.0.0.0 adcdn.hpplay.cn
+0.0.0.0 adeng.hpplay.cn
+
+0.0.0.0 api.hpplay.com.cn
+0.0.0.0 cdn.hpplay.com.cn
+0.0.0.0 cdn1.hpplay.cn
+0.0.0.0 cloud.hpplay.cn
+0.0.0.0 conf.hpplay.cn
+0.0.0.0 fix.hpplay.cn
+0.0.0.0 ftp.hpplay.com.cn
+0.0.0.0 leboapi.hpplay.com.cn
+0.0.0.0 devicemgr.hpplay.cn
+0.0.0.0 image.hpplay.cn
+0.0.0.0 imdns.hpplay.cn
+0.0.0.0 gslb.hpplay.cn
+0.0.0.0 h5.hpplay.com.cn
+0.0.0.0 hotupgrade.hpplay.cn
+0.0.0.0 pin.hpplay.cn
+0.0.0.0 rp.hpplay.cn
+0.0.0.0 rp.hpplay.com.cn
+0.0.0.0 rps.hpplay.cn
+0.0.0.0 sdkauth.hpplay.cn
+0.0.0.0 sl.hpplay.cn
+0.0.0.0 tvapp.hpplay.cn
 0.0.0.0 userapi.hpplay.com.cn
-0.0.0.0 v.admaster.com.cn
-0.0.0.0 video.market.xiaomi.com
 0.0.0.0 vipauth.hpplay.cn
 0.0.0.0 vipsdkauth.hpplay.cn
+0.0.0.0 hpplay.cdn.cibn.cc
+
+# ===============================
+# 第三方广告 / 统计
+# ===============================
+0.0.0.0 ad.doubleclick.net
+0.0.0.0 admaster.com.cn
+0.0.0.0 v.admaster.com.cn
+0.0.0.0 secure-chn.imrworldwide.com
+0.0.0.0 alog.umeng.com
+0.0.0.0 android.bugly.qq.com
+
+# ===============================
+# 视频 / 内容平台
+# ===============================
+0.0.0.0 api.cupid.ptqy.gitv.tv
+0.0.0.0 auth.api.gitv.tv
+0.0.0.0 t7z.cupid.ptqy.gitv.tv
+
+0.0.0.0 tv.aiseet.atianqi.com
 0.0.0.0 vv.play.aiseet.atianqi.com
+0.0.0.0 omgmta.play.aiseet.atianqi.com
+0.0.0.0 gvod.aiseejapp.atianqi.com
+
+# ===============================
+# 电视统计 / CDN
+# ===============================
+0.0.0.0 alert.kuyun.com
+0.0.0.0 config.kuyun.com
+0.0.0.0 logonext.tv.kuyun.com
+0.0.0.0 tvapi.kuyun.com
+
+# ===============================
+# 迅雷 / 下载组件
+# ===============================
+0.0.0.0 hub5btmain.sandai.net
+0.0.0.0 hub5emu.sandai.net
+0.0.0.0 upgrade.xl9.xunlei.com
+0.0.0.0 etl-xlmc-ssl.sandai.net
 
 # OPPO
 0.0.0.0 adx.ads.oppomobile.com
