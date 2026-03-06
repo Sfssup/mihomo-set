@@ -1,6 +1,6 @@
 # 自用Hosts列表
 
-127.0.0.1 localhost
+0.0.0.0 localhost
 ::1 ip6-localhost
 
 # httpDNS，可能会导致hosts失效
@@ -158,15 +158,17 @@
 0.0.0.0 miui-fxcse.avlyun.com
 0.0.0.0 miav-cse.avlyun.com
 # 禁用后将无法云扫描病毒
-127.0.0.1 etl-xlmc-ssl.sandai.net
-127.0.0.1 cn.app.chat.xiaomi.net
+0.0.0.0 etl-xlmc-ssl.sandai.net
+0.0.0.0 cn.app.chat.xiaomi.net
 # 病毒扫描
 0.0.0.0 staging.sec.miui.com
 0.0.0.0 a0.app.xiaomi.com
 # 腾讯安天
 0.0.0.0 tmfsdk.m.qq.com
-# 屏蔽系统更新
+# 系统更新
 0.0.0.0 update.miui.com
+0.0.0.0 hugeota.d.miui.com
+0.0.0.0 bigota.d.miui.com
 # 快应用
 0.0.0.0 qr.quickapp.cn
 0.0.0.0 qrcdn.quickapp.cn
