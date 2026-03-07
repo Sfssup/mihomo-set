@@ -885,7 +885,6 @@
 0.0.0.0 experimentation.microsoft.com
 0.0.0.0 notifications.windows.com
 0.0.0.0 wn.edge.microsoft.com
-0.0.0.0 copilot.microsoft.com
 0.0.0.0 sydney.bing.com
 0.0.0.0 edgeservices.bing.com
 
