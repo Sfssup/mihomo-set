@@ -1,0 +1,22 @@
+# 纯自用补充
+
+! Google Ads
+||googleads.g.doubleclick.net^
+||ad.doubleclick.net^
+||static.doubleclick.net^
+
+! Google Syndication
+||pagead2.googlesyndication.com^
+||tpc.googlesyndication.com^
+
+! Ad Services
+||googleadservices.com^
+
+! YouTube Stats & Tracking
+||s.youtube.com^
+||video-stats.l.google.com^
+||metrics.youtube.com^
+
+! YouTube Static Ads
+||ad.youtube.com^
+||ads.youtube.com^
