@@ -13,7 +13,6 @@
 ||googleadservices.com^
 
 ! YouTube Stats & Tracking
-||s.youtube.com^
 ||video-stats.l.google.com^
 ||metrics.youtube.com^
 
