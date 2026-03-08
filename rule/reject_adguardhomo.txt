@@ -1,21 +1,609 @@
-# 纯自用补充
+# 自用规则，大部分由gpt生产，可用性未知
 
-! Google Ads
+# httpDNS，可能会导致hosts失效
+||httpdns-api.aliyuncs.com^
+||httpdns-sc.aliyuncs.com^
+||httpdns.alicdn.com^
+||httpdns.baidu.com^
+||httpdns.baidubce.com^
+||httpdns.bcelive.com^
+||httpdns.n.shifen.com^
+||httpsdns.baidu.com^
+||httpdns-browser.platform.dbankcloud.cn^
+||httpdns.c.cdnhwc2.com^
+||httpdns.huaweicloud.com^
+||httpdns.platform.dbankcloud.cn^
+||httpdns.platform.dbankcloud.com^
+||httpdns1.cc.cdnhwc5.com^
+||dns.iqiyi.com^
+||dns.qiyipic.iqiyi.com^
+||doh.iqiyi.com^
+||hdns.ksyun.com^
+||kuaishou.httpdns.pro^
+||httpdns.meituan.com^
+||httpdnsvip.meituan.com^
+||httpdns-sdk.n.netease.com^
+||httpdns.music.163.com^
+||httpdns.n.netease.com^
+||lofter.httpdns.c.163.com^
+||music.httpdns.c.163.com^
+||httpdns.push.oppomobile.com^
+||httpdns.ocloud.oppomobile.com^
+||dns.weixin.qq.com^
+||dns.weixin.qq.com.cn^
+||httpdns.kg.qq.com^
+||httpdns.ocloud.heytapmobi.com^
+||httpdns.push.heytapmobi.com^
+||apidns.kwd.inkuai.com^
+||dns.jd.com^
+||dns.weibo.cn^
+||doh.ptqy.gitv.tv^
+||dotserver.douyucdn.cn^
+||httpdns.bilivideo.com^
+||httpdns.browser.miui.com^
+||httpdns.cctv.com^
+||httpdns.danuoyi.tbcache.com^
+||httpdns.gslb.yy.com^
+||httpdns.kwd.inkuai.com^
+||httpdns.pro^
+||httpdns.volcengineapi.com^
+||httpdns.yunxindns.com^
+||httpdns.zhihu.com^
+||httpdns.zybang.com^
+||dns.qq.com^
+||doh.dns.apple.com^
+||httpdns.immomo.com^
+
+# 国家反诈中心
+||gjfzpt.cn^
+||chanct.cn^
+
+# 政府平台
+||mps.gov.cn^
+||miit.gov.cn^
+
+# 银联反诈
+||antifraud.cup.com.cn^
+
+# 哔哩漫游X服务器
+||black.qimo.ink^
+
+# Xiaomi Ads（MIUI 广告服务器）
+||ad.mi.com^
+||ad.xiaomi.com^
+||api.ad.xiaomi.com^
+||new.api.ad.xiaomi.com^
+||tracking.ad.xiaomi.com^
+||sdkconfig.ad.xiaomi.com^
+||ssp.ad.xiaomi.com^
+||ad1.xiaomi.com^
+||cdn.ad.xiaomi.com^
+||diagnosis.ad.xiaomi.com^
+||e.ad.xiaomi.com^
+||log.ad.xiaomi.com^
+||track.ad.xiaomi.com^
+||m.track.ad.xiaomi.com^
+||zeus.ad.xiaomi.com^
+||sdkconfig.ad.india.xiaomi.com^
+||sdkconfig.ad.intl.xiaomi.com^
+||api.ad.intl.xiaomi.com^
+||diagnosis.ad.intl.xiaomi.com^
+||zeus.ad.intl.xiaomi.com^
+||test.ad.xiaomi.com^
+||test.e.ad.xiaomi.com^
+||test.new.api.ad.xiaomi.com^
+||ximad.com^
+||mjp-analytics.ximad.com^
+||opt.ximad.com^
+
+# Xiaomi Analytics（统计 / 行为上报）
+||a.stat.xiaomi.com^
+||analytics.miui.com^
+||analytics.db.miui.com^
+||data.mistat.xiaomi.com^
+||data.mistat.intl.xiaomi.com^
+||tracking.miui.com^
+||tracking.intl.miui.com^
+||tracking.rus.miui.com^
+||tracking.india.miui.com^
+||om.tracking.miui.com^
+||mitv.tracking.miui.com^
+||fcanr.tracking.miui.com^
+
+# Xiaomi 安全 / 行为检测
+||adv.sec.miui.com^
+||api.sec.miui.com^
+||auth.be.sec.miui.com^
+||flash.sec.miui.com^
+||data.sec.miui.com^
+||staging.sec.miui.com^
+||api.tw06.xlmc.sec.miui.com^
+||adinfo.ra1.xlmc.sec.miui.com^
+
+# 腾讯安全 SDK
+||tmfsdk.m.qq.com^
+
+# MIUI 云扫描组件（Avlyun）
+||ixav-cse.avlyun.com^
+||sdkconf.avlyun.com^
+||miui-fxcse.avlyun.com^
+||miav-cse.avlyun.com^
+||log.avlyun.sec.intl.miui.com^
+||update.avlyun.sec.miui.com^
+||logupdate.avlyun.sec.miui.com^
+
+# MIUI 系统更新
+||update.miui.com^
+||hugeota.d.miui.com^
+||bigota.d.miui.com^
+
+# 应用安装验证
+||api.installer.xiaomi.com^
+||api-installer.pt.xiaomi.com^
+||preview-api.installer.xiaomi.com^
+||test-api-installer.pt.xiaomi.com^
+
+# MIUI 云服务 / 系统服务
+||api.developer.xiaomi.com^
+||api.comm.miui.com^
+||cn.app.chat.xiaomi.net^
+||metok.sys.miui.com^
+||a0.app.xiaomi.com^
+||o2o.api.xiaomi.com^
+||staging.ai.api.xiaomi.com^
+||api.jr.mi.com^
+
+# MIUI 浏览器 / 推荐
+||sug.browser.miui.com^
+||r.browser.miui.com^
+
+# 快应用
+||qr.quickapp.cn^
+||qrcdn.quickapp.cn^
+||statres.quickapp.cn^
+
+# 小米应用商店
+||market.xiaomi.com^
+||video.market.xiaomi.com^
+||wtradv.market.xiaomi.com^
+
+||f*.market.mi-img.com^
+||f*.market.xiaomi.com^
+||t*.a.market.xiaomi.com^
+
+# 小米推送服务
+||file.xmpush.xiaomi.com^
+||register.xmpush.xiaomi.com^
+||resolver.msg.xiaomi.net^
+
+# 小米电视 / Pandora 平台
+||pandora.mi.com^
+||pandora.xiaomi.com^
+||package.box.xiaomi.com^
+
+# Xiaomi 设备服务
+||api.device.xiaomi.net^
+||data.device.xiaomi.net^
+
+# 投屏 / 乐播
+||hpplay.cn^
+||hpplay.com.cn^
+
+# 第三方广告 / 统计
+||ad.doubleclick.net^
+||admaster.com.cn^
+||v.admaster.com.cn^
+||secure-chn.imrworldwide.com^
+||alog.umeng.com^
+||android.bugly.qq.com^
+
+# 电视统计 / CDN
+||alert.kuyun.com^
+||config.kuyun.com^
+||logonext.tv.kuyun.com^
+||tvapi.kuyun.com^
+
+# 酷安
+||api.coolapk.com^
+||api2.coolapk.com^
+
+# 车来了推荐
+||cdn.web.chelaile.net.cn^
+
+# 百度隐私分析上报
+||crab.baidu.com^
+||dxp.baidu.com^
+||hm.baidu.com^
+||nsclick.baidu.com^
+||pos.baidu.com^
+||sp1.baidu.com^
+||gsp1.baidu.com^
+||usp1.baidu.com^
+||wn.pos.baidu.com^
+||cpro.baidustatic.com^
+
+# 百度地图
+||a1.alibabausercontent.com^
+||afd.baidu.com^
+||afdconf.baidu.com^
+||httpdns.baidubce.com^
+||ugc.map.baidu.com^
+||pms-cdn.bdstatic.com^
+||aiad-aisuda.cdn.bcebos.com^
+
+# 百度输入法 广告
+||adinput.baidu.com^
+||adinputapi.baidu.com^
+||adsinput.baidu.com^
+
+# 百度输入法 统计 / 行为分析
+||inputlog.baidu.com^
+||inputdata.baidu.com^
+||input-stat.baidu.com^
+
+# 百度输入法 数据上报 / 遥测
+||log.input.baidu.com^
+||report.input.baidu.com^
+||telemetry.input.baidu.com^
+
+# 百度输入法 推荐 / 内容推送
+||rec.input.baidu.com^
+||recommend.input.baidu.com^
+||feed.input.baidu.com^
+||udpolimenew.baidu.com^
+||udpolimeok.baidu.com^
+||upl.baidu.com^
+||ads.uutest.cn^
+
+# 百度输入法 SDK / 广告平台
+||mobads.baidu.com^
+||mobads-logs.baidu.com^
+||union.baidu.com^
+
+# 百度网盘
+||dss0.bdstatic.com^
+||staticsns.cdn.bcebos.com^
+||issuecdn.baidupcs.com^
+||update.pan.baidu.com^
+||update.pan.n.shifen.com^
+
+# 高德地图
+||optimus-ads.amap.com^
+||store.is.autonavi.com^
+||adiu.amap.com^
+||cgicol.amap.com^
+||awaken.amap.com^
+||amap-aos-info-nogw.amap.com^
+||optimus-ads-ykx.amap.com^
+
+# QQ隐私相关
+||wup.imtt.qq.com^
+||huatuo.qq.com^
+||ping.huatuo.qq.com^
+||tpns.tencent.com^
+||stat.tpns.tencent.com^
+
+# 支付宝广告
+||ad.alipay.com^
+||ads.alipay.com^
+||adservice.alipay.com^
+||optimus-ads.alipay.com^
+||mobile-ads.alipay.com^
+
+# 支付宝推荐 / 信息流
+||recommend.alipay.com^
+||rec.alipay.com^
+||feed.alipay.com^
+
+# 支付宝统计 / 行为分析
+||loggw.alipay.com^
+||log.alipay.com^
+||report.alipay.com^
+||analytics.alipay.com^
+||tracking.alipay.com^
+
+# 支付宝日志 / Telemetry
+||alipaylog.com^
+||mdap.alipaylog.com^
+||logs.mp.alipay.com^
+||metrics.alipay.com^
+||mas-api.alipay.com^
+||ossgw.alipay.com^
+||cloud-metrics.alipay.com^
+||m-api.alipay.com^
+||mdap.alipay.com^
+
+# 阿里统计 SDK
+||log.mmstat.com^
+||gm.mmstat.com^
+||stat.mmstat.com^
+||acs.m.taobao.com^
+||ut.alibaba.com^
+
+# 阿里广告平台
+||adashx.ut.taobao.com^
+||adashbc.ut.taobao.com^
+||adash.m.taobao.com^
+||adash-c.ut.taobao.com^
+||adashbc.ut.alibaba.com^
+||adash-mtop.ut.alibaba.com^
+
+# 微信广告
+||ad.weixin.qq.com^
+||ads.weixin.qq.com^
+||adstats.weixin.qq.com^
+||adimg.weixin.qq.com^
+||wxa.wxs.qq.com^
+||wxsnsdy.wxs.qq.com^
+||wxsnsdythumb.wxs.qq.com^
+||ad.wx.com^
+||bc.weixin.qq.com^
+||channels.weixin.qq.com^
+||badjs.weixinbridge.com^
+||wximg.wxs.qq.com^
+||wxsmw.wxs.qq.com^
+||aedns.weixin.qq.com^
+||dnstest.weixin.qq.com^
+||is.snssdk.com^
+||gw.365you.com^
+||mi.gdt.qq.com^
+||ii.gdt.qq.com^
+||adlog.weixin.qq.com^
+||adreport.weixin.qq.com^
+||adanalytics.weixin.qq.com^
+||rec.weixin.qq.com^
+||recommend.weixin.qq.com^
+||feed.weixin.qq.com^
+||log.weixin.qq.com^
+||report.weixin.qq.com^
+||analytics.weixin.qq.com^
+||telemetry.weixin.qq.com^
+||trace.weixin.qq.com^
+||ad.qq.com^
+||adsmind.qq.com^
+||adsmind.gdtimg.com^
+||pgdt.gtimg.cn^
+||pgdt.ugdtimg.com^
+||gdt.qq.com^
+||tencentlog.com^
+||log.tbs.qq.com^
+||report.qq.com^
+
+# 酷我音乐
+||kwimg3.kuwo.cn^
+||httpdns.kg.qq.com^
+||tmeadcomm.y.qq.com^
+||apk.shouji.koowo.com^
+||g.koowo.com^
+||deliver.kuwo.cn^
+||log.kuwo.cn^
+||mobilead.kuwo.cn^
+||msphoneclick.kuwo.cn^
+||updatepage.kuwo.cn^
+||wa.kuwo.cn^
+||webstat.kuwo.cn^
+
+# 喜马拉雅
+||ad.ximalaya.com^
+||xdcs-collector.ximalaya.com^
+||adbehavior.ximalaya.com^
+||adbehavior.wsa.ximalaya.com^
+||adbehaviorhera.ximalaya.com^
+||adse.ximalaya.com^
+||adse.wsa.ximalaya.com^
+||adsehera.ximalaya.com^
+||gslbali.ximalaya.com^
+||gslbtx.ximalaya.com^
+
+# 蜻蜓FM
+||ad.qingting.fm^
+||admgr.qingting.fm^
+||dload.qd.qingting.fm^
+||logger.qingting.fm^
+||s.qd.qingting.fm^
+||s.qd.qingtingfm.com^
+||adlaunch.qtfm.cn^
+||ad-cdn.qtfm.cn^
+
+# 懒人听书
+||display.wting.info^
+||update.duokan.com^
+
+# 京东开屏广告
+||adservice.jd.com^
+||ads.jd.com^
+||adsmind.jd.com^
+||stat.m.jd.com^
+||policy.jd.com^
+||jrad.jd.com^
+||imgad0.jd.com^
+||imgad1.jd.com^
+||imgad2.jd.com^
+||imgad3.jd.com^
+||imgad4.jd.com^
+||adimg.jd.com^
+
+# 京东广告统计
+||stat.m.jd.com^
+||stat.jd.com^
+||counter.jd.com^
+
+# 京东联盟广告
+||union.jd.com^
+||cpc.jd.com^
+
+# 第三方广告（京东常用）
+||ad.doubleclick.net^
+||googleads.g.doubleclick.net^
+||pagead2.googlesyndication.com^
+
+# 美团开屏
+||flowplus.meituan.net^
+||httpdns.meituan.com^
+
+# 拼多多广告
+||images.pinduoduo.com^
+||t-dsp.pinduoduo.com^
+||adim.pinduoduo.com^
+||dspsdk.pinduoduo.com^
+||lp.pinduoduo.com^
+
+# 饿了么
+||elemecdn.com^
+||fuss10.elemecdn.com^
+||www1.elecfans.com^
+||nr-op.elemecdn.com^
+||app-monitor.ele.me^
+||ads.95516.com^
+
+# 云闪付 / 其他广告
+||ads.cup.com.cn^
+||ad.maoyan.com^
+
+# WiFi万能钥匙 (尚网网络)
+||a.wkanx.com^
+||adx-ad-prod.wkanx.com^
+||static.wkanx.com^
+||img01.51y5.net^
+||movies.ttwifi.net^
+||track-config.y5kfpt.com^
+||track-gateway.y5kfpt.com^
+
+# WiFi万能钥匙_好看
+||cds.wifi188.com^
+||n.wifi188.com^
+||ocean-alps.wifi188.com^
+
+# 迅雷
+||advertpay-vip-ssl.xunlei.com^
+||test.adsp.xunlei.com^
+||api-mcp.adsp.xunlei.com^
+||watch.advertising.speed.cdn.vip.xunlei.com^
+||advertpay.vip.xunlei.com^
+||adsp.xunlei.com^
+||t03-api.xlmc.xunlei.com^
+||master.wap.dphub.sandai.net^
+||hub5u.wap.sandai.net^
+||idx.m.hub.sandai.net^
+||tw13b093.sandai.net^
+||uploadlog.xlmc.sandai.net^
+||pre.api.tw06.xlmc.sandai.net^
+||hub5pn.wap.sandai.net^
+||api-shoulei-ssl.xunlei.com^
+||biz.live.xunlei.com^
+||ct.niu.xunlei.com^
+||mou.niu.xunlei.com^
+||static.m.sjzhushou.com^
+||m.sjzhushou.com^
+||scene.vip.xunlei.com^
+
+# WPS
+||ad.docer.wps.cn^
+||adm.zookingsoft.com^
+||docerad.wps.cn^
+||update.thread0.com^
+
+# 货拉拉
+||ads-log.huolala.cn^
+||www-ads.huolala.co^
+
+# 哈啰
+||admaster-public.51downapp.cn^
+||g.fancyapi.com^
+
+# TikTok / ByteDance
+||ads.tiktok.com^
+||log.tiktokv.com^
+||analytics.tiktok.com^
+||ads-api.tiktok.com^
+||log.byteoversea.com^
+||ads.byteoversea.com^
+
+# 抖音 / 今日头条 / 穿山甲
+||p3-ad-sign.byteimg.com^
+||p6-ad-sign.byteimg.com^
+||p9-ad-sign.byteimg.com^
+||ad.toutiao.com^
+||dsp.toutiao.com^
+||nativeapp.toutiao.com^
+||log.snssdk.com^
+||analytics.snssdk.com^
+||mon.snssdk.com^
+||ad.snssdk.com^
+||ads.snssdk.com^
+||pangle.io^
+||pangolin-sdk-toutiao.com^
+||pangolin.snssdk.com^
+
+# OPPO / Realme / OnePlus
+||adsfs.oppomobile.com^
+||adx.ads.oppomobile.com^
+||adsfs.oppomobile.com^
+||data.ads.oppomobile.com^
+||tracking.coloros.com^
+||ads.coloros.com^
+
+# Apple
+||guzzoni.apple.com^
+||iad.apple.com^
+||metrics.apple.com^
+||securemetrics.apple.com^
+
+# Samsung
+||config.samsungads.com^
+||log-config.samsungads.com^
+||samsung-com.112.2o7.net^
+
+# Microsoft / Windows / Edge
+||browser.events.data.microsoft.com^
+||v10.events.data.microsoft.com^
+||self.events.data.microsoft.com^
+||settings-win.data.microsoft.com^
+||watson.telemetry.microsoft.com^
+||telemetry.microsoft.com^
+||oca.telemetry.microsoft.com^
+
+# Google Ads / Analytics
+||pagead2.googlesyndication.com^
+||adservice.google.com^
+||adservice.google.com.hk^
+||googleads.g.doubleclick.net^
+||stats.g.doubleclick.net^
+||ad.doubleclick.net^
+||analytics.google.com^
+||ssl.google-analytics.com^
+||www.google-analytics.com^
+
+# Facebook / Meta
+||ads.facebook.com^
+||graph.facebook.com^
+||connect.facebook.net^
+||an.facebook.com^
+
+# AppsFlyer / Adjust / 归因广告
+||appsflyer.com^
+||t.appsflyer.com^
+||events.appsflyer.com^
+||adjust.com^
+||app.adjust.com^
+||analytics.adjust.com^
+
+# Google Ads
 ||googleads.g.doubleclick.net^
 ||ad.doubleclick.net^
 ||static.doubleclick.net^
 
-! Google Syndication
+# Google Syndication
 ||pagead2.googlesyndication.com^
 ||tpc.googlesyndication.com^
 
-! Ad Services
+# Ad Services
 ||googleadservices.com^
 
-! YouTube Stats & Tracking
+# YouTube Stats & Tracking
 ||video-stats.l.google.com^
 ||metrics.youtube.com^
 
-! YouTube Static Ads
+# YouTube Static Ads
 ||ad.youtube.com^
 ||ads.youtube.com^
