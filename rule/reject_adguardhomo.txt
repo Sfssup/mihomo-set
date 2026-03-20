@@ -758,3 +758,10 @@
 ||wosms.cn^
 ||www.google-analytics.com^
 ||zhanzhang.toutiao.com^
+||info.3g.qq.com^
+||onbtqgokrasec.site^
+||adexchangeclear.com^
+||stackpath.bootstrapcdn.com^
+||dns.weixin.qq.com.cn^
+||fourier.alibaba.com^
+||api.device.xiaomi.net^
