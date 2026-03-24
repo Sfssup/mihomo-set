@@ -663,7 +663,6 @@
 ||firebase-settings.crashlytics.com^
 ||firebaselogging.googleapis.com^
 ||flysleep.cn^
-||fmhy.net^
 ||footprints-pa.googleapis.com^
 ||fp-it.fengkongcloud.com^
 ||galileotelemetry.tencent.com^
