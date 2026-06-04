@@ -296,7 +296,6 @@
 ||log-vip-ssl.xunlei.com^
 ||log.aliyuncs.com^
 ||log.cookieyes.com^
-||log.snssdk.com^
 ||log.tbs.qq.com^
 ||log.wechatpay.cn^
 ||log.weixin.qq.com^
@@ -480,7 +479,6 @@
 ||tnc0-alisc1.zijieapi.com^
 ||tnc3-aliec2.snssdk.com^
 ||tnc3-aliec2.zijieapi.com^
-||tnc3-alisc1.snssdk.com^
 ||tnc3-alisc1.zijieapi.com^
 ||tnc3-bjlgy.snssdk.com^
 ||tnc3-bjlgy.zijieapi.com^
