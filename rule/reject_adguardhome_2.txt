@@ -88,7 +88,6 @@
 ||asearch.alicdn.com^
 ||astrategy.beacon.qq.com^
 ||atrace.chelaile.net.cn^
-||audid-api.taobao.com^
 ||audid.umeng.com^
 ||auth.be.sec.miui.com^
 ||avalancheofnews.com^
