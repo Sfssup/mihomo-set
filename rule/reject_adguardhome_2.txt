@@ -262,7 +262,6 @@
 ||impression.appsflyer.com^
 ||improving.duckduckgo.com^
 ||imtmp.net^
-||in-addr.arpa^
 ||in.appcenter.ms^
 ||inf.miui.com^
 ||info.3g.qq.com^
