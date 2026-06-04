@@ -195,7 +195,6 @@
 ||evt.mxplay.com^
 ||ezoicanalytics.com^
 ||f*.market.mi-img.com^
-||f*.market.xiaomi.com^
 ||fcapp.run^
 ||fclog.baidu.com^
 ||file.daihuo.qq.com^
@@ -310,7 +309,6 @@
 ||logs.amap.com^
 ||logs.chelaile.net.cn^
 ||lupic.cdn.bcebos.com^
-||market.xiaomi.com^
 ||masdkv6.3g.qq.com^
 ||masonerthoria.shop^
 ||matomo.cloud^
