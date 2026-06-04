@@ -69,7 +69,7 @@
 ||api.fu.xcultur.com^
 ||api.g.micloud.xiaomi.net^
 ||api.installer.xiaomi.com^
-||api.installer.xiaomi.com^$important
+||api.installer.xiaomi.com^
 ||api.kingdata.ksyun.com^
 ||api.miui.security.xiaomi.com^
 ||api.segment.io^
@@ -388,7 +388,7 @@
 ||pro-market.net^
 ||pss.alicdn.com^
 ||pub.idqqimg.com^
-||pubadx.one^$dnsrewrite=ad-block.dns.adguard.com
+||pubadx.one^
 ||public.gdtimg.com^
 ||puds.ucweb.com^
 ||pull-hs-f5-hot.flive.douyincdn.com
