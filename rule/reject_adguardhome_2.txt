@@ -137,7 +137,6 @@
 ||cloudflareinsights.com^
 ||cmp.setupcmp.com^
 ||cn-api.anythinktech.com^
-||cnbj1.fds.api.xiaomi.com^
 ||cnlogs.umeng.com^
 ||cnlogs.umengcloud.com^
 ||cnzz.com^
