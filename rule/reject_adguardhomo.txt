@@ -554,9 +554,9 @@
 ||birdgesdk.com^
 
 ||topdalao.lanzoui.com^
-||z23r562938.iask.in^$importa'
+||z23r562938.iask.in^
 ||zzhc.vnet.cn^
-||sentry.io^$importantnt'
+||sentry.io^
 ||api.umengcn.org^
 ||update.googleapis.com^
 ||browser.sentry-cdn.com^
@@ -584,7 +584,7 @@
 ||log.*^
 ||tingyun.com^
 
-#哔哩哔哩PCDN'
+#哔哩哔哩PCDN
 ||chat.bilibili.com^
 ||365dmp.com^
 ||biliapi.net^
@@ -625,10 +625,10 @@
 #字节跳动系列广告
 ||rup4a04-c02.tos-cn-hongkong.bytepluses.com^
 ||crashlytics.com^
-||ads*-normal-hl.zijieapi.com^important'
-||log*-applog-hl.fqnovel.com^important'
-||rtlog*-applog-hl.fqnovel.com^important'
-||p*-ad-sign.byteimg.com^important'
+||ads*-normal-hl.zijieapi.com^
+||log*-applog-hl.fqnovel.com^
+||rtlog*-applog-hl.fqnovel.com^
+||p*-ad-sign.byteimg.com^
 ||abtest*-misc-*.zijieapi.com^
 ||gecko5-lq.zijieapi.com^
 ||zlink.toutiao.com^
@@ -680,7 +680,7 @@
 ||abtest*-misc.zijieapi.com^
 ||ugsdk.cn^
 ||track.ranfenghd.com^
-||tnc*-alisc*.zijieapi.com^$importat'
+||tnc*-alisc*.zijieapi.com^
 
 #微博
 ||forecast.sina.cn^
