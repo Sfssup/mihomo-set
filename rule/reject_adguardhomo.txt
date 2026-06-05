@@ -612,7 +612,6 @@
 ||ssp-landing.taptap.cn^
 ||site.u-mob.cn^
 ||mos.m.taobao.com^
-||pages-fast.m.taobao.com^
 ||pages.goofish.com^
 ||mo.m.taobao.com^
 ||i.meituan.com^
