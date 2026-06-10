@@ -700,9 +700,6 @@
 ||catfront.dianping.com^
 ||alita.waimai.meituan.com^
 
-#微信
-||apd-pcdnwxlogin.teg.tencent-cloud.net^
-
 #车来了
 ||image3.chelaile.net.cn^
 ||pic1.chelaile.net.cn^
