@@ -13,7 +13,6 @@
 ||abtest-ch.snssdk.com^
 ||ac.dun.163.com^
 ||ac.dun.163yun.com^
-||acs.m.taobao.com^
 ||ad.mail.ru^
 ||adapty.io^
 ||adashx.m.taobao.com^
