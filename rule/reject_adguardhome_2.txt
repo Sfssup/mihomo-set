@@ -92,7 +92,6 @@
 ||avalancheofnews.com^
 ||b-gtc.getui.net^
 ||backstage-file-static.a.88cdn.com^
-||backstage-img-ssl.a.88cdn.com^
 ||badjs.weixinbridge.com^
 ||bdbus-turbonet.baidu.com^
 ||beacon-api.aliyuncs.com^
