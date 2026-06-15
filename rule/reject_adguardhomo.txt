@@ -291,7 +291,6 @@
 ||log.mmstat.com^
 ||gm.mmstat.com^
 ||stat.mmstat.com^
-||acs.m.taobao.com^
 ||ut.alibaba.com^
 
 # 阿里广告平台
