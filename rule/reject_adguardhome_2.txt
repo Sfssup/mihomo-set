@@ -59,7 +59,6 @@
 ||api-access.pangolin-sdk-toutiao.com^
 ||api-access.pangolin-sdk-toutiao1.com^
 ||api-game-ssl.xunlei.com^
-||api-shoulei-ssl.xunlei.com^
 ||api.ad.xiaomi.com^
 ||api.comm.miui.com^
 ||api.developer.xiaomi.com^
