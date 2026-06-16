@@ -244,8 +244,6 @@
 ||hog.crowdin.com^
 ||huangye.miui.com^
 ||hub5idx.v6.shub.sandai.net^
-||hub5pn.wap.sandai.net^
-||hub5pnc.sandai.net^
 ||i.mxplayer.j2inter.com^
 ||i.posthog.com^
 ||iad.g.163.com^
@@ -432,7 +430,6 @@
 ||slb-p2p.vcloud.ks-live.com^
 ||snowflake.qq.com^
 ||snowplowprd.trx.gitlab.net^
-||soa-vip-ssl.xunlei.com^
 ||sofire.baidu.com^
 ||sofire.bdstatic.com^
 ||sp0.baidu.com^
