@@ -464,8 +464,6 @@
 ||tw13b093.sandai.net^
 ||uploadlog.xlmc.sandai.net^
 ||pre.api.tw06.xlmc.sandai.net^
-||hub5pn.wap.sandai.net^
-||api-shoulei-ssl.xunlei.com^
 ||biz.live.xunlei.com^
 ||ct.niu.xunlei.com^
 ||mou.niu.xunlei.com^
