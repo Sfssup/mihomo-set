@@ -263,7 +263,6 @@
 ||ir-sdk.dun.163.com^
 ||issuecdn.baidupcs.com^
 ||itsdata.map.baidu.com^
-||jnn-pa.googleapis.com^
 ||jpush.cn^
 ||jsapi.qq.com^
 ||jsinfo.net^
