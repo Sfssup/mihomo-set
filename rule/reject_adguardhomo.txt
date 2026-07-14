@@ -28,6 +28,7 @@
 ||ximad.com^
 ||mjp-analytics.ximad.com^
 ||opt.ximad.com^
+
 # Xiaomi Analytics（统计 / 行为上报）
 ||a.stat.xiaomi.com^
 ||analytics.miui.com^
@@ -41,6 +42,7 @@
 ||om.tracking.miui.com^
 ||mitv.tracking.miui.com^
 ||fcanr.tracking.miui.com^
+
 # Xiaomi 安全 / 行为检测
 ||adv.sec.miui.com^
 ||api.sec.miui.com^
@@ -50,10 +52,13 @@
 ||staging.sec.miui.com^
 ||api.tw06.xlmc.sec.miui.com^
 ||adinfo.ra1.xlmc.sec.miui.com^
+
 # 腾讯安全 SDK
 ||tmfsdk.m.qq.com^
+
 #小米智能服务系统级广告
 ||metok.sys.miui.com^
+
 # MIUI 云扫描组件（Avlyun）
 ||ixav-cse.avlyun.com^
 ||sdkconf.avlyun.com^
@@ -62,15 +67,18 @@
 ||log.avlyun.sec.intl.miui.com^
 ||update.avlyun.sec.miui.com^
 ||logupdate.avlyun.sec.miui.com^
+
 # MIUI 系统更新
 ||update.miui.com^
 ||hugeota.d.miui.com^
 ||bigota.d.miui.com^
+
 # 应用安装验证
 ||api.installer.xiaomi.com^
 ||api-installer.pt.xiaomi.com^
 ||preview-api.installer.xiaomi.com^
 ||test-api-installer.pt.xiaomi.com^
+
 # MIUI 云服务 / 系统服务
 ||api.developer.xiaomi.com^
 ||api.comm.miui.com^
@@ -79,16 +87,20 @@
 ||o2o.api.xiaomi.com^
 ||staging.ai.api.xiaomi.com^
 ||api.jr.mi.com^
+
 # MIUI 浏览器 / 推荐
 ||sug.browser.miui.com^
 ||r.browser.miui.com^
+
 # 快应用
 ||qr.quickapp.cn^
 ||qrcdn.quickapp.cn^
 ||statres.quickapp.cn^
+
 # 投屏 / 乐播
 ||hpplay.cn^
 ||hpplay.com.cn^
+
 # 第三方广告 / 统计
 ||ad.doubleclick.net^
 ||admaster.com.cn^
@@ -96,11 +108,13 @@
 ||secure-chn.imrworldwide.com^
 ||alog.umeng.com^
 ||android.bugly.qq.com^
+
 # 电视统计 / CDN
 ||alert.kuyun.com^
 ||config.kuyun.com^
 ||logonext.tv.kuyun.com^
 ||tvapi.kuyun.com^
+
 # 百度隐私分析上报
 ||crab.baidu.com^
 ||dxp.baidu.com^
@@ -112,18 +126,22 @@
 ||usp1.baidu.com^
 ||wn.pos.baidu.com^
 ||cpro.baidustatic.com^
+
 # 百度输入法 广告
 ||adinput.baidu.com^
 ||adinputapi.baidu.com^
 ||adsinput.baidu.com^
+
 # 百度输入法 统计 / 行为分析
 ||inputlog.baidu.com^
 ||inputdata.baidu.com^
 ||input-stat.baidu.com^
+
 # 百度输入法 数据上报 / 遥测
 ||log.input.baidu.com^
 ||report.input.baidu.com^
 ||telemetry.input.baidu.com^
+
 # 百度输入法 推荐 / 内容推送
 ||rec.input.baidu.com^
 ||recommend.input.baidu.com^
@@ -132,16 +150,19 @@
 ||udpolimeok.baidu.com^
 ||upl.baidu.com^
 ||ads.uutest.cn^
+
 # 百度输入法 SDK / 广告平台
 ||mobads.baidu.com^
 ||mobads-logs.baidu.com^
 ||union.baidu.com^
+
 # 百度网盘
 ||dss0.bdstatic.com^
 ||staticsns.cdn.bcebos.com^
 ||issuecdn.baidupcs.com^
 ||update.pan.baidu.com^
 ||update.pan.n.shifen.com^
+
 # 高德地图
 ||optimus-ads.amap.com^
 ||store.is.autonavi.com^
@@ -150,28 +171,33 @@
 ||awaken.amap.com^
 ||amap-aos-info-nogw.amap.com^
 ||optimus-ads-ykx.amap.com^
+
 # QQ隐私相关
 ||wup.imtt.qq.com^
 ||huatuo.qq.com^
 ||ping.huatuo.qq.com^
 ||tpns.tencent.com^
 ||stat.tpns.tencent.com^
+
 # 支付宝广告
 ||ad.alipay.com^
 ||ads.alipay.com^
 ||adservice.alipay.com^
 ||optimus-ads.alipay.com^
 ||mobile-ads.alipay.com^
+
 # 支付宝推荐 / 信息流
 ||recommend.alipay.com^
 ||rec.alipay.com^
 ||feed.alipay.com^
+
 # 支付宝统计 / 行为分析
 ||loggw.alipay.com^
 ||log.alipay.com^
 ||report.alipay.com^
 ||analytics.alipay.com^
 ||tracking.alipay.com^
+
 # 支付宝日志 / Telemetry
 ||alipaylog.com^
 ||mdap.alipaylog.com^
@@ -182,11 +208,13 @@
 ||cloud-metrics.alipay.com^
 ||m-api.alipay.com^
 ||mdap.alipay.com^
+
 # 阿里统计 SDK
 ||log.mmstat.com^
 ||gm.mmstat.com^
 ||stat.mmstat.com^
 ||ut.alibaba.com^
+
 # 阿里广告平台
 ||adashx.ut.taobao.com^
 ||adashbc.ut.taobao.com^
@@ -194,6 +222,7 @@
 ||adash-c.ut.taobao.com^
 ||adashbc.ut.alibaba.com^
 ||adash-mtop.ut.alibaba.com^
+
 # 微信广告
 ||ad.weixin.qq.com^
 ||ads.weixin.qq.com^
@@ -229,6 +258,7 @@
 ||tencentlog.com^
 ||log.tbs.qq.com^
 ||report.qq.com^
+
 # 酷我音乐
 ||kwimg3.kuwo.cn^
 ||tmeadcomm.y.qq.com^
@@ -241,6 +271,7 @@
 ||updatepage.kuwo.cn^
 ||wa.kuwo.cn^
 ||webstat.kuwo.cn^
+
 # 蜻蜓FM
 ||ad.qingting.fm^
 ||admgr.qingting.fm^
@@ -250,9 +281,11 @@
 ||s.qd.qingtingfm.com^
 ||adlaunch.qtfm.cn^
 ||ad-cdn.qtfm.cn^
+
 # 懒人听书
 ||display.wting.info^
 ||update.duokan.com^
+
 # 京东开屏广告
 ||adservice.jd.com^
 ||ads.jd.com^
@@ -266,23 +299,29 @@
 ||imgad3.jd.com^
 ||imgad4.jd.com^
 ||adimg.jd.com^
+
 # 京东广告统计
 ||stat.jd.com^
 ||counter.jd.com^
+
 # 京东联盟广告
 ||union.jd.com^
 ||cpc.jd.com^
+
 # 第三方广告（京东常用）
 ||googleads.g.doubleclick.net^
 ||pagead2.googlesyndication.com^
+
 # 美团开屏
 ||flowplus.meituan.net^
+
 # 拼多多广告
 ||images.pinduoduo.com^
 ||t-dsp.pinduoduo.com^
 ||adim.pinduoduo.com^
 ||dspsdk.pinduoduo.com^
 ||lp.pinduoduo.com^
+
 # 饿了么
 ||elemecdn.com^
 ||fuss10.elemecdn.com^
@@ -290,9 +329,11 @@
 ||nr-op.elemecdn.com^
 ||app-monitor.ele.me^
 ||ads.95516.com^
+
 # 云闪付 / 其他广告
 ||ads.cup.com.cn^
 ||ad.maoyan.com^
+
 # 迅雷
 ||advertpay-vip-ssl.xunlei.com^
 ||test.adsp.xunlei.com^
@@ -313,17 +354,21 @@
 ||static.m.sjzhushou.com^
 ||m.sjzhushou.com^
 ||scene.vip.xunlei.com^
+
 # WPS
 ||ad.docer.wps.cn^
 ||adm.zookingsoft.com^
 ||docerad.wps.cn^
 ||update.thread0.com^
+
 # 货拉拉
 ||ads-log.huolala.cn^
 ||www-ads.huolala.co^
+
 # 哈啰
 ||admaster-public.51downapp.cn^
 ||g.fancyapi.com^
+
 # TikTok / ByteDance
 ||ads.tiktok.com^
 ||log.tiktokv.com^
@@ -331,6 +376,7 @@
 ||ads-api.tiktok.com^
 ||log.byteoversea.com^
 ||ads.byteoversea.com^
+
 #天猫校园
 ||tnc*-aliec*.zijieapi.com^
 ||aiclk.com^
@@ -338,10 +384,12 @@
 ||qttunion.com^
 ||adintl.cn^
 ||adashx.m.taobao.com^
+
 #可可影视
 ||fdxadiv.com^
 ||tqezu.com^
 ||vsres.dsty*.com^
+
 #喜马拉雅
 ||open.ximalaya.com^
 ||adsehera.ximalaya.com^
@@ -353,14 +401,18 @@
 ||adse.wsa.ximalaya.com^
 ||gslbali.ximalaya.com^
 ||gslbtx.ximalaya.com^
+
+
 #咪咕视频
 ||ggx01.miguvideo.com^
 ||ggx02.miguvideo.com^
 ||ggic01.miguvideo.com^
 ||ggtagcache.cmvideo.cn^
+
 #腾讯QQ
 ||compliance.tdos.qq.com^
 ||tianshu.gtimg.cn^
+
 # 抖音 / 今日头条 / 穿山甲
 ||p3-ad-sign.byteimg.com^
 ||p6-ad-sign.byteimg.com^
@@ -376,6 +428,7 @@
 ||pangle.io^
 ||pangolin-sdk-toutiao.com^
 ||pangolin.snssdk.com^
+
 #百度
 ||s.bdstatic.com^
 ||wjz-cdn.baidu.com^
@@ -395,8 +448,10 @@
 ||fakeurl.virtual.baidu.com^
 ||wejianzhan.com^
 ||oschina.net^
+
 #QQ浏览器
 ||r.release.qq.com^
+||wup.imtt.qq.com^
 ||tam.cdn-go.cn^
 ||apponline.research.qq.com^
 ||tmfmazuhttp-wangka.m.qq.com^
@@ -406,6 +461,7 @@
 ||qbuc.html5.qq.com^
 ||ug.qbimg.qq.com^
 ||mcdn.kandian.qq.com^
+
 #快手/快手极速版
 ||log-sdk.ksapisrv.com^
 ||open.e.kuaishou.*^
@@ -414,9 +470,11 @@
 ||frontend-perf-service.e.kuaishou.com^
 ||ad*kwai.com^
 ||kskwai.com^
+
 #酷安残留广告
 ||anythinktech.com^
 ||birdgesdk.com^
+
 #############################'
 ||topdalao.lanzoui.com^
 ||z23r562938.iask.in^
@@ -426,6 +484,7 @@
 ||update.googleapis.com^
 ||browser.sentry-cdn.com^
 ||advertising.amazon.com^
+||tracking.india.miui.com^
 ||ymatuhin.ru^
 ||metrics.apple.com^
 ||metrics*.data.hicloud.com^
@@ -440,6 +499,7 @@
 ||marketingplatform.google.com^
 ||bigdata.ssp.samsung.com^
 ||click.oneplus.com^
+||data.mistat.intl.xiaomi.com^
 ||sessions.bugsnag.com^
 ||hotjar-analytics.com^
 ||assoc-amazon.com^
@@ -448,14 +508,20 @@
 ||networkbench.com^
 ||log.*^
 ||tingyun.com^
+
 #百度网盘
+||staticsns.cdn.bcebos.com^
+||dss0.bdstatic.com^
+
 #哔哩哔哩PCDN
 ||chat.bilibili.com^
 ||365dmp.com^
 ||biliapi.net^
 ||biliapi.com^
+
 #小爱音箱
 ||info.mina.xiaoaisound.com^
+
 #OPPO/一加云控
 ||129.227.29.163^
 ||142.251.43.10^
@@ -469,6 +535,7 @@
 ||129.227.17.142^
 ||106.38.236.63^
 ||106.3.18.4^
+
 #HTTPDNS
 ||hdns.ksyun.com
 ||apidns.kwd.inkuai.com^
@@ -491,6 +558,7 @@
 ||dot.api.idmzj.com^
 ||doh.iqiyi.com^
 ||paydns.wechatpay.cn^
+
 #网易云音乐
 ||nstool.netease.com^
 ||ssp-landing.taptap.cn^
@@ -499,12 +567,14 @@
 ||pages-fast.m.taobao.com^
 ||pages.goofish.com^
 ||mo.m.taobao.com^
+||lp.pinduoduo.com^
 ||i.meituan.com^
 ||conf-darwin.xycdn.com^
 ||sd-gl.xycdn.com^
 ||sdk*xyajs.data.kuiniuca.com^
 ||nstool.laiqukankan.com^
 ||qiezibenpao.com^
+
 #字节跳动系列广告
 ||rup4a04-c02.tos-cn-hongkong.bytepluses.com^
 ||crashlytics.com^
@@ -517,6 +587,7 @@
 ||zlink.toutiao.com^
 ||uril6.com^
 ||yuanbaobaoxian.com^
+||adim.pinduoduo.com^
 ||cjjd14.com^
 ||lf-reward-video.bytedcdn.com^
 ||homeborn.cn^
@@ -565,15 +636,19 @@
 ||ugsdk.cn^
 ||track.ranfenghd.com^
 ||tnc*-alisc*.zijieapi.com^
+
 #国家反诈中心
 ||gjfzpt.cn^
 ||chanct.cn^
 ||g*fzpt.cn^
+
 # 政府平台
 ||mps.gov.cn^
 ||miit.gov.cn^
+
 # 银联反诈
 ||antifraud.cup.com.cn^
+
 #微博客户端
 ||forecast.sina.cn^
 ||sdkapp.uve.weibo.com^
@@ -581,11 +656,13 @@
 ||bootpreload.uve.weibo.com^
 ||dp.im.weibo.cn^
 ||adimg.uve.weibo.com^
+
 #智行火车票/携程旅行
 ||pages.c-ctrip.com^
 ||pages.suanya.com^
 ||docs.c-ctrip.com^
 ||download*.ctrip.com^
+
 #美团/美团外卖
 ||catfront.dianping.com^
 ||data-sdk-uuid-log.d.meituan.net^
@@ -595,6 +672,7 @@
 ||logan.sankuai.com^
 ||appsflyersdk.com^
 ||alita.waimai.meituan.com^
+
 #动漫之家
 ||mobrtb.com^
 ||domob.cn^
@@ -603,6 +681,7 @@
 ||magicacid.cn^
 ||youzanyun.com^
 ||adsdk.*^
+
 #汽车之家
 ||applogapi.autohome.com.cn^
 ||cdn-recovery.autohome.com.cn^
@@ -615,12 +694,15 @@
 ||news.app.autohome.com.cn^
 ||guanceyun.autohome.com.cn^
 ||leads.*^
+
 #微信
 ||apd-pcdnwxlogin.teg.tencent-cloud.net^
+
 #两步路户外助手
 ||shop45920354.m.youzan.com^
 ||ad.*^
 ||admobile.top^
+
 #车来了
 ||image3.chelaile.net.cn^
 ||pic1.chelaile.net.cn^
@@ -628,27 +710,33 @@
 ||sogaha.cn^
 ||atrace.chelaile.net.cn^
 ||cdn.smartimg.chelaile.net.cn^
+
 # 车来了推荐
 ||cdn.web.chelaile.net.cn^
+
 #什么值得买
 ||analytics-api-*.smzdm.com^
 ||bc-ad-vod.zdmimg.com^
 ||aaid.uyunad.com^
 ||acs4baichuan.m.taobao.com^
 ||adashxgc.ut.taobao.com^
+
 #北美省钱快报
 ||app.adjust.io^
 ||api2.dealmoon.cn^
+
 #WiFi万能钥匙
 ||wkanx.com^
 ||track-*.y5kfpt.com^
 ||domobcdn.com^
 ||*-adnet.vivo.com.cn^
 ||promotion-partner.kuaishou.com^
+
 # WiFi万能钥匙_好看
 ||cds.wifi188.com^
 ||n.wifi188.com^
 ||ocean-alps.wifi188.com^
+
 #虎牙直播
 ||e-ad-monitor.huya.com^
 ||electric-shop.yaoguo.com^
@@ -657,9 +745,11 @@
 ||*-fileserverpcdn.cdn.huya^
 ||*-cdnfile*pcdn.msstatic.com^
 ||hydlpcdn.cdn.huya.com^
+
 #中国移动云盘
 ||lf*-data.volccdn.com^
 ||irs03.com^
+
 #墨迹天气
 ||reachmax.cn^
 ||logd.api.moji.com^
@@ -667,14 +757,18 @@
 ||qchannel*.cn^
 ||sdk.api.oaid.wocloud.cn^
 ||oss4bpc.moji.com^
+
 #前程无忧51job
 ||adash-emas.cn-hangzhou.aliyuncs.com^
 ||appapi.51job.com^
+
 #木鸟民宿
 ||applog-*.*^
 ||api-share.mob.com^
+
 #小蚕惠生活
 ||buryingapi.xiaocantech.com^
+
 #虎扑
 ||goblin.hupu.com^
 ||e-goblin.hupu.com^
@@ -686,34 +780,46 @@
 ||downloadmobile.hupu.com^
 ||themis.hupu.com^
 ||activity-static.hoopchina.com.cn^
+
 #魅族手机
 ||open-iflow.meizu.com^
 ||reader.meizu.com^
 ||dw-reader.meizu.com^
 ||tongji-resl.meizu.com^
 ||api-flow.flyme.cn^
+
 #翼支付
 ||mdc.bestpay.com.cn^
+
 #哔咔漫画
 ||adult-movie.bidobido.xyz^
+
 #新浪财经
 ||ads*.cj.sina.com.cn^
 ||sax.sina.com.cn^
 ||pluto.sina.cn^
 ||api.sina.cn^
+
 #飞猪App
 ||tbexpand.alicdn.com^
 ||pigeon.alicdn.com^
+
 #米游社App
 ||ad-log-upload.mihoyo.com^
 ||h5log-api-dualstack.mihoyo.com^
 ||log-upload-v6.mihoyo.com^
+
 #咕咚App
 ||imageads.codoon.com^
 ||adsdkapi.dxys.pro^
 ||tobidad.*^
+
 #斗鱼直播
 ||rtbapi.douyucdn.cn^
+
+#小米智能服务系统级广告
+||metok.sys.miui.com^
+
 #AGE动漫
 ||cdn-*.g52j7.com^
 ||bdxiguaimg.com^
@@ -721,6 +827,7 @@
 ||vip.cqtnfs.com^
 ||vip.aqdm349.com^
 ||vip.huijujiavip.com^
+
 #酷狗音乐
 ||voowebpbssdl.kugou.com^
 ||h5retry.kugou.com^
@@ -729,11 +836,13 @@
 ||gad.kugou.com^
 ||mvads.kugou.com^
 ||adservice.kugou.com^
+
 #亲邻开门
 ||yfanads.com^
 ||yumao.puata.info^
 ||mallapi2.qinlinkeji.com^
 ||mall-dsp2.qinlinkeji.com^
+
 #原版Alist的恶意域名
 ||al.nn.ci^
 ||alist.nn.ci^
@@ -745,11 +854,13 @@
 ||contrib.nn.ci^
 ||jsd.nn.ci^
 ||musl.nn.ci^
+
 #Keep运动
 ||kplayer.keepcdn.com^
 ||da.qiyukf.com^
 ||v1.keepcdn.com^
 ||kad.gotokeep.com^
+
 #汽水音乐
 ||adbiding.com^
 ||meta.pinduoduo.com^
@@ -759,13 +870,16 @@
 ||v.smtcdns.com^
 ||somamobi.com^
 ||ndcpp.com^
+
 #中国电信
 ||appupdate.189.cn^
 ||appupdates.189.cn^
 ||bkappad.189.cn^
+
 #驾校一点通
 ||richmanrank.ksedt.com^
 ||resauth.kuwo.cn^
+
 #禁漫漫画
 ||aplsof2fd.*.com^
 ||xyftidkux8i2ab.ddcu8sdjmnbhh.dafga*.com^
@@ -782,6 +896,7 @@
 ||sharkcloud.app^
 ||789free.fun^
 ||iqq*.work^
+
 #书旗小说
 ||adnetstatic.*^
 ||sdk-log.partner.sm.cn^
@@ -789,26 +904,34 @@
 ||ssp.vivo.com.cn^
 ||ssp-sdk-config.uc.cn^
 ||partner.uc.cn^
+
 #度小满/有钱花
 ||plusjrmallstatic.cdn.bcebos.com^
+
 #萤石云视频
 ||ad-material.*.com^
 ||sdk-ab-config-cdn.yunxish.com^
 ||appdownload.ys7.com^
+
 #快手短视频
 ||xxpkg.com^
 ||comfylink.com^
 ||djvod.ndcimgs.com^
+
 #午夜AV
 ||s1-a1.global-cdn.me^
 ||pptstatic.wyav.tv^
+
 #彩虹多多App
 ||yunxish.com^
 ||adxvip.com^
+
 #百词斩App
 ||advertise.bczeducation.*^
+
 #努比亚游戏中心
 ||cdn*-ads.redmagic.com^
+
 #日志抓取
 ||*-ad.adukwai.com^
 ||*-inapps.appsflyersdk.com^
@@ -825,15 +948,20 @@
 ||ac.dun.163yun.com^
 ||ad.mail.ru^
 ||adapty.io^
+||adashx.m.taobao.com^
 ||adexchangerapid.com^
+||adiu.amap.com^
 ||admin-oss-xlvip.a.88cdn.com^
 ||ads-api.twitter.com^
 ||ads-api.x.com^
 ||ads5-normal-hj.zijieapi.com^
 ||adsboosters.xyz^
+||adsmind.gdtimg.com^
 ||adstats.tencentmusic.com^
 ||adtrack.quark.cn^
 ||adtrafficquality.google^
+||adv.sec.miui.com^
+||advertpay-vip-ssl.xunlei.com^
 ||advlion.com^
 ||adx-ad-prod.wkanx.com^
 ||adx-bj.anythinktech.com^
@@ -841,6 +969,7 @@
 ||aegis.qq.com^
 ||afd.baidu.com^
 ||afdconf.baidu.com^
+||aiclk.com^
 ||alb.reddit.com^
 ||aliapp.org^
 ||als.baidu.com^
@@ -849,9 +978,12 @@
 ||analytics.morphe.software^
 ||analytics.twitter.com^
 ||analytics.yahoo.com^
+||android.bugly.qq.com^
 ||android.crashsight.qq.com^
 ||android.rqd.qq.com^
+||anythinktech.com^
 ||apd-pcdnvodstat.teg.tencent-cloud.net^
+||apd-pcdnwxlogin.teg.tencent-cloud.net^
 ||apd-pcdnwxnat.teg.tencent-cloud.net^
 ||apd-pcdnwxstat.teg.tencent-cloud.net^
 ||apd-vodp2plogin.teg.tencent-cloud.net^
@@ -860,14 +992,22 @@
 ||api-access.pangolin-sdk-toutiao.com^
 ||api-access.pangolin-sdk-toutiao1.com^
 ||api-game-ssl.xunlei.com^
+||api.ad.xiaomi.com^
+||api.comm.miui.com^
+||api.developer.xiaomi.com^
 ||api.fu.xcultur.com^
 ||api.g.micloud.xiaomi.net^
+||api.installer.xiaomi.com^
+||api.installer.xiaomi.com^
 ||api.kingdata.ksyun.com^
 ||api.miui.security.xiaomi.com^
 ||api.segment.io^
+||api.ssp.xcultur.com^
+||api.tw06.xlmc.sec.miui.com^
 ||api2.branch.io^
 ||api2.coolapk.com^
 ||app-measurement.com^
+||app-monitor.ele.me^
 ||appcfg.v.qq.com^
 ||appier.net^
 ||appjiagu.com^
@@ -876,20 +1016,25 @@
 ||appsupport.qq.com^
 ||asearch.alicdn.com^
 ||astrategy.beacon.qq.com^
+||atrace.chelaile.net.cn^
 ||audid.umeng.com^
+||auth.be.sec.miui.com^
 ||avalancheofnews.com^
 ||b-gtc.getui.net^
 ||backstage-file-static.a.88cdn.com^
+||badjs.weixinbridge.com^
 ||bdbus-turbonet.baidu.com^
 ||beacon-api.aliyuncs.com^
 ||beacon.cdn.qq.com^
 ||beacon.qq.com^
 ||bes-mtj.baidu.com^
+||birdgesdk.com^
 ||bj-td-menta-01-callback.advlion.com^
 ||boxofwhisper.com^
 ||branch.io^
 ||browser-intake-datadoghq.com^
 ||browser.miui.com^
+||browser.sentry-cdn.com^
 ||browserkernel.baidu.com^
 ||bvmlt.top^
 ||bz-ipdx.baidu.com^
@@ -908,6 +1053,8 @@
 ||cdn.wwads.cn^
 ||cdna.sec.miui.com^
 ||cfg.imtt.qq.com^
+||cgicol.amap.com^
+||channels.weixin.qq.com^
 ||clarity.ms^|
 ||cleverwebserver.com^
 ||clickadu.com^
@@ -927,6 +1074,7 @@
 ||consent.cmp.oath.com^
 ||counter.yadro.ru^
 ||cpc-service-square.aiclk.com^
+||cpro.baidustatic.com^
 ||cpucdn.baidu.com^
 ||cr.adsappier.com^
 ||crsspxl.com^
@@ -940,6 +1088,7 @@
 ||d2ng6x3yyemlxz.cloudfront.net^
 ||d33f51dyacx7bd.cloudfront.net^
 ||data.bilibili.com^
+||data.sec.miui.com^
 ||daup.map.baidu.com^
 ||dbzy3.com^
 ||dbzy5.com^
@@ -953,6 +1102,7 @@
 ||dlswbr.baidu.com^
 ||dns.weixin.qq.com*^
 ||dns.weixin.qq.com.cn^
+||doubleclick.net^
 ||dp3.qq.com^
 ||dualstack-logs.amap.com^
 ||duxiaoman.com^
@@ -976,6 +1126,7 @@
 ||firebase-settings.crashlytics.com^
 ||firebaselogging-pa.googleapis.com^
 ||firebaselogging.googleapis.com^
+||flash.sec.miui.com^
 ||fls.doubleclick.net^
 ||flysleep.cn^
 ||fontmenice.com^
@@ -989,6 +1140,7 @@
 ||galileotelemetry.tencent.com^
 ||game.weixin.qq.com^
 ||gamebox.sec.miui.com^
+||gdt.qq.com^
 ||gdtimg.com^
 ||geo.yahoo.com^
 ||gepush.com^
@@ -997,6 +1149,7 @@
 ||glitter.services.disqus.com^
 ||gnomesyeuked.com^
 ||google-analytics.com^
+||googleads.g.doubleclick.net^
 ||googleadservices.com^
 ||googletagmanager.com^
 ||graph.facebook.com^
@@ -1012,6 +1165,7 @@
 ||h-adashx.ut.taobao.com^
 ||h.trace.qq.com^
 ||hijack.baidu.com^
+||hm.baidu.com^
 ||hmma.baidu.com^
 ||hog.crowdin.com^
 ||huangye.miui.com^
@@ -1056,7 +1210,9 @@
 ||log-vip-ssl.xunlei.com^
 ||log.aliyuncs.com^
 ||log.cookieyes.com^
+||log.tbs.qq.com^
 ||log.wechatpay.cn^
+||log.weixin.qq.com^
 ||log.wifi.com^
 ||log.wtlogin.qq.com^
 ||log0-misc-hl.amemv.com^
@@ -1067,6 +1223,7 @@
 ||loggw-exsdk.alipay.com^
 ||logrcv.aiclk.com^
 ||logs.amap.com^
+||logs.chelaile.net.cn^
 ||lupic.cdn.bcebos.com^
 ||masdkv6.3g.qq.com^
 ||masonerthoria.shop^
@@ -1075,18 +1232,25 @@
 ||mc.yandex.ru^
 ||mcs.snssdk.com^
 ||mcs.zijieapi.com^
+||mdap.alipay.com^
 ||mediav.com^
+||metok.sys.miui.com^
 ||metric.huya.com^
 ||metricreceiver.cellrebel.com^
 ||metrics-collector.xaidc.com^
 ||metrics.tacit.dk^
 ||metricslinks.com^
+||mi.gdt.qq.com^
 ||miaowu.baidu.com^
+||miaozhen.com^
 ||microfun.cn^
 ||mime.baidu.com^
 ||mmgame.qpic.cn^
 ||mo.baidu.com^
+||mobads-logs.baidu.com^
+||mobads.baidu.com^
 ||mobile-data.onetrust.io^
+||mon.snssdk.com^
 ||mon.toutiao.com^
 ||mon.zijieapi.com^
 ||ms.applovin.com^
@@ -1101,11 +1265,13 @@
 ||mxvp-feature-toggle-prod-1.zenmxapps.com^
 ||myip.la^
 ||nap5k.com^
+||ndcpp.com^
 ||netpub.media^
 ||new-sentry.gitlab.net^
 ||nexusedgeio.com^
 ||nj.t.bcsp2p.baidu.com^
 ||noa.yahoo.com^
+||nsclick.baidu.com^
 ||o22381.ingest.sentry.io^
 ||o248881.ingest.us.sentry.io^
 ||o33249.ingest.sentry.io^
@@ -1121,6 +1287,8 @@
 ||oth.str.mdt.qq.com^
 ||otheve.beacon.qq.com^
 ||p.l.qq.com^
+||pagead2.googlesyndication.com^
+||pgdt.gtimg.cn^
 ||ph5.ynuf.aliapp.org^
 ||pimlog.baidu.com^
 ||pingjs.qq.com^
@@ -1167,6 +1335,7 @@
 ||sdk.api.bjshcw.com^
 ||sdk.beizi.biz^
 ||sdk.e.qq.com^
+||sdkconfig.ad.xiaomi.com^
 ||searchlabspartnerservice-pa.googleapis.com^
 ||sec.umeng.com^
 ||securepubads.g.doubleclick.net^
@@ -1183,6 +1352,7 @@
 ||sofire.baidu.com^
 ||sofire.bdstatic.com^
 ||sp0.baidu.com^
+||sp1.baidu.com^
 ||ssl.google-analytics.com^
 ||startup.mobile.yandex.net^
 ||stat-download-ssl.xunlei.com^
@@ -1219,16 +1389,20 @@
 ||toblog.ctobsnssdk.com^
 ||tosv.byted.org^
 ||tpc.googlesyndication.com^
+||tpns.tencent.com^
 ||tpstelemetry.tencent.com^
 ||track-config.y5kfpt.com^
 ||track-gateway.y5kfpt.com^
 ||track.lc.quark.cn^
 ||track.uc.cn^
 ||tracker.xiaomixiaoai.com^
+||tracking.miui.com^
 ||trafficjunky.net^
 ||tuisong.baidu.com^
 ||tz.sec.xiaomi.com^
+||ubixioe.com^
 ||udc.yahoo.com^
+||udpolimenew.baidu.com^
 ||ufosdk.baidu.com^
 ||ug.baidu.com^
 ||uhabo.com^
@@ -1242,10 +1416,13 @@
 ||unioncom.cc^
 ||up-hl.3g.qq.com^
 ||upc.zztfly.com^
+||update.pan.baidu.com^
+||upl.baidu.com^
 ||usr-api.aiclk.com^
 ||utoken.umeng.com^
 ||v1.cnzz.com^
 ||v1d.pkoplink.com^
+||vegslb.com^
 ||vhit.io^
 ||via.google^
 ||vpp-license-proxy.aliyuncs.com^
@@ -1253,6 +1430,7 @@
 ||w3-reporting.reddit.com^
 ||wcpkckormoghp.website^
 ||webcert.cnmstl.net^
+||wkanx.com^
 ||wosms.cn^
 ||ws-keyboard.shouji.sogou.com^
 ||wspeed.qq.com^
@@ -1273,6 +1451,8 @@
 ||ziffdavis.com^
 ||zxid-m.mobileservice.cn^
 ||zz.bdstatic.com^
+||zzhc.vnet.cn^
+
 #部分小众广告联盟
 ||adn.tapapis.cn^
 ||yourongsj.com^
@@ -1337,13 +1517,16 @@
 ||vlion.cn^
 ||abtest.*^
 ||zztfly.com^
+||flysleep.cn^
 ||business-ad.cdn-go.cn^
 ||sentry-ov.*.com^
 ||wxcjgg.cn^
+||advlion.com^
 ||adv.api.mucfc.com^
 ||jr-ad.ctrip.com^
 ||rtawin.daikuan.360.cn^
 ||at.pinduoduo.com^
+
 #木马网站跳转，防劫持
 ||0lqohce0nl7t.com^
 ||x7m1y3.*^
