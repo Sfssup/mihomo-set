@@ -1,6 +1,15 @@
 # 哔哩漫游X服务器
 ||black.qimo.ink^
 
+#Bugsnag 崩溃监控
+||bugsnag.com^
+
+#Sentry 错误监控
+||sentry.io^
+
+#Google 广告服务/广告归因
+||googleadservices.com^
+
 # Xiaomi Ads（MIUI 广告服务器）
 ||ad.mi.com^
 ||ad.xiaomi.com^
