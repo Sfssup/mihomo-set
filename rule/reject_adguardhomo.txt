@@ -423,7 +423,7 @@
 ||zzhc.vnet.cn^
 ||sentry.io^
 ||api.umengcn.org^
-||update.googleapis.com^
+||glitchtip.jgeek00.com^
 ||browser.sentry-cdn.com^
 ||advertising.amazon.com^
 ||ymatuhin.ru^
