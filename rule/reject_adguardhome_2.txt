@@ -62,7 +62,6 @@
 ||api.ad.xiaomi.com^
 ||api.comm.miui.com^
 ||api.developer.xiaomi.com^
-||api.device.xiaomi.net^
 ||api.fu.xcultur.com^
 ||api.g.micloud.xiaomi.net^
 ||api.installer.xiaomi.com^
@@ -121,7 +120,6 @@
 ||cdn.wwads.cn^
 ||cdna.sec.miui.com^
 ||cfg.imtt.qq.com^
-||cgi.connect.qq.com^
 ||cgicol.amap.com^
 ||channels.weixin.qq.com^
 ||clarity.ms^|
@@ -138,9 +136,7 @@
 ||cnzz.com^
 ||collect.alipay.com^
 ||collector.github.com^
-||config.cmpassport.com^
 ||config.jpush.cn^
-||config2.cmpassport.com^
 ||configv2.unityads.unitychina.cn^
 ||consent.cmp.oath.com^
 ||counter.yadro.ru^
@@ -171,7 +167,6 @@
 ||dhsz.cn^
 ||directory.cookieyes.com^
 ||dlswbr.baidu.com^
-||dns.alidns.com^
 ||dns.weixin.qq.com*^
 ||dns.weixin.qq.com.cn^
 ||doubleclick.net^
@@ -182,7 +177,6 @@
 ||e.so.com^
 ||easytomessage.com^
 ||effirst.com^
-||elemecdn.com^
 ||errnewlog.umeng.com^
 ||error-tracking.reddit.com^
 ||etl-xlmc-ssl.sandai.net^
@@ -247,8 +241,6 @@
 ||i.posthog.com^
 ||iad.g.163.com^
 ||id6.me^
-||idm.api.io.mi.com^
-||idm.iot.mi.com^
 ||igexin.com^
 ||ilce.alicdn.com^
 ||img.ssl.msdk.qq.com^
@@ -261,7 +253,6 @@
 ||info.3g.qq.com^
 ||ipinfo.be^
 ||ir-sdk.dun.163.com^
-||issuecdn.baidupcs.com^
 ||itsdata.map.baidu.com^
 ||jpush.cn^
 ||jsapi.qq.com^
@@ -371,7 +362,6 @@
 ||pms-cdn.bdstatic.com^
 ||polaris5-normal-lq.zijieapi.com^
 ||polls.services.disqus.com^
-||polyfill-js.cn^
 ||port.sec.miui.com^
 ||privacy.miui.com^
 ||pro-market.net^
@@ -396,8 +386,6 @@
 ||reqstat.api.mega.co.nz^
 ||res-etl-ssl.xunlei.com^
 ||resolve.umeng.com^
-||resolver.mi.xiaomi.com^
-||resolver.msg.xiaomi.net^
 ||retcode.taobao.com^
 ||rlcdn.com^
 ||rmonitor.qq.com^
@@ -440,7 +428,6 @@
 ||static.cloudflareinsights.com^
 ||static.doubleclick.net^
 ||static2-youxi.a.88cdn.com^
-||statics.woozooo.com^
 ||statisticslinks.com^
 ||stats.wp.com^
 ||stats.zincdrive.com^
@@ -506,8 +493,6 @@
 ||vhit.io^
 ||via.google^
 ||vpp-license-proxy.aliyuncs.com^
-||vv.video.qq.com^
-||vweixinthumb.tc.qq.com^
 ||w3-reporting-nel.reddit.com^
 ||w3-reporting.reddit.com^
 ||wcpkckormoghp.website^
