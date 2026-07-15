@@ -1,160 +1,272 @@
+# 端口
+port: 7892
+socks-port: 7893
 mixed-port: 1080
+redir-port: 7891
 tproxy-port: 1536
-log-level: error
+
+# 全局配置
 mode: rule
 udp: true
-find-process-mode: strict
-ipv6: true
+ipv6: false
 tcp-concurrent: true
 unified-delay: true
-
-global-client-fingerprint: chrome
+find-process-mode: strict
+geodata-loader: memconservative
+geosite-matcher: succinct
 global-ua: clash.meta
 etag-support: true
 
+# 日志
+log-level: error
+
+# 局域网配置
 allow-lan: true
 bind-address: "*"
 
+# TCP连接保持活跃探测，修改此项以减少移动设备耗电问题
 disable-keep-alive: true
 keep-alive-interval: 15
 keep-alive-idle: 15
 
-geodata-loader: memconservative
-geosite-matcher: succinct
-
+# 外部控制 (API)
 external-controller: 127.0.0.1:9090
 secret: "ksc666"
-external-ui: "./zashboard"
-external-ui-url: "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip" # 自定义外部用户界面下载地址
+external-ui: "./Web/zashboard"
+external-ui-url: "https://github.com/Zephyruso/zashboard/releases/latest/download/dist-no-fonts.zip"
 
+# 缓存
 profile:
   store-selected: true
   store-fake-ip: true
 
 tun:
   enable: false
-  device: utun0
+  device: tun0
   stack: mixed
+  dns-hijack: [any:53, tcp://any:53]
   auto-route: true
-  auto-redirect: false
-  auto-detect-interface: true
-  dns-hijack:
-    - "any:53"
-    - "tcp://any:53"
   strict-route: true
-  route-exclude-address:
-    - "192.168.0.0/16"
-    - "fc00::/7"
+  auto-redirect: true
+  auto-detect-interface: true
+  mtu: 9000
+  gso: true
+  route-exclude-address: [127.0.0.1/32,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,224.0.0.0/4,169.254.0.0/16,"::/127","fe80::/10","ff00::/8"]
+  route-exclude-address-set: [private_ip]
 
 sniffer:
   enable: true
   force-dns-mapping: true
   parse-pure-ip: true
   override-destination: true
-  sniff:
-    HTTP:
-      ports: [80, 8080-8880]
-      override-destination: true
-    TLS:
-      ports: [443, 8443]
-    QUIC:
-      ports: [443, 8443]
-  skip-src-address:
-    - 192.168.0.3/32
-  skip-dst-address:
-    - 192.168.0.3/32
-  skip-domain:
-    - "RULE-SET:private"
-    - "Mijia Cloud"
-    - "+.push.apple.com"
+  sniff: {HTTP: {ports: [80, 8080-8880], override-destination: true}, TLS: {ports: [443, 8443]}, QUIC: {ports: [443, 8443]}}
+  skip-domain: [localhost,+.local,+.lan,+.push.apple.com,Mijia Cloud,dlg.io.mi.com]
 
 dns:
   enable: true
-  cache-algorithm: arc
+  listen: 0.0.0.0:1053
+  respect-rules: true
   prefer-h3: false
+  disable-qtype-65: true
+  ipv6: false
+  ipv6-timeout: 3000
   use-hosts: true
   use-system-hosts: true
-  respect-rules: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  ipv6-timeout: 600
+  cache-algorithm: arc
   default-nameserver:
     - https://223.5.5.5/dns-query
-    - https://120.53.53.53/dns-query
+    - https://119.29.29.29/dns-query
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.0/15
-  fake-ip-filter-mode: blacklist
+  fake-ip-range6: fc00::/18
+  fake-ip-ttl: 60
+  fake-ip-filter-mode: rule
   fake-ip-filter:
-    - "RULE-SET:private"
+    - RULE-SET,private,real-ip
+    - MATCH,fake-ip
   nameserver-policy:
     "+.arpa": "10.0.0.1"
-    "RULE-SET:cn,private":
-      - https://223.5.5.5/dns-query
-      - https://120.53.53.53/dns-query
   nameserver:
-    - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  direct-nameserver-follow-policy: false
   direct-nameserver:
     - https://223.5.5.5/dns-query
-    - https://120.53.53.53/dns-query
+    - https://1.12.12.12/dns-query
   proxy-server-nameserver:
-    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
     - https://120.53.53.53/dns-query
 
 proxies:
-  - {name: 🌐 DNS劫持, type: dns}
-  - {name: 🇨🇳 国内直连, type: direct, udp: true}
 
-p: &p {type: http, interval: 86400, proxy: "节点下载", exclude-filter: "套餐|流量|群组|频道|官网|推荐使用|测试|电报|极速666|防失联|节点超时", exclude-type: "http", health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 3600, timeout: 3000, max-failed-times: 5, lazy: true}}
-pr: &pr {type: select, proxies: [手动选择, 自动选择, 故障转移, 负载均衡, 🇨🇳 国内直连, 流量拦截, 香港, 台湾, 日本, 韩国, 新加坡, 美国, 其它地区, 全部节点]}
+  - {name: 🌐 DNS劫持, type: dns}
+  - {name: 🇨🇳 直连, type: direct, udp: true}
+  
+# 锚点
+p: &p {type: http, interval: 86400, proxy: "SubUpdate", exclude-filter: "(?i)Russia", exclude-type: "http|ss", health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 3600, timeout: 3000}}
+pr: &pr {type: select, proxies: [香港-自动选择, 香港-故障转移, 香港-负载均衡, 香港-手动选择, 台湾-自动选择, 台湾-故障转移, 台湾-负载均衡, 台湾-手动选择, 日本-自动选择, 日本-故障转移, 日本-负载均衡, 日本-手动选择, 韩国-自动选择, 韩国-故障转移, 韩国-负载均衡, 韩国-手动选择, 新加坡-自动选择, 新加坡-故障转移, 新加坡-负载均衡, 新加坡-手动选择, 英国-自动选择, 英国-故障转移, 英国-负载均衡, 英国-手动选择, 美国-自动选择, 美国-故障转移, 美国-负载均衡, 美国-手动选择, 其他-自动选择, 其他-故障转移, 其他-负载均衡, 其他-手动选择, 全部-自动选择, 全部-故障转移, 全部-负载均衡, 全部-手动选择, 神秘大国, Block]}
+check: &check {url: "https://www.gstatic.com/generate_204", interval: 1800, timeout: 3000, lazy: true, max-failed-times: 3, hidden: true}
+smux: &smux {udp: true, client-fingerprint: chrome, tfo: true, smux: {enabled: true, protocol: h2mux, max-connections: 9, min-streams: 5, max-streams: 9, statistic: false, only-tcp: false, padding: true}}
 
 proxy-providers:
-  mojie: {<<: *p, url: "https://www.mojie.cyou/#/register?code=a0sBIylV", override: {additional-prefix: "魔戒｜"}}
-  dingjijichang: {<<: *p, url: "https://xn--mes358a9urctx.com/#/register?code=wiPXjyYq", override: {additional-prefix: "顶级机场｜"}}
-  feiniaoyun: {<<: *p, url: "https://www.feiniaoyun.xyz/#/register?code=1gZX21aI", override: {additional-prefix: "飞鸟云｜"}}
-  Miaona: {<<: *p, url: "https://miaona.org/#/register?code=C3J67GSL", override: {additional-prefix: "Miaona｜"}}
-  jisuyun: {<<: *p, url: "https://w2.rouhe88.com/#/register?code=Zl5IqVKd", override: {additional-prefix: "极速云｜"}}
-
-proxy-groups:
-  - {name: 手动选择, type: select, proxies: [自动选择, 故障转移, 负载均衡, 🇨🇳 国内直连, 流量拦截, 香港, 台湾, 日本, 韩国, 新加坡, 美国, 其它地区, 全部节点], icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Clubhouse.png}
-  - {name: 自动选择, type: url-test, include-all-providers: true, tolerance: 10, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Auto.png}
-  - {name: 故障转移, type: fallback, include-all-providers: true, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/ULB.png}
-  - {name: 负载均衡, type: load-balance, strategy: sticky-sessions, include-all-providers: true, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/load-balance.png}
-
-  - {name: 自定义流量, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/zdy.png}
-  - {name: 节点下载, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Download.png}
-  - {name: 漏网之鱼, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Final.png}
-  - {name: 流量拦截, type: select, proxies: [REJECT-DROP, REJECT, PASS], icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Reject.png}
+  # 以下是自用的几个机场推荐，复制 url: "” 部分官网，注册后把自己的订阅链接替换进去即可
+  # 如果你有更多机场订阅，按照相同格式 一行一个 添加即可，无需额外配置
+  #   机场名: {<<: *p, url: "订阅地址", path: .路径与文件名, override: {复写 在节点名前面加上机场名，用以区分多个机场}}
   
-  - {name: 香港, type: url-test, include-all-providers: true, filter: "(?i)🇭🇰|港|hk|hongkong|hong kong", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/HongKong.png}
-  - {name: 台湾, type: url-test, include-all-providers: true, filter: "(?i)🇹🇼|台|tw|taiwan|tai", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Taiwan.png}
-  - {name: 日本, type: url-test, include-all-providers: true, filter: "(?i)🇯🇵|日本|jp|japan", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Japan.png}
-  - {name: 韩国, type: url-test, include-all-providers: true, filter: "(?i)🇰🇷|韩|kr|korea", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Korea.png}
-  - {name: 新加坡, type: url-test, include-all-providers: true, filter: "(?i)🇸🇬|新|sg|singapore", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/Singapore.png}
-  - {name: 美国, type: url-test, include-all-providers: true, exclude-filter: "(?i)RU", filter: "(?i)🇺🇸|美|us|unitedstates|united states", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/United_States.png}
-  - {name: 其它地区, type: url-test, include-all-providers: true, exclude-filter: "(?i)🇭🇰|港|hk|hongkong|hong kong|🇹🇼|台|tw|taiwan|tai|🇰🇷|韩|kr|korea|🇯🇵|日|jp|japan|🇸🇬|新加坡|sg|singapore|🇺🇸|美|us|unitedstates|united states", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/qitadiqu.png}
-  - {name: 全部节点, type: url-test, include-all-providers: true, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/icon/quanbujiedian.png}
+  Miaona: {<<: *p, url: "https://miaona.org/#/register?code=EdpK1Vlo", path: ./proxy_providers/Miaona.yaml, override: {<<: *smux, additional-prefix: "Miaona｜"}}
+  魔戒: {<<: *p, url: "https://www.mojie.cyou/#/register?code=a0sBIylV", path: ./proxy_providers/魔戒.yaml, override: {<<: *smux, additional-prefix: "魔戒｜"}}
+  飞鸟云: {<<: *p, url: "https://www.feiniaoyun.xyz/#/register?code=1gZX21aI", path: ./proxy_providers/飞鸟云.yaml, override: {<<: *smux, additional-prefix: "飞鸟云｜"}}
+  淘气兔: {<<: *p, url: "https://vip.xn--h5qy56dzhb.vip/#/register?code=rNh8X1zf", path: ./proxy_providers/淘气兔.yaml, override: {<<: *smux, additional-prefix: "淘气兔｜"}}
+  极速云: {<<: *p, url: "https://w2.rouhe88.com/#/register?code=Zl5IqVKd", path: ./proxy_providers/极速云.yaml, override: {<<: *smux, additional-prefix: "极速云｜"}}
+  顶级机场: {<<: *p, url: "https://xn--mes358a9urctx.com/#/register?code=AkCxVELH", path: ./proxy_providers/顶级机场.yaml, override: {<<: *smux, additional-prefix: "顶级机场｜"}}
+  
+proxy-groups:
+  
+  # 代理组
+  - {name: Speedtest, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/speedtest.svg}
+  - {name: Google FCM, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/firebase.svg}
+  - {name: Google, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/google_new.svg}
+  - {name: Microsoft, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/microsoft.svg}
+  - {name: Apple, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/apple.svg}
+  - {name: AI, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/meta-ai.svg}
+  - {name: Steam, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/steam.svg}
+  - {name: Github, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/github.svg}
+  - {name: Twitter, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/twitter_2.svg}
+  - {name: Telegram, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/telegram.svg}
+  - {name: Instagram, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/instagram.svg}
+  - {name: Facebook, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/facebook_2.svg}
+  - {name: TikTok, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/tiktok.svg}
+  - {name: YouTube, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/youtube.svg}
+  - {name: Spotify, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/spotify.svg}
+  - {name: PikPak, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/pikpak.svg}
+  - {name: MEGA, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/mega.svg}
+  - {name: PayPal, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/PayPal.svg}
+  - {name: SubUpdate, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/download.svg}
+  - {name: Global, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/global.svg}
+  - {name: Block, type: select, proxies: [REJECT-DROP, REJECT, PASS], icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/adguard.svg}
+  - {name: Final, <<: *pr, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/Final_2.svg}
+  - {name: 神秘大国, type: select, proxies: [🇨🇳 直连, 全部-手动选择, Block], default-selected: 🇨🇳 直连, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/china.svg}
+  
+  # 地区筛选
+  - {name: 香港-手动选择, type: select, include-all-providers: true, filter: "(?i)港|hk|hong ?kong", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/hk.svg}
+  - {name: 香港-自动选择, type: url-test, include-all-providers: true, <<: *check, tolerance: 10, filter: "(?i)港|hk|hong ?kong", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/hk.svg}
+  - {name: 香港-故障转移, type: fallback, include-all-providers: true, <<: *check, filter: "(?i)港|hk|hong ?kong", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/hk.svg}
+  - {name: 香港-负载均衡, type: load-balance, strategy: consistent-hashing, include-all-providers: true, <<: *check, filter: "(?i)港|hk|hong ?kong", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/hk.svg}
+  - {name: 台湾-手动选择, type: select, include-all-providers: true, filter: "(?i)台|tw|tai ?wan|tai ?pei", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/tw.svg}
+  - {name: 台湾-自动选择, type: url-test, include-all-providers: true, <<: *check, tolerance: 10, filter: "(?i)台|tw|tai ?wan|tai ?pei", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/tw.svg}
+  - {name: 台湾-故障转移, type: fallback, include-all-providers: true, <<: *check, filter: "(?i)台|tw|tai ?wan|tai ?pei", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/tw.svg}
+  - {name: 台湾-负载均衡, type: load-balance, strategy: consistent-hashing, include-all-providers: true, <<: *check, filter: "(?i)台|tw|tai ?wan|tai ?pei", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/tw.svg}
+  - {name: 日本-手动选择, type: select, include-all-providers: true, filter: "(?i)日本|jp|japan|nippon", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/jp.svg}
+  - {name: 日本-自动选择, type: url-test, include-all-providers: true, <<: *check, tolerance: 10, filter: "(?i)日本|jp|japan|nippon", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/jp.svg}
+  - {name: 日本-故障转移, type: fallback, include-all-providers: true, <<: *check, filter: "(?i)日本|jp|japan|nippon", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/jp.svg}
+  - {name: 日本-负载均衡, type: load-balance, strategy: consistent-hashing, include-all-providers: true, <<: *check, filter: "(?i)日本|jp|japan|nippon", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/jp.svg}
+  - {name: 韩国-手动选择, type: select, include-all-providers: true, filter: "(?i)韩|kr|korea", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/kr.svg}
+  - {name: 韩国-自动选择, type: url-test, include-all-providers: true, <<: *check, tolerance: 10, filter: "(?i)韩|kr|korea", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/kr.svg}
+  - {name: 韩国-故障转移, type: fallback, include-all-providers: true, <<: *check, filter: "(?i)韩|kr|korea", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/kr.svg}
+  - {name: 韩国-负载均衡, type: load-balance, strategy: consistent-hashing, include-all-providers: true, <<: *check, filter: "(?i)韩|kr|korea", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/kr.svg}
+  - {name: 新加坡-手动选择, type: select, include-all-providers: true, filter: "(?i)新加坡|sg|singapore|狮城", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/sg.svg}
+  - {name: 新加坡-自动选择, type: url-test, include-all-providers: true, <<: *check, tolerance: 10, filter: "(?i)新加坡|sg|singapore|狮城", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/sg.svg}
+  - {name: 新加坡-故障转移, type: fallback, include-all-providers: true, <<: *check, filter: "(?i)新加坡|sg|singapore|狮城", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/sg.svg}
+  - {name: 新加坡-负载均衡, type: load-balance, strategy: consistent-hashing, include-all-providers: true, <<: *check, filter: "(?i)新加坡|sg|singapore|狮城", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/sg.svg}
+  - {name: 英国-手动选择, type: select, include-all-providers: true, filter: "(?i)UK|United ?Kingdom|英国|伦敦|London", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/UK.svg}
+  - {name: 英国-自动选择, type: url-test, include-all-providers: true, <<: *check, tolerance: 10, filter: "(?i)UK|United ?Kingdom|英国|伦敦|London", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/UK.svg}
+  - {name: 英国-故障转移, type: fallback, include-all-providers: true, <<: *check, filter: "(?i)UK|United ?Kingdom|英国|伦敦|London", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/UK.svg}
+  - {name: 英国-负载均衡, type: load-balance, strategy: consistent-hashing, include-all-providers: true, <<: *check, filter: "(?i)UK|United ?Kingdom|英国|伦敦|London", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/UK.svg}
+  - {name: 美国-手动选择, type: select, include-all-providers: true, filter: "(?i)美|us|united ?states", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/us.svg}
+  - {name: 美国-自动选择, type: url-test, include-all-providers: true, <<: *check, tolerance: 10, filter: "(?i)美|us|united ?states", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/us.svg}
+  - {name: 美国-故障转移, type: fallback, include-all-providers: true, <<: *check, filter: "(?i)美|us|united ?states", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/us.svg}
+  - {name: 美国-负载均衡, type: load-balance, strategy: consistent-hashing, include-all-providers: true, <<: *check, filter: "(?i)美|us|united ?states", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/us.svg}
+  - {name: 其他-手动选择, type: select, include-all-providers: true, exclude-filter: "(?i)港|hk|hong ?kong|台|tw|tai ?wan|tai ?pei|韩|kr|korea|日本|jp|japan|nippon|新加坡|sg|singapore|狮城|UK|United ?Kingdom|英国|伦敦|London|美|us|united ?states", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/other.svg}
+  - {name: 其他-自动选择, type: url-test, include-all-providers: true, <<: *check, tolerance: 10, exclude-filter: "(?i)港|hk|hong ?kong|台|tw|tai ?wan|tai ?pei|韩|kr|korea|日本|jp|japan|nippon|新加坡|sg|singapore|狮城|UK|United ?Kingdom|英国|伦敦|London|美|us|united ?states", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/other.svg}
+  - {name: 其他-故障转移, type: fallback, include-all-providers: true, <<: *check, exclude-filter: "(?i)港|hk|hong ?kong|台|tw|tai ?wan|tai ?pei|韩|kr|korea|日本|jp|japan|nippon|新加坡|sg|singapore|狮城|UK|United ?Kingdom|英国|伦敦|London|美|us|united ?states", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/other.svg}
+  - {name: 其他-负载均衡, type: load-balance, strategy: consistent-hashing, include-all-providers: true, <<: *check, exclude-filter: "(?i)港|hk|hong ?kong|台|tw|tai ?wan|tai ?pei|韩|kr|korea|日本|jp|japan|nippon|新加坡|sg|singapore|狮城|UK|United ?Kingdom|英国|伦敦|London|美|us|united ?states", icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/other.svg}
+  - {name: 全部-手动选择, type: select, include-all-providers: true, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/all.svg}
+  - {name: 全部-自动选择, type: url-test, include-all-providers: true, <<: *check, tolerance: 10, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/all.svg}
+  - {name: 全部-故障转移, type: fallback, include-all-providers: true, <<: *check, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/all.svg}
+  - {name: 全部-负载均衡, type: load-balance, strategy: consistent-hashing, include-all-providers: true, <<: *check, icon: https://raw.githubusercontent.com/Sfssup/mihomo-set/main/icon/all.svg}
 
 rule-anchor:
+
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
   domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
 
 rule-providers:
+  
+  # 域名
   private: {<<: *domain, path: ./rule_set/private.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
+  telegram: {<<: *domain, path: ./rule_set/telegram.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
+  github: {<<: *domain, path: ./rule_set/github.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
+  youtube: {<<: *domain, path: ./rule_set/youtube.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
+  steam: {<<: *domain, path: ./rule_set/steam.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs"}
+  ai-!cn: {<<: *domain, path: ./rule_set/category-ai-!cn.mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs"}
+  google: {<<: *domain, path: ./rule_set/google.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
+  googlefcm: {<<: *domain, path: ./rule_set/googlefcm.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/googlefcm.mrs"}
+  mega: {<<: *domain, path: ./rule_set/mega.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/mega.mrs"}
+  spotify: {<<: *domain, path: ./rule_set/spotify.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs"}
+  twitter: {<<: *domain, path: ./rule_set/twitter.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs"}
+  facebook: {<<: *domain, path: ./rule_set/facebook.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/facebook.mrs"}
+  tiktok: {<<: *domain, path: ./rule_set/tiktok.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"}
+  pikpak: {<<: *domain, path: ./rule_set/pikpak.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pikpak.mrs"}
+  microsoft: {<<: *domain, path: ./rule_set/microsoft.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
+  apple: {<<: *domain, path: ./rule_set/apple.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs"}
+  geolocation-!cn: {<<: *domain, path: ./rule_set/geolocation-!cn.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
+  paypal: {<<: *domain, path: ./rule_set/paypal.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
+  speedtest: {<<: *domain, path: ./rule_set/speedtest.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-speedtest.mrs"}
   cn: {<<: *domain, path: ./rule_set/cn.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
-  direct_domain: {<<: *domain, path: ./rule_set/direct.yaml, format: yaml, url: "https://raw.githubusercontent.com/Sfssup/mihomo-set/refs/heads/main/rule_set/direct.yaml"}
-  category-ads-all: {<<: *domain, path: ./rule_set/category-ads-all.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs"}
+  instagram: {<<: *domain, path: ./rule_set/instagram.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/instagram.mrs"}
+  
+  # 广告
+  httpdns: {<<: *domain, path: ./rule_set/category-httpdns-cn.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-httpdns-cn.mrs"}
+  ads: {<<: *domain, path: ./rule_set/category-ads-all.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs"}
+  AWAvenue: {<<: *domain, path: ./rule_set/AWAvenue.mrs, url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.mrs"}
+
+  # iP
   private_ip: {<<: *ip, path: ./rule_set/private_ip.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"}
+  telegram_ip: {<<: *ip, path: ./rule_set/telegram_ip.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
+  google_ip: {<<: *ip, path: ./rule_set/google_ip.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
+  twitter_ip: {<<: *ip, path: ./rule_set/twitter_ip.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.mrs"}
+  facebook_ip: {<<: *ip, path: ./rule_set/facebook_ip.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/facebook.mrs"}
+  cn_ip: {<<: *ip, path: ./rule_set/cn_ip.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
+  apple_ip: {<<: *ip, path: ./rule_set/apple_ip.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geoip/apple.mrs"}
   
 rules:
-
+  
   - DST-PORT,53,🌐 DNS劫持
-  - RULE-SET,private,🇨🇳 国内直连
-  - RULE-SET,category-ads-all,流量拦截
-  - RULE-SET,direct_domain,自定义流量
-  - RULE-SET,cn,🇨🇳 国内直连
-  - RULE-SET,private_ip,🇨🇳 国内直连,no-resolve
-  - RULE-SET,cn_ip,🇨🇳 国内直连
-
-  - MATCH,漏网之鱼
-
+  - RULE-SET,private,🇨🇳 直连
+  - RULE-SET,httpdns,Block
+  - RULE-SET,ads,Block
+  - RULE-SET,AWAvenue,Block
+  
+  # 域名分流
+  - RULE-SET,googlefcm,Google FCM
+  - RULE-SET,telegram,Telegram
+  - RULE-SET,github,Github
+  - RULE-SET,youtube,YouTube
+  - RULE-SET,ai-!cn,AI
+  - RULE-SET,mega,MEGA
+  - RULE-SET,pikpak,PikPak
+  - RULE-SET,google,Google
+  - RULE-SET,microsoft,Microsoft
+  - RULE-SET,apple,Apple
+  - RULE-SET,steam,Steam
+  - RULE-SET,twitter,Twitter
+  - RULE-SET,spotify,Spotify
+  - RULE-SET,tiktok,TikTok
+  - RULE-SET,instagram,Instagram
+  - RULE-SET,paypal,PayPal
+  - RULE-SET,facebook,Facebook
+  - RULE-SET,speedtest,Speedtest
+  - RULE-SET,geolocation-!cn,Global
+  - RULE-SET,cn,神秘大国
+  
+  # IP分流
+  - RULE-SET,private_ip,🇨🇳 直连,no-resolve
+  - RULE-SET,telegram_ip,Telegram
+  - RULE-SET,google_ip,Google
+  - RULE-SET,apple_ip,Apple
+  - RULE-SET,twitter_ip,Twitter
+  - RULE-SET,facebook_ip,Facebook
+  - RULE-SET,cn_ip,神秘大国
+  
+  # 兜底规则
+  - MATCH,Final
