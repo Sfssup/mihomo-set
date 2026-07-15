@@ -82,7 +82,11 @@ dns:
   fake-ip-ttl: 60
   fake-ip-filter-mode: rule
   fake-ip-filter:
+    - DOMAIN,localhost,real-ip
+    - DOMAIN-SUFFIX,lan,real-ip
+    - DOMAIN-SUFFIX,local,real-ip
     - RULE-SET,private,real-ip
+    - RULE-SET,cn,real-ip
     - MATCH,fake-ip
   nameserver-policy:
     "+.arpa": "10.0.0.1"
@@ -109,7 +113,7 @@ check: &check {url: "https://www.gstatic.com/generate_204", interval: 1800, time
 smux: &smux {udp: true, client-fingerprint: chrome, tfo: true, smux: {enabled: true, protocol: h2mux, max-connections: 9, min-streams: 5, max-streams: 9, statistic: false, only-tcp: false, padding: true}}
 
 proxy-providers:
-  # 以下是自用的几个机场推荐，复制 url: "” 部分官网，注册后把自己的订阅链接替换进去即可
+  # 以下是自用的几个机场推荐，复制 url: “官网” 注册后把自己的订阅链接替换进去即可
   # 如果你有更多机场订阅，按照相同格式 一行一个 添加即可，无需额外配置
   #   机场名: {<<: *p, url: "订阅地址", path: .路径与文件名, override: {复写 在节点名前面加上机场名，用以区分多个机场}}
   
