@@ -45,9 +45,12 @@
 >>- [Surfing](https://github.com/MoGuangYu/Surfing)
 >>- [akashaProxy](https://github.com/ModuleList/akashaProxy)
 >>- [Clash For Magisk](https://github.com/taamarin/ClashforMagisk)
->>- [Box for Magisk/KernelSU](https://github.com/boxproxy/box)
+>>- [Box for Root](https://github.com/boxproxy/box)
 >>- [Sing4Magisk](https://github.com/Asterisk4Magisk/Sing4Magisk)
 >>- [Xray4Magisk](https://github.com/Asterisk4Magisk/Xray4Magisk)
+>>- [ShellCrash](https://github.com/juewuy/ShellCrash)
+>>- [Clash MIX](https://github.com/AXEVO/Clash-MIX)
+>>- [Maodie Launcher](https://github.com/SherlockChiang/Maodie-Launcher)
 
 >## iOS
 >- [ClashMi](https://github.com/KaringX/clashmi)
