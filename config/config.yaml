@@ -11,7 +11,7 @@ udp: true
 ipv6: false
 tcp-concurrent: true
 unified-delay: true
-find-process-mode: strict
+find-process-mode: off
 geodata-loader: memconservative
 geosite-matcher: succinct
 global-ua: clash.meta
@@ -79,7 +79,7 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.0/15
   fake-ip-range6: fc00::/18
-  fake-ip-ttl: 60
+  fake-ip-ttl: 30
   fake-ip-filter-mode: rule
   fake-ip-filter:
     - DOMAIN,localhost,real-ip
