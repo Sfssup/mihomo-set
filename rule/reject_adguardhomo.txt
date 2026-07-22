@@ -2504,6 +2504,50 @@
 ||adtag.primetime.adobe.com^
 ||sstats.adobe.com^
 
+#MouseFlow 用户行为分析
+||mouseflow.com^
+||a.mouseflow.com^
+
+#Lucky Orange 用户行为分析
+||luckyorange.com^
+||luckyorange.net^
+||cdn.luckyorange.com^
+||w1.luckyorange.com^
+||upload.luckyorange.net^
+||cs.luckyorange.net^
+||settings.luckyorange.net^
+
+#Sentry 错误追踪 / 数据采集
+||sentry.io^
+||getsentry.com^
+||app.getsentry.com^
+||browser.sentry-cdn.com^
+||o*.ingest.sentry.io^
+
+#Yahoo 广告 / 统计
+||yahoo.co.jp^
+||b98.yahoo.co.jp^
+||b99.yahoo.co.jp^
+||am.yahoo.co.jp^
+||apm.yahoo.co.jp^
+
+#Yandex 广告 / Metrica统计
+||yandex.ru^
+||yandex.com^
+||metrika.yandex.ru^
+||mc.yandex.ru^
+||appmetrica.yandex.com^
+||appmetrica.yandex.ru^
+||report.appmetrica.yandex.net^
+||analytics.mobile.yandex.net^
+||banners.mobile.yandex.net^
+||adsdk.yandex.ru^
+||adfox.yandex.ru^
+||yandexadexchange.net^
+||mobile.yandexadexchange.net^
+||clck.yandex.ru^
+||an.yandex.ru^
+
 # 微信广告
 ||ad.weixin.qq.com^
 ||ads.weixin.qq.com^
