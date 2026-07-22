@@ -2441,6 +2441,7 @@
 ||ws-na.amazon-adsystem.com^
 ||z-eu.amazon-adsystem.com^
 ||z-na.amazon-adsystem.com^
+
 #亚马逊
 ||aan.amazon.com^
 ||aax-us-east-retail-direct.amazon.com^
