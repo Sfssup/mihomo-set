@@ -2504,6 +2504,21 @@
 ||adtag.primetime.adobe.com^
 ||sstats.adobe.com^
 
+# Media.net
+||media.net^
+||cdn.media.net^
+||static.media.net^
+||images.media.net^
+||contextweb.com^
+||cpxinteractive.com^
+||himedia.net^
+
+#Freshworks Ads
+||freshmarketer.com^
+||freshmarketer.io^
+||freshreports.com^
+||freshworksapi.com^
+
 #MouseFlow 用户行为分析
 ||mouseflow.com^
 ||a.mouseflow.com^
@@ -2530,6 +2545,7 @@
 ||b99.yahoo.co.jp^
 ||am.yahoo.co.jp^
 ||apm.yahoo.co.jp^
+||partnerads.ysm.yahoo.com^
 
 #Yandex 广告 / Metrica统计
 ||yandex.ru^
