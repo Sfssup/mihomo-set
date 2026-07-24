@@ -52,6 +52,7 @@
 >>- [Clash MIX](https://github.com/AXEVO/Clash-MIX)
 >>- [Maodie Launcher](https://github.com/SherlockChiang/Maodie-Launcher)
 >>- [MagicNet](https://github.com/LIghtJUNction/MagicNet)
+>>- [Flux](https://github.com/Chth1z/Flux)
 
 >## iOS
 >- [ClashMi](https://github.com/KaringX/clashmi)
