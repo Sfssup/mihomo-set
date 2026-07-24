@@ -168,12 +168,7 @@
 ||ocean-alps.wifi188.com^
 
 #迅雷
-||adsp.xunlei.com^
-||api-mcp.adsp.xunlei.com^
-||test.adsp.xunlei.com^
-||advertpay.vip.xunlei.com^
-||advertpay-vip-ssl.xunlei.com^
-||watch.advertising.speed.cdn.vip.xunlei.com^
+
 ||scene.vip.xunlei.com^
 ||biz.live.xunlei.com^
 ||ct.niu.xunlei.com^
