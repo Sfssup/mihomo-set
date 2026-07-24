@@ -176,6 +176,14 @@
 ||watch.advertising.speed.cdn.vip.xunlei.com^
 
 
+||mou.niu.xunlei.com^
+||m.sjzhushou.com^
+||static.m.sjzhushou.com^
+||api-shoulei-ssl.xunlei.com^
+||t03-api.xlmc.xunlei.com^
+||uploadlog.xlmc.sandai.net^
+||pre.api.tw06.xlmc.sandai.net^
+
 # 百度隐私分析上报
 ||crab.baidu.com^
 ||dxp.baidu.com^
