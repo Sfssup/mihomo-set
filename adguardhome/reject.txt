@@ -174,8 +174,8 @@
 ||advertpay.vip.xunlei.com^
 ||advertpay-vip-ssl.xunlei.com^
 ||watch.advertising.speed.cdn.vip.xunlei.com^
-
-
+||biz.live.xunlei.com^
+||ct.niu.xunlei.com^
 ||mou.niu.xunlei.com^
 ||m.sjzhushou.com^
 ||static.m.sjzhushou.com^
