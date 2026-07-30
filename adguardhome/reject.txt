@@ -2377,7 +2377,10 @@
 ||fcmatch.youtube.com^
 ||an.facebook.com^
 ||pixel.facebook.com^
+||affiliationjs.s3.amazonaws.com^
 ||ads.twitter.com^
+||advertising.twitter.com^
+||ads-dev.pinterest.com^
 ||ads.x.com^
 ||ads-api.x.com^
 ||ads-api.twitter.com^
