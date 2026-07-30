@@ -7,9 +7,6 @@
 #Sentry 错误监控
 ||sentry.io^
 
-#Google 广告服务/广告归因
-||googleadservices.com^
-
 #银联反诈
 ||antifraud.cup.com.cn^
 
