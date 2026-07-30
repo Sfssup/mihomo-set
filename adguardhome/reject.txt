@@ -3083,7 +3083,6 @@
 ||glitter.services.disqus.com^
 ||gnomesyeuked.com^
 ||google-analytics.com^
-||googleadservices.com^
 ||googletagmanager.com^
 ||graph.facebook.com^
 ||groleegni.net^
