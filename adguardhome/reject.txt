@@ -1,3 +1,12 @@
+# 小米/中国移动相关追踪、推送、统计
+
+||url-detect.engine.mi.com^
+||jiguang.coc.10086.cn^
+||yxfk.market.chinamobile.com^
+||h.app.coc.10086.cn^
+||push.it.10086.cn^
+||apm.app.coc.10086.cn^
+
 # 哔哩漫游X服务器
 ||black.qimo.ink^
 
