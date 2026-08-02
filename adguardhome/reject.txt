@@ -1,6 +1,14 @@
 
 
 
+! APP资源广告
+||res.app.coc.10086.cn^
+
+! 活动/运营位
+||h.app.coc.10086.cn^
+||activity.10086.cn^
+||promo.10086.cn^
+||promotion.10086.cn^
 
 ! Cookie/用户画像
 ||track.10086.cn^
