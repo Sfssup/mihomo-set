@@ -4,6 +4,9 @@
 ! APP资源广告
 ||res.app.coc.10086.cn^
 
+! APP后台接口（谨慎）
+||client.app.coc.10086.cn^
+
 ! 活动/运营位
 ||h.app.coc.10086.cn^
 ||activity.10086.cn^
