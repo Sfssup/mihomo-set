@@ -1,14 +1,3 @@
-! 中国移动 广告/营销/追踪
-
-||ads.10086.cn^
-||ad.10086.cn^
-||adimg.10086.cn^
-||adstatic.10086.cn^
-
-! 营销推荐
-||market.10086.cn^
-||yxfk.market.chinamobile.com^
-||market.coc.10086.cn^
 
 ! APP广告接口
 ||appad.10086.cn^
