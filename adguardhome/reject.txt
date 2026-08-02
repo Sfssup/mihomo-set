@@ -1,10 +1,5 @@
 
 
-! 中国移动APP接口分析/统计
-||url-detect.engine.mi.com^
-||apm.app.coc.10086.cn^
-||analytics.app.coc.10086.cn^
-||stat.app.coc.10086.cn^
 
 ! APP资源广告
 ||res.app.coc.10086.cn^
