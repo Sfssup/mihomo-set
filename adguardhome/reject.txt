@@ -1,13 +1,4 @@
 
-! APP广告接口
-||appad.10086.cn^
-||adpush.10086.cn^
-||advert.10086.cn^
-||advertising.10086.cn^
-
-! 推送服务
-||push.it.10086.cn^
-||jiguang.coc.10086.cn^
 
 ! 中国移动APP接口分析/统计
 ||url-detect.engine.mi.com^
