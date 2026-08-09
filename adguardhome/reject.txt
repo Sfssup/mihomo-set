@@ -1822,7 +1822,6 @@
 ||tnc2-bjlgy.zijieapi.com^
 ||tnc3-aliec2.zijieapi.com^
 ||tnc3-alisc1.zijieapi.com^
-||tnc3-bjlgy.zijieapi.com^
 ||tnc4-bjlgy.zijieapi.com^
 ||tnc5-bjlgy.zijieapi.com^
 ||vcs.zijieapi.com^
@@ -3304,7 +3303,6 @@
 ||tnc3-aliec2.zijieapi.com^
 ||tnc3-alisc1.zijieapi.com^
 ||tnc3-bjlgy.snssdk.com^
-||tnc3-bjlgy.zijieapi.com^
 ||toblog.ctobsnssdk.com^
 ||tosv.byted.org^
 ||tpc.googlesyndication.com^
