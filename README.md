@@ -1,4 +1,6 @@
 # 写在前面
+![GitHub stars](https://img.shields.io/github/stars/Sfssup/mihomo-set?style=flat-square) ![Profile Views](https://komarev.com/ghpvc/?username=Sfssup&color=blue)
+
 该仓库所有内容仅为收集整理，不对可能造成的任何后果负责；有建议或意见请提Issues
 
 # 内核
