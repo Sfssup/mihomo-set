@@ -112,7 +112,6 @@
 
 #滴滴
 ||img-ys011.didistatic.com^
-#||adtrack.xiaojukeji.com^
 ||s3-hnapuhdd-cdn.didistatic.com^
 
 #携程&智行火车票
