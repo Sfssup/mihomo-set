@@ -926,7 +926,6 @@
 ||ug.qbimg.qq.com^
 ||mcdn.kandian.qq.com^
 ||m4.publicimg.browser.qq.com^
-#||qbuc.html5.qq.com^
 
 #QQ
 ||ca.gtimg.com^
