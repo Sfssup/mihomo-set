@@ -104,6 +104,7 @@
 >- [SSClash](https://github.com/zerolabnet/SSClash)
 >- [ShadowSocksR Plus+](https://github.com/fw876/helloworld)
 >- [openwrt-clashoo](https://github.com/kenzok8/openwrt-clashoo)
+>- [Open-Box](https://github.com/liandu2024/Open-Box)：OpenWrt 一体化透明代理方案:一条命令装完 sing-box 内核 + 管理面板,浏览器打开即用
 
 # Dashboard
 - [Yacd](https://github.com/haishanh/yacd)
