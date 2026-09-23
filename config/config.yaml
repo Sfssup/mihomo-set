@@ -14,7 +14,7 @@ unified-delay: true
 find-process-mode: off
 geodata-loader: memconservative
 geosite-matcher: succinct
-global-ua: clash.meta
+global-ua: mihomo
 etag-support: true
 
 # 日志
@@ -25,13 +25,14 @@ allow-lan: true
 bind-address: "*"
 
 # TCP连接保持活跃探测，修改此项以减少移动设备耗电问题
+# 移动设备：true，否则：false
 disable-keep-alive: true
-keep-alive-interval: 15
-keep-alive-idle: 15
+keep-alive-interval: 60
+keep-alive-idle: 600
 
 # 外部控制 (API)
 external-controller: 127.0.0.1:9090
-secret: "ksc666"
+secret: "telegram@ksc666"
 external-ui: "./Web/zashboard"
 external-ui-url: "https://github.com/Zephyruso/zashboard/releases/latest/download/dist-no-fonts.zip"
 
@@ -39,6 +40,14 @@ external-ui-url: "https://github.com/Zephyruso/zashboard/releases/latest/downloa
 profile:
   store-selected: true
   store-fake-ip: true
+
+ntp:
+  enable: true
+  write-to-system: false
+  server: time.apple.com
+  port: 123
+  interval: 60
+  dialer-proxy: DIRECT
 
 tun:
   enable: false
@@ -49,10 +58,7 @@ tun:
   strict-route: true
   auto-redirect: true
   auto-detect-interface: true
-  mtu: 9000
-  gso: true
-  route-exclude-address: [127.0.0.1/32,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,224.0.0.0/4,169.254.0.0/16,"::/127","fe80::/10","ff00::/8"]
-  route-exclude-address-set: [private_ip]
+  route-exclude-address: [10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.168.0.0/16,198.18.0.0/15,"::/127","fc00::/7","fe80::/10","ff00::/8"]
 
 sniffer:
   enable: true
@@ -60,14 +66,13 @@ sniffer:
   parse-pure-ip: true
   override-destination: true
   sniff: {HTTP: {ports: [80, 8080-8880], override-destination: true}, TLS: {ports: [443, 8443]}, QUIC: {ports: [443, 8443]}}
-  skip-domain: [localhost,+.local,+.lan,+.push.apple.com,Mijia Cloud,dlg.io.mi.com]
+  skip-domain: [localhost,+.local,+.lan,+.push.apple.com,Mijia Cloud]
 
 dns:
   enable: true
   listen: 0.0.0.0:1053
   respect-rules: true
   prefer-h3: false
-  disable-qtype-65: true
   ipv6: false
   ipv6-timeout: 3000
   use-hosts: true
@@ -79,28 +84,49 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.0/15
   fake-ip-range6: fc00::/18
-  fake-ip-ttl: 10
-  fake-ip-filter-mode: rule
+  fake-ip-ttl: 60
+  fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - DOMAIN,localhost,real-ip
-    - DOMAIN-SUFFIX,lan,real-ip
-    - DOMAIN-SUFFIX,local,real-ip
-    - RULE-SET,private,real-ip
-    - RULE-SET,googlefcm,real-ip
-    - RULE-SET,cn,real-ip
-    - MATCH,fake-ip
+    # 本地网络
+    - 'localhost'
+    - '*.lan'
+    - '*.local'
+    - '*.arpa'
+    # NTP
+    - 'time.apple.com'
+    - '+.pool.ntp.org'
+    # Windows 网络连通性
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    # Wi-Fi Calling / IMS
+    - '+.pub.3gppnetwork.org'
+    # QQ登录
+    - 'localhost.ptlogin2.qq.com'
+    - 'localhost.sec.qq.com'
+    # 微信登录
+    - 'localhost.*.weixin.qq.com'
+    # 运营商一键登录
+    - 'id6.me'
+    - 'open.e.189.cn'
+    - 'hmrz.wo.cn'
+    - 'nishub1.10010.com'
+    - 'enrichgw.10010.com'
+    - '*.cmpassport.com'
+    - '*.wosms.cn'
+    # 规则集
+    - rule-set:private
   nameserver-policy:
-    "rule-set:httpdns,ads,AWAvenue": "rcode://success"
+    "rule-set:httpdns,ads,AWAvenue,anti-AD": "rcode://success"
   nameserver:
-    - https://8.8.8.8/dns-query
-    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query#disable-qtype-65=true
+    - https://1.1.1.1/dns-query#disable-qtype-65=true
   direct-nameserver-follow-policy: false
   direct-nameserver:
-    - https://223.5.5.5/dns-query
-    - https://119.29.29.29/dns-query
+    - https://223.5.5.5/dns-query#disable-qtype-65=true
+    - https://119.29.29.29/dns-query#disable-qtype-65=true
   proxy-server-nameserver:
-    - https://223.6.6.6/dns-query
-    - https://1.12.12.12/dns-query
+    - https://223.6.6.6/dns-query#disable-qtype-65=true
+    - https://1.12.12.12/dns-query#disable-qtype-65=true
 
 proxies:
 
@@ -110,8 +136,8 @@ proxies:
 # 锚点
 p: &p {type: http, interval: 86400, proxy: "SubUpdate", exclude-filter: "(?i)Russia", exclude-type: "http|ss", health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 1800, timeout: 3000, lazy: true}}
 pr: &pr {type: select, proxies: [香港-自动选择, 香港-故障转移, 香港-负载均衡, 香港-手动选择, 台湾-自动选择, 台湾-故障转移, 台湾-负载均衡, 台湾-手动选择, 日本-自动选择, 日本-故障转移, 日本-负载均衡, 日本-手动选择, 韩国-自动选择, 韩国-故障转移, 韩国-负载均衡, 韩国-手动选择, 新加坡-自动选择, 新加坡-故障转移, 新加坡-负载均衡, 新加坡-手动选择, 英国-自动选择, 英国-故障转移, 英国-负载均衡, 英国-手动选择, 美国-自动选择, 美国-故障转移, 美国-负载均衡, 美国-手动选择, 其他-自动选择, 其他-故障转移, 其他-负载均衡, 其他-手动选择, 全部-自动选择, 全部-故障转移, 全部-负载均衡, 全部-手动选择, 神秘大国, Block]}
-check: &check {url: "https://www.gstatic.com/generate_204", interval: 1800, timeout: 3000, lazy: true, max-failed-times: 3, hidden: true}
-smux: &smux {udp: true, client-fingerprint: chrome, tfo: true, smux: {enabled: true, protocol: h2mux, max-connections: 9, min-streams: 5, max-streams: 9, statistic: false, only-tcp: false, padding: true}}
+check: &check {url: "https://www.gstatic.com/generate_204", interval: 600, timeout: 3000, lazy: true, max-failed-times: 3, hidden: true}
+smux: &smux {udp: true, tfo: true, mptcp: true, ip-version: ipv4-prefer, client-fingerprint: chrome, smux: {enabled: true, protocol: h2mux, max-connections: 6, min-streams: 3, max-streams: 6, statistic: false, only-tcp: false, padding: true}}
 
 proxy-providers:
   # 以下是自用的几个机场推荐，复制 url: “官网” 注册后把自己的订阅链接替换进去即可
@@ -224,6 +250,7 @@ rule-providers:
   httpdns: {<<: *domain, path: ./rule_set/category-httpdns-cn.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-httpdns-cn.mrs"}
   ads: {<<: *domain, path: ./rule_set/category-ads-all.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs"}
   AWAvenue: {<<: *domain, path: ./rule_set/AWAvenue.mrs, url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.mrs"}
+  anti-AD: {<<: *domain, path: ./rule_set/anti-AD.mrs, url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/mihomo.mrs"}
 
   # iP
   private_ip: {<<: *ip, path: ./rule_set/private_ip.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"}
@@ -235,12 +262,13 @@ rule-providers:
   apple_ip: {<<: *ip, path: ./rule_set/apple_ip.mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geoip/apple.mrs"}
   
 rules:
-  
+  - AND,((RULE-SET,geolocation-!cn),(DST-PORT,443),(NETWORK,UDP)),Block
   - DST-PORT,53,🌐 DNS劫持
   - RULE-SET,private,🇨🇳 直连
   - RULE-SET,httpdns,Block
   - RULE-SET,ads,Block
   - RULE-SET,AWAvenue,Block
+  - RULE-SET,anti-AD,Block
   
   # 域名分流
   - RULE-SET,googlefcm,Google FCM
