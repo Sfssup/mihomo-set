@@ -110,10 +110,6 @@
 ||amap-aos-info-nogw.amap.com^
 ||optimus-ads-ykx.amap.com^
 
-#滴滴
-||img-ys011.didistatic.com^
-||s3-hnapuhdd-cdn.didistatic.com^
-
 #携程&智行火车票
 ||dimg04.c-ctrip.com^
 ||ma-adx.ctrip.com^
