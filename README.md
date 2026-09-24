@@ -123,7 +123,6 @@
 - [极速云](https://512.jsy.lol/#/register?code=KmIpamty)
 - [顶级机场](https://xn--mes358a9urctx.com/#/register?code=wiPXjyYq)
 - [飞鸟云](https://www.feiniaoyun.xyz/#/register?code=1gZX21aI)
-- [淘气兔](https://vip.taoqitu.pro/index.html?register=rNh8X1zf)
 
 # 感谢
 感谢以上所有开发者！排名不分先后
