@@ -147,7 +147,7 @@ proxy-providers:
   Miaona: {<<: *p, url: "https://miaona.org/#/register?code=EdpK1Vlo", path: ./proxy_providers/Miaona.yaml, override: {<<: *smux, additional-prefix: "Miaona｜"}}
   魔戒: {<<: *p, url: "https://www.mojie.cyou/#/register?code=a0sBIylV", path: ./proxy_providers/魔戒.yaml, override: {<<: *smux, additional-prefix: "魔戒｜"}}
   飞鸟云: {<<: *p, url: "https://www.feiniaoyun.xyz/#/register?code=1gZX21aI", path: ./proxy_providers/飞鸟云.yaml, override: {<<: *smux, additional-prefix: "飞鸟云｜"}}
-  淘气兔: {<<: *p, url: "https://vip.xn--h5qy56dzhb.vip/#/register?code=rNh8X1zf", path: ./proxy_providers/淘气兔.yaml, override: {<<: *smux, additional-prefix: "淘气兔｜"}}
+  良心云: {<<: *p, url: "https://xn--9kqz23b19z.com/#/register?code=VpXfaVUL", path: ./proxy_providers/良心云.yaml, override: {<<: *smux, additional-prefix: "良心云｜"}}
   极速云: {<<: *p, url: "https://w2.rouhe88.com/#/register?code=Zl5IqVKd", path: ./proxy_providers/极速云.yaml, override: {<<: *smux, additional-prefix: "极速云｜"}}
   顶级机场: {<<: *p, url: "https://xn--mes358a9urctx.com/#/register?code=AkCxVELH", path: ./proxy_providers/顶级机场.yaml, override: {<<: *smux, additional-prefix: "顶级机场｜"}}
   
