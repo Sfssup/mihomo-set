@@ -10,6 +10,8 @@
 #银联反诈
 ||antifraud.cup.com.cn^
 
+||guanggao-prod.cn-shanghai.log.aliyuncs.com^
+
 #反诈
 ||gjfzpt.cn^
 ||fzapp.chanct.cn^
