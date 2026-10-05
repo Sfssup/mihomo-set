@@ -85,7 +85,6 @@
 ||httpdns.baidubce.com^
 ||ugc.map.baidu.com^
 ||map-mobile-opnimg.cdn.bcebos.com^
-||pms-cdn.bdstatic.com^
 ||aiad-aisuda.cdn.bcebos.com^
 
 #高德地图
@@ -1061,6 +1060,7 @@
 ||sp0.baidu.com^
 ||qapm.baidu.com^
 ||fclog.baidu.com^
+||tcbox.baidu.com^
 ||browserkernel.baidu.com^
 ||hijack.baidu.com^
 ||hpd.baidu.com^
