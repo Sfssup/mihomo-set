@@ -1061,7 +1061,6 @@
 ||sp0.baidu.com^
 ||qapm.baidu.com^
 ||fclog.baidu.com^
-||tcbox.baidu.com^
 ||browserkernel.baidu.com^
 ||hijack.baidu.com^
 ||hpd.baidu.com^
