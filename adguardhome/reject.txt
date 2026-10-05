@@ -78,15 +78,6 @@
 ||ads.95516.com^
 ||ad.maoyan.com^
 
-#百度地图
-||a1.alibabausercontent.com^
-||afd.baidu.com^
-||afdconf.baidu.com^
-||httpdns.baidubce.com^
-||ugc.map.baidu.com^
-||map-mobile-opnimg.cdn.bcebos.com^
-||aiad-aisuda.cdn.bcebos.com^
-
 #高德地图
 ||optimus-ads.amap.com^
 ||store.is.autonavi.com^
