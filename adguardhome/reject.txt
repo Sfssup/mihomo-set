@@ -1089,13 +1089,6 @@
 ||fc4tn.baidu.com^
 ||fc5tn.baidu.com^
 
-#sina-icast
-||cast.ra.icast.cn^
-||rack.ra.icast.cn^
-||res.icast.cn^
-||rmtx.ra.icast.cn^
-||track.ra.icast.cn^
-
 #微博
 ||biz.weibo.com^
 ||s.alitui.weibo.com^
@@ -1103,11 +1096,6 @@
 ||game.weibo.cn^
 ||gw5.push.mcp.weibo.cn^
 ||m.game.weibo.cn^
-
-#海外字节系广告
-||tnc16-alisg.byteoversea.com^
-||tnc16-useast1a.byteoversea.com^
-||ssdk-sg.pangle.io^
 
 #TopOn 酷安用
 ||app.takuad.com^
@@ -1223,21 +1211,6 @@
 ||api.tw06.xlmc.sec.miui.com^
 ||adinfo.ra1.xlmc.sec.miui.com^
 
-# 小米云扫描组件 Avlyun
-||ixav-cse.avlyun.com^
-||sdkconf.avlyun.com^
-||miui-fxcse.avlyun.com^
-||miav-cse.avlyun.com^
-||log.avlyun.sec.intl.miui.com^
-||update.avlyun.sec.miui.com^
-||logupdate.avlyun.sec.miui.com^
-
-# 小米安装验证
-||api.installer.xiaomi.com^
-||api-installer.pt.xiaomi.com^
-||preview-api.installer.xiaomi.com^
-||test-api-installer.pt.xiaomi.com^
-
 #小米网址检测
 ||url-detect.engine.mi.com^
 
@@ -1273,72 +1246,14 @@
 # 腾讯安全 SDK
 ||tmfsdk.m.qq.com^
 
-# 系统更新
-||update.miui.com^
-||hugeota.d.miui.com^
-||bigota.d.miui.com^
-
 # 云扫描 / 上报
 ||etl-xlmc-ssl.sandai.net^
-
-# 第三方广告 / 统计
-||ad.doubleclick.net^
-||admaster.com.cn^
-||v.admaster.com.cn^
-||secure-chn.imrworldwide.com^
-||alog.umeng.com^
-||android.bugly.qq.com^
-
-# 电视统计 / CDN
-||alert.kuyun.com^
-
-#油管推脸书P站
-||ads.youtube.com^
-||fcmatch.youtube.com^
-||an.facebook.com^
-||pixel.facebook.com^
-||affiliationjs.s3.amazonaws.com^
-||ads.twitter.com^
-||advertising.twitter.com^
-||ads-dev.pinterest.com^
-||ads.x.com^
-||ads-api.x.com^
-||ads-api.twitter.com^
-||ads-bidder-api.twitter.com^
-||static.ads-twitter.com^
-||analytics.twitter.com^
-||ads-twitter.com^
-||pixon.ads-pixiv.net^
-||open-pixon.ads-pixiv.net^
-||d.pixiv.org^
-||sh.adingo.jp^
-||dex.advg.jp^
-||y.one.impact-ad.jp^
-||js.mtburn.com^
-||spcnv.i-mobile.co.jp^
-||spdmg-backend.i-mobile.co.jp^
-||spdmg.i-mobile.co.jp^
-||assets.gunosy.com^
-||staticxx.facebook.com^
-||dc.ads.linkedin.com^
-||syndication.twitter.com^
-||tapi.apkpure.net^
-||t.apkpure.net^
 
 #Spotify(音频广告去不掉)
 ||ads.spotify.com^
 ||adstudio-assets.scdn.co^
 ||audio-ad.spotify.com^
 ||enduser.adsrvr.org^
-
-#Adobe
-||campaign.adobe.com^
-||mcd-mkt-prod31-lb.campaign.adobe.com^
-||pandoramedia-mkt-prod1-t.campaign.adobe.com^
-||wdpro-mkt-prod2-lb.campaign.adobe.com^
-||geo.adobe.com^
-||adtag.primetime.adobe.com^
-||sstats.adobe.com^
 
 # Media.net
 ||media.net^
@@ -1348,12 +1263,6 @@
 ||contextweb.com^
 ||cpxinteractive.com^
 ||himedia.net^
-
-#Freshworks Ads
-||freshmarketer.com^
-||freshmarketer.io^
-||freshreports.com^
-||freshworksapi.com^
 
 #MouseFlow 用户行为分析
 ||mouseflow.com^
@@ -1373,31 +1282,6 @@
 ||app.getsentry.com^
 ||browser.sentry-cdn.com^
 ||o*.ingest.sentry.io^
-
-#Yahoo 广告 / 统计
-||yahoo.co.jp^
-||b98.yahoo.co.jp^
-||b99.yahoo.co.jp^
-||am.yahoo.co.jp^
-||apm.yahoo.co.jp^
-||partnerads.ysm.yahoo.com^
-
-#Yandex 广告 / Metrica统计
-||yandex.ru^
-||yandex.com^
-||metrika.yandex.ru^
-||mc.yandex.ru^
-||appmetrica.yandex.com^
-||appmetrica.yandex.ru^
-||report.appmetrica.yandex.net^
-||analytics.mobile.yandex.net^
-||banners.mobile.yandex.net^
-||adsdk.yandex.ru^
-||adfox.yandex.ru^
-||yandexadexchange.net^
-||mobile.yandexadexchange.net^
-||clck.yandex.ru^
-||an.yandex.ru^
 
 # 懒人听书
 ||display.wting.info^
@@ -1419,13 +1303,6 @@
 ||ads-api.tiktok.com^
 ||log.byteoversea.com^
 ||ads.byteoversea.com^
-
-# 抖音 / 今日头条 / 穿山甲
-||log.snssdk.com^
-||ad.snssdk.com^
-||ads.snssdk.com^
-||pangle.io^
-||pangolin-sdk-toutiao.com^
 
 #酷安残留广告
 ||anythinktech.com^
@@ -1483,100 +1360,6 @@
 ||dot.api.idmzj.com^
 ||doh.iqiyi.com^
 ||paydns.wechatpay.cn^
-
-#网易云音乐
-||ssp-landing.taptap.cn^
-||site.u-mob.cn^
-||mos.m.taobao.com^
-||pages-fast.m.taobao.com^
-||pages.goofish.com^
-||mo.m.taobao.com^
-||conf-darwin.xycdn.com^
-||sd-gl.xycdn.com^
-||sdk*xyajs.data.kuiniuca.com^
-||nstool.laiqukankan.com^
-||qiezibenpao.com^
-
-#字节跳动系列广告
-||rup4a04-c02.tos-cn-hongkong.bytepluses.com^
-||crashlytics.com^
-||ads*-normal-hl.zijieapi.com^important'
-||log*-applog-hl.fqnovel.com^important'
-||rtlog*-applog-hl.fqnovel.com^important'
-||p*-ad-sign.byteimg.com^important'
-||abtest*-misc-*.zijieapi.com^
-||uril6.com^
-||yuanbaobaoxian.com^
-||cjjd14.com^
-||lf-reward-video.bytedcdn.com^
-||homeborn.cn^
-||*-reading.fqnovelstatic.com^
-||*-pitaya.bytetos.com^
-||*-pitaya-tos.pstatp.com^
-||*-luckycat.byteimg.com^
-||qtaeixd.com^
-||*0kkkkkt.com^
-||*-normal-lq.zijieapi.com^
-||*-luckycatopen.byteimg.com^
-||*-cdn-tos.bytegeckoext.com^
-||*-novelapp.fqnovelvod.com^
-||webcast*-open-lq.douyin.com^
-||ttwebview.com^
-||volcsiriusbd.com^
-||sealaly.net^
-||vegslb.com^
-||siomxity.com^
-||lf-fe.fqnovelstatic.com^
-||open.douyin.com^
-||*-open.douyin.com^
-||vod-settings.bytedanceapi.com^
-||ug-data.mihoyo.com^
-||www.bytedance.com^
-||huixuanjiasu.com^
-||mktm.jd.com^
-||api*-normal-c-lf.amemv.com^
-||oceanengine.com^
-||chengzijianzhan.com^
-||life-service-open.zijieapi.com^
-||tsearch.snssdk.com^
-||zxid-api.mobileservice.cn^
-||ietheivaicai.com^
-||ssp.*rtb.com^
-||tnc*-bjlgy.zijieapi.com^
-||whoami.akamai.net^
-||abtestvm.bytedance.com^
-||tapad-platform.tapimg.com^
-||tap-dsp.iem.taptap.cn^
-||statics.adanxing.com^
-||adx.dictapis.cn^
-||abtest*-misc.zijieapi.com^
-||ugsdk.cn^
-||track.ranfenghd.com^
-||tnc*-alisc*.zijieapi.com^
-
-#美团/美团外卖
-||catfront.dianping.com^
-||data-sdk-uuid-log.d.meituan.net^
-||tec73.com^
-||wmlog.meituan.com^
-||volces.com^
-||logan.sankuai.com^
-||appsflyersdk.com^
-||alita.waimai.meituan.com^
-||flowplus.meituan.net^
-||httpdns.meituan.com^
-
-#动漫之家
-||mobrtb.com^
-||domob.cn^
-||tanx.com^
-||api.ssp.xcultur.com^
-||magicacid.cn^
-||youzanyun.com^
-||adsdk.*^
-
-#微信
-||apd-pcdnwxlogin.teg.tencent-cloud.net^
 
 #车来了
 ||image3.chelaile.net.cn^
