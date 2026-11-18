@@ -115,7 +115,7 @@
 ||catdot.dianping.com^
 ||dot.api.idmzj.com^
 ||doh.iqiyi.com^
-# ||paydns.wechatpay.cn^
+||paydns.wechatpay.cn^
 ||doh.qq.com^
 ||dot.qq.com^
 ||dns.taobao.com^
