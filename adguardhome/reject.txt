@@ -52,7 +52,6 @@
 ||zzhc.vnet.cn^
 ||sentry.io^nt
 ||api.umengcn.org^
-||update.googleapis.com^
 ||browser.sentry-cdn.com^
 ||advertising.amazon.com^
 ||tracking.india.miui.com^
